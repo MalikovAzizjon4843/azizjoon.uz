@@ -1,0 +1,1 @@
+<template><footer class='text-center p-4'>© 2025 InBio</footer></template>
