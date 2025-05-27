@@ -1,4 +1,4 @@
-# azizjoon-uz
+# azizjoon.uz
 
 ## Project setup
 ```
