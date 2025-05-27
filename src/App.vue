@@ -1,11 +1,21 @@
 <template>
-  <Navbar />
-  <RouterView />
-  <Footer />
+  <div id="app">
+   <Home/>
+  </div>
 </template>
 
-<script setup>
-import { RouterView } from 'vue-router'
-import Navbar from './components/common/Navbar.vue'
-import Footer from './components/common/Footer.vue'
+<script>
+import Home from './components/Home.vue';
+
+export default {
+  name: 'App',
+  components: {
+    Home
+  }
+  }
 </script>
+
+<style>
+/* Your global styles here */
+
+</style>

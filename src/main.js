@@ -1,12 +1,13 @@
-import { createApp } from 'vue'
+import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import { createPinia } from 'pinia'
-import i18n from './i18n'
-import './assets/tailwind.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@/assets/css/style.css';
+// import '@/assets/scss/style.scss';
 
-const app = createApp(App)
-app.use(createPinia())
-app.use(router)
-app.use(i18n)
-app.mount('#app')
+Vue.config.productionTip = false
+
+new Vue({
+  router,
+  render: h => h(App),
+}).$mount('#app')
