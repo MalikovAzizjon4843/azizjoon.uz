@@ -1,10 +1,7 @@
 <template>
   <div>
-    <Header />
     <AboutMe/>
     <Blog />
-    <router-view/>
-    <Footer />
     <!-- Back to top Start -->
     <div class="backto-top" @click="scrollToTop" :class="{ show: backToTopVisible }">
       <div>
@@ -17,8 +14,6 @@
 
 <script>
 import { ref, onMounted, onUnmounted } from 'vue';
-import Header from '../components/Header.vue';
-import Footer from '../components/Footer.vue';
 import AboutMe from "@/components/AboutMe.vue";
 import Blog from "@/components/Blog.vue";
 
@@ -27,8 +22,6 @@ export default {
   components: {
     Blog,
     AboutMe,
-    Header,
-    Footer
   },
   setup() {
     const backToTopVisible = ref(false);

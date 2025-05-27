@@ -1,5 +1,5 @@
 /*---------------------------
-    Header Area Styles 
+    Header Area Styles
 -----------------------------*/
 @media (prefers-reduced-motion: no-preference) {
     :root {
@@ -266,6 +266,9 @@ body.template-color-1 {
     top: 0;
     z-index: 999;
     width: 100%;
+    background-color: rgba(33, 36, 40, 0.8705882353);
+    box-shadow: var(--shadow-1);
+    backdrop-filter: blur(15px);
 }
 
 .rn-header.header--fixed {
@@ -465,7 +468,7 @@ body.template-color-1 {
     left: 0;
 }
 
-// Header Style Two 
+// Header Style Two
 .header-style-2 {
     position: absolute;
     top: 0;

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*---------------------------
- CSS Index  
+ CSS Index
 ****************************
 
 01. Variables
@@ -437,7 +437,7 @@ var {
 }
 
 /*---------------------------
-	List Style 
+	List Style
 ---------------------------*/
 ul,
 ol {
@@ -514,7 +514,7 @@ ol ul {
 }
 
 /*=========================
-    Section Separation 
+    Section Separation
 ==========================*/
 .slick-dotted.slick-slider {
   margin-bottom: 0;
@@ -6784,7 +6784,7 @@ input[type=submit]:hover {
 /*==============================
  *  Utilities
 =================================*/
-/* 
+/*
 font-family: 'Red Hat Display', sans-serif;
 */
 .clearfix:before,
@@ -6806,7 +6806,7 @@ font-family: 'Red Hat Display', sans-serif;
 }
 
 /*===============================
-    Background Color 
+    Background Color
 =================================*/
 .bg-color-primary {
   background: var(--color-primary);
@@ -6837,7 +6837,7 @@ font-family: 'Red Hat Display', sans-serif;
 }
 
 /*===========================
-Background Image 
+Background Image
 =============================*/
 .bg_image {
   background-repeat: no-repeat;
@@ -7305,7 +7305,7 @@ textarea:-ms-input-placeholder {
 }
 
 /*=============================
-	Overlay styles 
+	Overlay styles
 ==============================*/
 [data-overlay],
 [data-black-overlay],
@@ -7409,7 +7409,7 @@ textarea:-ms-input-placeholder {
 }
 
 /*------------------------------
-    Scroll Up 
+    Scroll Up
 --------------------------------*/
 #scrollUp {
   width: 70px;
@@ -7503,7 +7503,7 @@ textarea:-ms-input-placeholder {
 }
 
 /*--------------------
-    Contact Form 
+    Contact Form
 ----------------------*/
 .form-message {
   margin-bottom: 0;
@@ -7519,7 +7519,7 @@ textarea:-ms-input-placeholder {
 }
 
 /*---------------------------
-    Banner Area Styles 
+    Banner Area Styles
 -----------------------------*/
 .template-color-2 {
   background: #1D1E24;
@@ -10808,9 +10808,9 @@ Copyright (c) 2015 Daniel Eden
   opacity: 1;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xclip 
+xclip
 
 -------------------------------- */
 .cd-headline.clip span {
@@ -10844,7 +10844,7 @@ xclip
 
 /* Header  */
 /*---------------------------
-    Header Area Styles 
+    Header Area Styles
 -----------------------------*/
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -11103,6 +11103,9 @@ body.template-color-1 {
   top: 0;
   z-index: 999;
   width: 100%;
+  background-color: rgba(33, 36, 40, 0.8705882353);
+  box-shadow: var(--shadow-1);
+  backdrop-filter: blur(15px);
 }
 
 .rn-header.header--fixed {
@@ -11283,7 +11286,7 @@ body.template-color-1 {
 }
 
 /*--------------------------
-    Navigation Styles  
+    Navigation Styles
 ----------------------------*/
 .mainmenu-nav .primary-menu {
   display: flex;
@@ -11351,7 +11354,7 @@ body.template-color-1 {
 }
 
 /*----------------------------
-    Mobile Menu Styles  
+    Mobile Menu Styles
 ------------------------------*/
 .popup-mobile-menu {
   z-index: 9999;
@@ -11503,7 +11506,7 @@ body.template-color-1 {
 }
 
 /*----------------------
-    Right Demo  
+    Right Demo
 -----------------------*/
 .rn-right-demo {
   width: 40px;
@@ -11786,7 +11789,7 @@ body.template-color-1 {
 }
 
 /*-------------------
- Popup Tab  
+ Popup Tab
 -----------------------*/
 .popuptab-area {
   justify-content: center;
@@ -11839,7 +11842,7 @@ body.template-color-1 {
 }
 
 /*---------------------------------
-    Right Demo Light Version  
+    Right Demo Light Version
 ----------------------------------*/
 .demo-modal-area.white-version .wrapper .rn-modal-inner {
   background: var(--gradient-box-w);
@@ -11896,7 +11899,7 @@ body.template-color-1 {
 }
 
 /*---------------------------
-    Dropdown Menu  
+    Dropdown Menu
 ----------------------------*/
 .mainmenu-nav .primary-menu li {
   position: relative;
@@ -12003,7 +12006,7 @@ body.template-color-1 {
 
 /* Elements  */
 /*---------------------------
-    Header Area Styles 
+    Header Area Styles
 -----------------------------*/
 a.rn-btn,
 button.rn-btn {
@@ -12488,7 +12491,7 @@ figcaption {
 }
 
 /*---------------------------
-    Banner Area Styles 
+    Banner Area Styles
 -----------------------------*/
 .skill-share-inner-one .skill-share {
   flex-wrap: wrap;
@@ -13752,7 +13755,7 @@ figcaption {
 }
 
 /*---------------------------
-    Service Area Styles 
+    Service Area Styles
 -----------------------------*/
 .rn-service {
   text-align: left;
@@ -14189,7 +14192,7 @@ div#featured-project-carousel {
 }
 
 /*=====================
-    Skill Area 
+    Skill Area
 ========================*/
 @media only screen and (max-width: 479px) {
   .section-title.text-center span.subtitle {
@@ -14693,7 +14696,7 @@ div#featured-project-carousel {
 }
 
 /*=========================
-    Progress Bar Styles 
+    Progress Bar Styles
 ==========================*/
 .progress-charts {
   overflow: hidden;
@@ -14747,7 +14750,7 @@ div#featured-project-carousel {
 }
 
 /*---------------------------
-    Testimonial Area Styles 
+    Testimonial Area Styles
 -----------------------------*/
 .rn-testimonial {
   padding: 30px 15px;
@@ -15296,7 +15299,7 @@ div#featured-project-carousel {
 }
 
 /*------------------------------
-    Client Single Card 
+    Client Single Card
 --------------------------------*/
 .client-card {
   display: flex;
@@ -15589,7 +15592,7 @@ span.sr-only {
 }
 
 /*---------------------------
-    Pricing Area Styles 
+    Pricing Area Styles
 -----------------------------*/
 .navigation-wrapper {
   margin-left: 10px;
@@ -16152,7 +16155,7 @@ span.sr-only {
 }
 
 /*---------------------------
-    Contact Area Styles 
+    Contact Area Styles
 -----------------------------*/
 .contact-about-area {
   padding: 30px;
@@ -17041,7 +17044,7 @@ span.sr-only {
 }
 
 /*---------------------------
-    Contact Area Styles 
+    Contact Area Styles
 -----------------------------*/
 .footer-area h4 span {
   padding: 20px 23px;
@@ -17084,7 +17087,7 @@ span.sr-only {
 }
 
 /*-----------------------
-    Footer Style Two  
+    Footer Style Two
 --------------------------*/
 .footer-style-2 .copyright .description {
   color: var(--color-body);
@@ -17257,7 +17260,7 @@ span.sr-only {
 }
 
 /*---------------------------
-    Portfolio Area Styles 
+    Portfolio Area Styles
 -----------------------------*/
 .rn-portfolio,
 .rn-blog {
@@ -17502,7 +17505,7 @@ span.sr-only {
   padding: 35px 15px;
 }
 /*-----------------------------
-    Portfolio Style Two  
+    Portfolio Style Two
 -------------------------------*/
 .portfolio-style-two .carousel.slide {
   box-shadow: var(--shadow-1);
@@ -17869,7 +17872,7 @@ span.sr-only {
 }
 
 /*----------------------
-Rn Slick Dots Style  
+Rn Slick Dots Style
 -----------------------*/
 .slick-initialized .slick-slide {
   margin-bottom: 0 !important;

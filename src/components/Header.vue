@@ -1,66 +1,116 @@
 <template>
-  <header>
-    <!-- header - developer home -->
-    <!-- Start Header -->
-    <header class="rn-header haeder-default black-logo-version header--fixed header--sticky">
-      <div class="header-wrapper rn-popup-mobile-menu m--0 row align-items-center">
-        <!-- Start Header Left -->
-        <div class="col-lg-2 col-6">
-          <div class="header-left">
-            <div class="logo" style="width: 100px; height: 100px">
-              <router-link to="/">
-                <img src="@/assets/images/logo/myimg-removebg-preview.png" alt="logo">
-              </router-link>
-            </div>
+  <header class="rn-header haeder-default black-logo-version header--sticky">
+    <div class="header-wrapper rn-popup-mobile-menu m--0 row align-items-center h-25">
+      <!-- Left Logo -->
+      <div class="col-lg-2 col-6">
+        <div class="header-left">
+          <div class="logo" style="width: 90px; height: 90px">
+            <router-link to="/">
+              <img src="@/assets/images/avatar.png" alt="logo" />
+            </router-link>
           </div>
         </div>
-        <!-- End Header Left -->
-        <!-- Start Header Center -->
-        <div class="col-lg-10 col-6">
-          <div class="header-center">
-            <nav id="sideNav" class="mainmenu-nav navbar-example2 d-none d-xl-block onepagenav">
-              <!-- Start Mainmanu Nav -->
-              <ul class="primary-menu nav nav-pills">
-                <li class="nav-item"><router-link to="/" class="nav-link smoth-animation active">Home</router-link></li>
-                <li class="nav-item"><router-link to="/experiences" class="nav-link smoth-animation">Experience</router-link></li>
-                <li class="nav-item"><router-link to="/educations" class="nav-link smoth-animation">Education</router-link></li>
-                <li class="nav-item"><router-link to="/resume" class="nav-link smoth-animation">Resume</router-link></li>
-                <li class="nav-item"><router-link to="/portfolio" class="nav-link smoth-animation">Portfolio</router-link></li>
-                <li class="nav-item"><router-link to="/blog" class="nav-link smoth-animation">Blog</router-link></li>
-                <li class="nav-item"><router-link to="/footer" class="nav-link smoth-animation">Footer</router-link></li>
-              </ul>
-              <!-- End Mainmanu Nav -->
-            </nav>
-            <!-- Start Header Right  -->
-            <div class="header-right">
-              <!-- <a class="rn-btn" target="_blank" href="https://themeforest.net/checkout/from_item/33188244?license=regular"><span>BUY NOW</span></a> -->
-
-              <div class="hamberger-menu d-block d-xl-none">
-                <i id="menuBtn" class="feather-menu humberger-menu"></i>
-              </div>
-
-              <div class="close-menu d-block">
-                <span class="closeTrigger">
-                  <i data-feather="x"></i>
-                </span>
-              </div>
-            </div>
-            <!-- End Header Right  -->
-          </div>
-        </div>
-        <!-- End Header Center -->
       </div>
-    </header>
-    <!-- End Header Area -->
+
+      <!-- Center Nav -->
+      <div class="col-lg-10 col-6">
+        <div class="header-center d-flex justify-content-between align-items-center float-end">
+          <nav id="sideNav" class="mainmenu-nav navbar-example2 d-none d-xl-block onepagenav">
+            <ul class="primary-menu nav ">
+              <li
+                  v-for="item in navItems"
+                  :key="item.href"
+                  class="nav-item"
+              >
+                <a
+                    :href="item.href"
+                    class="nav-link smoth-animation"
+                    :class="{ active: activeId === item.href }"
+                    @click.prevent="scrollTo(item.href)"
+                >
+                  {{ item.label }}
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Right dummy (mobile menu btn or language later) -->
+          <div class="header-right d-none d-xl-block">
+            <!-- Example: future language switcher -->
+            <!-- <b-button variant="outline-light" size="sm">EN</b-button> -->
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 </template>
 
 <script>
 export default {
-  name: 'Header'
-}
+  name: "Header",
+  data() {
+    return {
+      activeId: "#home",
+      navItems: [
+        { label: "Home", href: "#home" },
+        { label: "Experience", href: "#experiences" },
+        { label: "Education", href: "#educations" },
+        { label: "Resume", href: "#resume" },
+        { label: "Portfolio", href: "#portfolio" },
+        { label: "Blog", href: "#blog" },
+        { label: "Footer", href: "#footer" }
+      ]
+    };
+  },
+  methods: {
+    scrollTo(href) {
+      const el = document.querySelector(href);
+      if (el) {
+        const top = el.offsetTop - 80;
+        window.scrollTo({
+          top,
+          behavior: "smooth"
+        });
+      }
+    },
+    trackActiveSection() {
+      const scrollY = window.scrollY + 100;
+      for (let item of this.navItems) {
+        const el = document.querySelector(item.href);
+        if (el && scrollY >= el.offsetTop) {
+          this.activeId = item.href;
+        }
+      }
+    }
+  },
+  mounted() {
+    window.addEventListener("scroll", this.trackActiveSection);
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.trackActiveSection);
+  }
+};
 </script>
 
 <style scoped>
-/* Your CSS here */
+.rn-header {
+  background-color: #1e1e1e;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.primary-menu .nav-link {
+  color: #aaa;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-menu .nav-link.active {
+  color: white;
+}
+
+.smoth-animation {
+  scroll-behavior: smooth;
+}
 </style>

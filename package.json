@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "bootstrap-vue": "^2.23.1",
     "core-js": "^3.8.3",
     "feather-icons": "^4.29.2",
     "jquery": "^3.7.1",
