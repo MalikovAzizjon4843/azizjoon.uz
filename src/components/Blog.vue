@@ -1,7 +1,6 @@
 <template>
-  <div>
     <!-- Start News Area -->
-    <div class="rn-blog-area rn-section-gap section-separator" id="blog">
+    <section class="rn-blog-area rn-section-gap section-separator" id="blog">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -40,55 +39,56 @@
           <!-- End Single blog -->
         </div>
       </div>
-    </div>
-    <!-- End News Area -->
 
-    <!-- Modal Blog Body area Start -->
-    <div class="modal fade" id="exampleModalCenters" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-news" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true"><i data-feather="x"></i></span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <img :src="require(`@/assets/images/blog/${currentBlog.image}`)" alt="news modal" class="img-fluid modal-feat-img">
-            <div class="news-details">
-              <span class="date">{{ currentBlog.date }}</span>
-              <h2 class="title">{{ currentBlog.title }}</h2>
-              <p>{{ currentBlog.description }}</p>
+      <!-- Modal Blog Body area Start -->
+      <div class="modal fade" id="exampleModalCenters" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-news" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><i data-feather="x"></i></span>
+              </button>
             </div>
+            <div class="modal-body">
+              <img :src="require(`@/assets/images/blog/${currentBlog.image}`)" alt="news modal" class="img-fluid modal-feat-img">
+              <div class="news-details">
+                <span class="date">{{ currentBlog.date }}</span>
+                <h2 class="title">{{ currentBlog.title }}</h2>
+                <p>{{ currentBlog.description }}</p>
+              </div>
 
-            <!-- Comment Section Area Start -->
-            <div class="comment-inner">
-              <h3 class="title mb--40 mt--50">Leave a Reply</h3>
-              <form action="#">
-                <div class="row">
-                  <div class="col-lg-6 col-md-12 col-12">
-                    <div class="rnform-group"><input type="text" placeholder="Name"></div>
-                    <div class="rnform-group"><input type="email" placeholder="Email"></div>
-                    <div class="rnform-group"><input type="text" placeholder="Website"></div>
-                  </div>
-                  <div class="col-lg-6 col-md-12 col-12">
-                    <div class="rnform-group">
-                      <textarea placeholder="Comment"></textarea>
+              <!-- Comment Section Area Start -->
+              <div class="comment-inner">
+                <h3 class="title mb--40 mt--50">Leave a Reply</h3>
+                <form action="#">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-12 col-12">
+                      <div class="rnform-group"><input type="text" placeholder="Name"></div>
+                      <div class="rnform-group"><input type="email" placeholder="Email"></div>
+                      <div class="rnform-group"><input type="text" placeholder="Website"></div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12">
+                      <div class="rnform-group">
+                        <textarea placeholder="Comment"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <a class="rn-btn" href="#"><span>SUBMIT NOW</span></a>
                     </div>
                   </div>
-                  <div class="col-lg-12">
-                    <a class="rn-btn" href="#"><span>SUBMIT NOW</span></a>
-                  </div>
-                </div>
-              </form>
+                </form>
+              </div>
+              <!-- Comment Section End -->
             </div>
-            <!-- Comment Section End -->
           </div>
         </div>
       </div>
-    </div>
-    <!-- End Modal Blog area -->
+      <!-- End Modal Blog area -->
+    </section>
+    <!-- End News Area -->
 
-  </div>
+
+
 </template>
 
 <script setup lang="ts">

@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xl-3 col-12 col-lg-3 col-md-6 col-sm-6 col-12">
           <div class="logo-thumbnail">
-            <a href="#"><img src="assets/images/logo/logo.png" alt="logo-image"></a>
+            <a href="#"><img src="@/assets/images/logo/logo.png" alt="logo-image"></a>
           </div>
           <div class="social-icone-wrapper">
             <ul class="social-share d-flex liststyle">

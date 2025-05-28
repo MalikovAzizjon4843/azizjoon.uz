@@ -5,80 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce7cedd9-dd38-4a66-9641-158e6737c687" name="Changes" comment="all updates">
-      <change afterPath="$PROJECT_DIR$/src/i18n/en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n/ru.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n/uz.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Education.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Experience.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Resume.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/cjs/api/api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/cjs/api/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/cjs/api/component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/cjs/api/context.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/cjs/api/hooks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/cjs/api/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/cjs/api/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/cjs/const.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/cjs/env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/cjs/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/cjs/plugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/cjs/proxy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/cjs/time.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/api/api.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/api/api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/api/app.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/api/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/api/component.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/api/component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/api/context.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/api/context.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/api/hooks.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/api/hooks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/api/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/api/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/api/util.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/api/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/const.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/const.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/plugin.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/plugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/proxy.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/proxy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/time.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/lib/esm/time.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/devtools-api/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vue-router/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vue-router/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vue-router/dist/vue-router.cjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vue-router/dist/vue-router.cjs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vue-router/dist/vue-router.cjs.prod.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vue-router/dist/vue-router.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vue-router/dist/vue-router.esm-browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vue-router/dist/vue-router.esm-bundler.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vue-router/dist/vue-router.global.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vue-router/dist/vue-router.global.prod.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vue-router/dist/vue-router.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vue-router/dist/vue-router.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vue-router/dist/vue-router.node.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vue-router/dist/vue-router.prod.cjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vue-router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vue-router/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vue-router/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vue-router/vetur/attributes.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vue-router/vetur/attributes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vue-router/vetur/tags.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vue-router/vetur/tags.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vue-router/vue-router-auto-routes.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vue-router/vue-router-auto.d.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/header/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutMe.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMe.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Blog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Projects.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Portfolio.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +35,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="Vue Options API Component" />
       </list>
     </option>
   </component>
@@ -112,6 +54,9 @@
     &quot;accountId&quot;: &quot;2f4894f0-af20-4c09-849b-13fbc9fbbb10&quot;
   }
 }</component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 1
@@ -136,6 +81,11 @@
     "npm.serve.executor": "Run",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Options API Component"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -176,7 +126,8 @@
       <option name="presentableId" value="Default" />
       <updated>1748342935218</updated>
       <workItem from="1748342936432" duration="395000" />
-      <workItem from="1748343338970" duration="6054000" />
+      <workItem from="1748343338970" duration="8140000" />
+      <workItem from="1748404632352" duration="15096000" />
     </task>
     <task id="LOCAL-00001" summary="all updates">
       <option name="closed" value="true" />
@@ -186,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748343365621</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="all updates">
+      <option name="closed" value="true" />
+      <created>1748349809989</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748349809989</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,6 +1,10 @@
 <template>
   <div>
     <AboutMe/>
+    <ExperienceSection/>
+    <EducationSection/>
+    <ResumeSection/>
+    <PortfolioSection/>
     <Blog />
     <!-- Back to top Start -->
     <div class="backto-top" @click="scrollToTop" :class="{ show: backToTopVisible }">
@@ -16,10 +20,18 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 import AboutMe from "@/components/AboutMe.vue";
 import Blog from "@/components/Blog.vue";
+import ExperienceSection from "@/components/Experience.vue";
+import EducationSection from "@/components/Education.vue";
+import ResumeSection from "@/components/Resume.vue";
+import PortfolioSection from "@/components/Portfolio.vue";
 
 export default {
   name: 'App',
   components: {
+    PortfolioSection,
+    ResumeSection,
+    EducationSection,
+    ExperienceSection,
     Blog,
     AboutMe,
   },

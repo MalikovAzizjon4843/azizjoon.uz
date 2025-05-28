@@ -14,9 +14,10 @@
     "feather-icons": "^4.29.2",
     "jquery": "^3.7.1",
     "modernizr": "^3.13.0",
+    "smoothscroll-polyfill": "^0.4.4",
     "vue": "^2.6.14",
     "vue-loader": "^17.4.2",
-    "vue-router": "^4.3.3"
+    "vue-router": "^3.6.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -27,6 +28,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.7.1",
+    "vue-awesome-swiper": "^5.0.1",
     "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {

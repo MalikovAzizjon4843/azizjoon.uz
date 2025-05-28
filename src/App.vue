@@ -4,7 +4,7 @@
     <router-view />
     <Footer />
     <!-- Back to top -->
-    <div class="backto-top" @click="scrollToTop" :class="{ show: backToTopVisible }">
+    <div class="backto-top" @click="scrollToTop" :class="{ show: backToTopVisible }" style="scroll-behavior: smooth">
       <div><i data-feather="arrow-up"></i></div>
     </div>
   </div>
@@ -47,3 +47,35 @@ export default {
   }
 }
 </script>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+.backto-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.backto-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.backto-top i {
+  font-size: 18px;
+}
+</style>

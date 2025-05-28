@@ -1,5 +1,11 @@
 <template>
-  <header class="rn-header haeder-default black-logo-version header--sticky">
+  <header :class="[
+      'haeder-default',
+      'black-logo-version',
+      'header--sticky',
+      'p-3',
+      scrollTop > 50 ? 'rn-header' : ''
+    ]">
     <div class="header-wrapper rn-popup-mobile-menu m--0 row align-items-center h-25">
       <!-- Left Logo -->
       <div class="col-lg-2 col-6">
@@ -50,6 +56,7 @@ export default {
   name: "Header",
   data() {
     return {
+      scrollTop: 0,
       activeId: "#home",
       navItems: [
         { label: "Home", href: "#home" },
@@ -81,14 +88,19 @@ export default {
           this.activeId = item.href;
         }
       }
+    },
+    onScroll() {
+      this.scrollTop = window.scrollY
     }
   },
   mounted() {
     window.addEventListener("scroll", this.trackActiveSection);
+    window.addEventListener('scroll', this.onScroll)
   },
   beforeDestroy() {
     window.removeEventListener("scroll", this.trackActiveSection);
-  }
+    window.removeEventListener('scroll', this.onScroll)
+  },
 };
 </script>
 

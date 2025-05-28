@@ -17445,8 +17445,8 @@ span.sr-only {
 
 .backto-top > div {
   position: fixed;
-  bottom: 50px;
-  right: 30px;
+  bottom: 20px;
+  right: 20px;
   cursor: pointer;
   z-index: 999;
   width: 50px;
