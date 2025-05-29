@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce7cedd9-dd38-4a66-9641-158e6737c687" name="Changes" comment="all updates">
-      <change afterPath="$PROJECT_DIR$/src/components/Education.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Experience.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Resume.vue" afterDir="false" />
+    <list default="true" id="ce7cedd9-dd38-4a66-9641-158e6737c687" name="Changes" comment="favicon and some images added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/elements/_banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/elements/_banner.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AboutMe.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMe.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Projects.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Portfolio.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,28 +55,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Projects/azizjoon.uz",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.serve.executor": "Run",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/azizjoon.uz&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.serve.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Options API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Options API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\azizjoon.uz" />
@@ -127,7 +116,8 @@
       <updated>1748342935218</updated>
       <workItem from="1748342936432" duration="395000" />
       <workItem from="1748343338970" duration="8140000" />
-      <workItem from="1748404632352" duration="15096000" />
+      <workItem from="1748404632352" duration="16581000" />
+      <workItem from="1748490756530" duration="5294000" />
     </task>
     <task id="LOCAL-00001" summary="all updates">
       <option name="closed" value="true" />
@@ -145,7 +135,39 @@
       <option name="project" value="LOCAL" />
       <updated>1748349809989</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="all updates">
+      <option name="closed" value="true" />
+      <created>1748437110934</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748437110934</updated>
+    </task>
+    <task id="LOCAL-00004" summary="swiper added and fix">
+      <option name="closed" value="true" />
+      <created>1748437912647</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748437912647</updated>
+    </task>
+    <task id="LOCAL-00005" summary="favicon and some images added">
+      <option name="closed" value="true" />
+      <created>1748518595841</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1748518595841</updated>
+    </task>
+    <task id="LOCAL-00006" summary="favicon and some images added">
+      <option name="closed" value="true" />
+      <created>1748518627104</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1748518627104</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +175,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="all updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="all updates" />
+    <MESSAGE value="swiper added and fix" />
+    <MESSAGE value="favicon and some images added" />
+    <option name="LAST_COMMIT_MESSAGE" value="favicon and some images added" />
   </component>
 </project>

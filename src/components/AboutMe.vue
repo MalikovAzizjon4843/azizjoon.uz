@@ -55,7 +55,7 @@
             <div class="order-1 order-xl-2 col-lg-12 col-xl-7">
               <div class="background-image-area">
                 <div class="thumbnail-image">
-                  <img src="@/assets/images/slider/banner-02.png" alt="Personal Portfolio">
+                  <img src="@/assets/images/slider/banner2.png" alt="Personal Portfolio" style="width: 672px; height: 505px" />
                 </div>
               </div>
             </div>
@@ -83,4 +83,58 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+.user-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-pulse {
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.user-icon {
+  font-size: 28px;
+  color: #fff;
+  background-color: #CA0A45;
+  border-radius: 50%;
+  padding: 18px;
+  z-index: 2;
+  position: relative;
+}
+
+.user-pulse::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(202, 10, 69, 0.4);
+  animation: pulse-ring 1.8s infinite ease-out;
+  z-index: 1;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.icon {
+  margin-right: 10px;
+  color: #CA0A45;
+}
+</style>
+
