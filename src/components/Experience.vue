@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="section-title text-center">
-              <span class="subtitle">Over 2 years of experience</span>
+              <span class="subtitle">Over 3+ years of experience</span>
               <h2 class="title">My Experience</h2>
             </div>
           </div>
@@ -15,74 +15,53 @@
 
             <!-- single skills -->
             <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="experience-style-two">
-              <div class="experience-left">
+              <div class="w-25">
                 <div class="experience-image">
-                  <img src="@/assets/images/portfolio/portfolio-01.jpg" alt="Personal Portfolio">
+                  <img src="@/assets/images/portfolio/experience1.png" alt="Personal Portfolio">
                 </div>
+
+              </div>
+              <div class="w-75">
                 <div class="experience-center">
-                  <span class="date">2015-Present</span>
+                  <span class="date bg-success">July 2023-Present</span>
                   <h4 class="experience-title">
-                    Rainbow - Themes.
+                    Antimonopoly Committee of Uzbekistan - FAIRTECH
                   </h4>
                   <h6 class="subtitle">
-                    Co-Founder, Web Designer & Developer
+                    Full Stack Java Engineer
                   </h6>
-                  <p class="disc">Reinvetning the way you create websites</p>
+                  <p class="disc">Developed scalable web applications to support market regulation</p>
+                  <a class="rn-btn rn-btn-small float-end" target="_blank" href="https://raqobat.gov.uz/uz/raqobat-qomitasining-fair-tech-yagona-axborot-tizimi-orqali-respublikamizning-hududlari-kesimida-farmatsevtika-faoliyati-bilan-shugullanuvchi/"><span>VIEW MORE</span></a>
                 </div>
-              </div>
-              <div class="experience-right">
                 <div class="experience-footer">
-                  <a class="rn-btn" href="#contacts"><span>CONTACT ME</span></a>
                 </div>
               </div>
             </div>
             <!-- single skills -->
 
             <!-- single skills -->
-            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" class="experience-style-two">
-              <div class="experience-left">
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="experience-style-two">
+              <div class="w-25">
                 <div class="experience-image">
-                  <img src="@/assets/images/portfolio/portfolio-02.jpg" alt="Personal Portfolio">
+                  <img src="@/assets/images/portfolio/experience2.png" alt="Personal Portfolio">
                 </div>
-                <div class="experience-center">
-                  <span class="date">2015-Present</span>
-                  <h4 class="experience-title">
-                    App Development.
-                  </h4>
-                  <h6 class="subtitle">
-                    Co-Founder, Web Designer & Developer
-                  </h6>
-                  <p class="disc">Reinvetning the way you create websites</p>
-                </div>
-              </div>
-              <div class="experience-right">
-                <div class="experience-footer">
-                  <a class="rn-btn" href="#contacts"><span>CONTACT ME</span></a>
-                </div>
-              </div>
-            </div>
-            <!-- single skills -->
 
-            <!-- single skills -->
-            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="experience-style-two">
-              <div class="experience-left">
-                <div class="experience-image">
-                  <img src="@/assets/images/portfolio/portfolio-03.jpg" alt="Personal Portfolio">
-                </div>
+              </div>
+              <div class="w-75">
                 <div class="experience-center">
-                  <span class="date">2015-Present</span>
+                  <span class="date bg-danger">May 2022 - June2023 </span>
                   <h4 class="experience-title">
-                    Application Management.
+                    Texno Model
                   </h4>
                   <h6 class="subtitle">
-                    Co-Founder, Web Designer & Developer
+                    Java Software Engineer
                   </h6>
-                  <p class="disc">Reinvetning the way you create websites</p>
+                  <p class="disc">Led backend development and partially managed projects.</p>
+
+                  <p class="disc">Developed ERP modules and integrated backend logic.</p>
+                  <a class="rn-btn rn-btn-small float-end" target="_blank" href="http://teda.uz/"><span>VIEW MORE</span></a>
                 </div>
-              </div>
-              <div class="experience-right">
                 <div class="experience-footer">
-                  <a class="rn-btn" href="#contacts"><span>CONTACT ME</span></a>
                 </div>
               </div>
             </div>
@@ -100,31 +79,7 @@
 export default {
   name: 'ExperienceSection',
   data() {
-    return {
-      experiences: [
-        {
-          image: 'portfolio-01.jpg',
-          date: '2015-Present',
-          title: 'Rainbow - Themes.',
-          subtitle: 'Co-Founder, Web Designer & Developer',
-          description: 'Reinventing the way you create websites'
-        },
-        {
-          image: 'portfolio-02.jpg',
-          date: '2015-Present',
-          title: 'App Development.',
-          subtitle: 'Co-Founder, Web Designer & Developer',
-          description: 'Reinventing the way you create websites'
-        },
-        {
-          image: 'portfolio-03.jpg',
-          date: '2015-Present',
-          title: 'Application Management.',
-          subtitle: 'Co-Founder, Web Designer & Developer',
-          description: 'Reinventing the way you create websites'
-        }
-      ]
-    }
+    return {}
   }
 }
 </script>
