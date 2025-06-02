@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="section-title text-center">
-              <span class="subtitle">Phd, Master and Bachelo</span>
+              <span class="subtitle">Bachelor of Computer Science</span>
               <h2 class="title">Education</h2>
             </div>
           </div>
@@ -16,10 +16,10 @@
             <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="experience-style-two">
               <div class="experience-left">
                 <div class="experience-image">
-                  <img src="@/assets/images/portfolio/portfolio-04.jpg" alt="Personal Portfolio">
+                  <img src="@/assets/images/portfolio/titu-logo.png" alt="Personal Portfolio">
                 </div>
                 <div class="experience-center">
-                  <span class="date">2015-Present</span>
+                  <span class="date bg-success">2022-Present (Part time)</span>
                   <h4 class="experience-title">
                     Software Develop.
                   </h4>
@@ -41,7 +41,7 @@
             <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" class="experience-style-two">
               <div class="experience-left">
                 <div class="experience-image">
-                  <img src="@/assets/images/portfolio/portfolio-05.jpg" alt="Personal Portfolio">
+                  <img src="@/assets/images/portfolio/pdp-logo.png" alt="Personal Portfolio">
                 </div>
                 <div class="experience-center">
                   <span class="date">2015-Present</span>
