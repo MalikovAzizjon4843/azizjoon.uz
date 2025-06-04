@@ -55,7 +55,7 @@
     "not dead"
   ],
   "engines": {
-    "node": "18.20.8"
+    "node": "18.20.6"
   }
 
 }
