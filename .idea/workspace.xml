@@ -4,11 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce7cedd9-dd38-4a66-9641-158e6737c687" name="Changes" comment="favicon and some images added">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ce7cedd9-dd38-4a66-9641-158e6737c687" name="Changes" comment="education some changes">
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-core/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-core/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-core/dist/compiler-core.cjs.prod.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-core/dist/compiler-core.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-core/dist/compiler-core.esm-bundler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-core/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-core/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.prod.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/dist/compiler-dom.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/dist/compiler-dom.esm-browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/dist/compiler-dom.esm-browser.prod.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/dist/compiler-dom.esm-bundler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/dist/compiler-dom.global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/dist/compiler-dom.global.prod.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-ssr/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-ssr/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-ssr/dist/compiler-ssr.cjs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-ssr/dist/compiler-ssr.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-ssr/package.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/elements/_banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/elements/_banner.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutMe.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMe.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
