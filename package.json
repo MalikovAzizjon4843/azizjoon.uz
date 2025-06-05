@@ -14,7 +14,6 @@
     "feather-icons": "^4.29.2",
     "jquery": "^3.7.1",
     "modernizr": "^3.13.0",
-    "signal-exit": "^4.1.0",
     "smoothscroll-polyfill": "^0.4.4",
     "swiper": "^5.3.8",
     "vue": "^2.6.14",
@@ -23,19 +22,17 @@
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
-    "@babel/eslint-parser": "^7.27.5",
-    "@babel/types": "^7.27.3",
+    "@babel/eslint-parser": "^7.21.3",
+    "@babel/types": "^7.21.3",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.7.1",
     "vue-loader": "^15.11.1",
-    "vue-template-compiler": "^2.7.16"
+    "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
-    "parser": "babel-eslint",
     "root": true,
     "env": {
       "node": true
@@ -45,7 +42,8 @@
       "eslint:recommended"
     ],
     "parserOptions": {
-      "parser": "@babel/eslint-parser"
+      "parser": "@babel/eslint-parser",
+      "requireConfigFile": false
     },
     "rules": {
       "vue/multi-word-component-names": "off"
@@ -57,6 +55,6 @@
     "not dead"
   ],
   "engines": {
-    "node": "18.20.6"
+    "node": "18.x"
   }
 }
