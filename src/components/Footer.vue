@@ -62,7 +62,7 @@
       </div>
     </div>
     <div class="copyright text-center ptb--40 section-separator">
-      <p class="description">© 2022. All rights reserved by <a target="_blank" href="https://themeforest.net/user/rainbow-themes/portfolio">Rainbow-Themes.</a></p>
+      <p class="description">© 2025. All rights reserved by <a target="_blank" href="https://www.azizjoon.uz/">Azizjon Malikov</a></p>
     </div>
   </div>
 </template>
