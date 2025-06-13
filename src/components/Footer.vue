@@ -10,9 +10,9 @@
             <ul class="social-share d-flex liststyle">
               <li class="facebook"><a href="#"><i data-feather="linkedin"></i></a>
               </li>
-              <li class="instagram"><a href="#"><i data-feather="instagram"></i></a>
+              <li class="instagram"><a href="https://www.instagram.com/azizdjan.malikov/"><i data-feather="instagram"></i></a>
               </li>
-              <li class="linkedin"><a href="#"><i data-feather="twitter"></i></a>
+              <li class="linkedin"><a href="https://x.com/AzizjonMalikov"><i data-feather="twitter"></i></a>
               </li>
             </ul>
           </div>
