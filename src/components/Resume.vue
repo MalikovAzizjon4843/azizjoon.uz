@@ -37,7 +37,7 @@
                 <div class="row">
                   <div class="col-lg-6 col-md-12 col-12">
                     <div class="content">
-                      <span class="subtitle">2007 - 2010</span>
+                      <span class="subtitle">2021 - 2022</span>
                       <h4 class="maintitle">Education Quality</h4>
                       <div class="experience-list">
                         <div class="resume-single-list" v-for="item in educationItems" :key="item.name">
