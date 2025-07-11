@@ -60,7 +60,7 @@
 
                   <div class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60">
                     <div class="content">
-                      <span class="subtitle bg-success">2022 - Present</span>
+                      <span class="subtitle">2022 - Present</span>
                       <h4 class="maintitle">Job Experience </h4>
                       <div class="experience-list">
                         <div class="resume-single-list" v-for="item in jobItems" :key="item.name">
