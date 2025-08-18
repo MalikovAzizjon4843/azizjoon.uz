@@ -3,8 +3,10 @@
     <div class="container pb--80 pb_sm--40 plr_sm--20">
       <div class="row">
         <div class="col-xl-3 col-12 col-lg-3 col-md-6 col-sm-6 col-12">
-          <div class="logo-thumbnail">
-            <a href="#"><img src="@/assets/images/logo/logo.png" alt="logo-image"></a>
+          <div class="logo" style="width: 90px; height: 90px">
+            <router-link to="/">
+              <img src="@/assets/images/avatar.png" alt="logo" />
+            </router-link>
           </div>
           <div class="social-icone-wrapper">
             <ul class="social-share d-flex liststyle">
