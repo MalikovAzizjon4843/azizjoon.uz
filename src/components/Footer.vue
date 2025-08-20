@@ -10,12 +10,13 @@
           </div>
           <div class="social-icone-wrapper">
             <ul class="social-share d-flex liststyle">
-              <li class="facebook"><a href="#"><i data-feather="linkedin"></i></a>
+              <li class="facebook"><a target="_blank" href="https://linkedin.com/in/azizjon-malikov"><i data-feather="linkedin"></i></a>
               </li>
-              <li class="instagram"><a href="https://www.instagram.com/azizdjan.malikov/"><i data-feather="instagram"></i></a>
+              <li class="instagram"><a target="_blank" href="https://www.instagram.com/azizdjan.malikov/"><i data-feather="instagram"></i></a>
               </li>
-              <li class="linkedin"><a href="https://x.com/AzizjonMalikov"><i data-feather="twitter"></i></a>
+              <li class="linkedin"><a target="_blank" href="https://x.com/AzizjonMalikov"><i data-feather="twitter"></i></a>
               </li>
+              <li class="github"><a target="_blank" href="https://github.com/MalikovAzizjon4843"><i data-feather="github"></i></a></li>
             </ul>
           </div>
         </div>
