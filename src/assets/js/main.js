@@ -20,7 +20,6 @@
             imJs.mobileMenuActive();
             imJs.vedioActivation();
             imJs.stickyHeader();
-            imJs.smothScroll();
             imJs.smothScroll_Two();
             imJs.stickyAdjust();
             imJs.testimonialActivation();
@@ -92,15 +91,6 @@
         
         wowActive: function () {
             new WOW().init();
-        },
-
-        smothScroll: function () {
-            $(document).on('click', '.smoth-animation', function (event) {
-                event.preventDefault();
-                $('html, body').animate({
-                    scrollTop: $($.attr(this, 'href')).offset().top - 50
-                }, 300);
-            });
         },
         // two scroll spy
         smothScroll_Two: function () {
@@ -366,7 +356,7 @@
 
             function close_video() {
                 $('.video-overlay.open').removeClass('open').find('iframe').remove();
-            };
+            }
         },
 
         mobileMenuActive: function (e) {

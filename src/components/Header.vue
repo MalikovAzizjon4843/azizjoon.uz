@@ -30,7 +30,7 @@
               >
                 <a
                     :href="item.href"
-                    class="nav-link smoth-animation"
+                    class="nav-link"
                     :class="{ active: activeId === item.href }"
                     @click.prevent="scrollTo(item.href)"
                 >
@@ -71,14 +71,7 @@ export default {
   },
   methods: {
     scrollTo(href) {
-      const el = document.querySelector(href);
-      if (el) {
-        const top = el.offsetTop - 80;
-        window.scrollTo({
-          top,
-          behavior: "smooth"
-        });
-      }
+      document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
     },
     trackActiveSection() {
       const scrollY = window.scrollY + 100;
@@ -122,7 +115,4 @@ export default {
   color: white;
 }
 
-.smoth-animation {
-  scroll-behavior: smooth;
-}
 </style>
