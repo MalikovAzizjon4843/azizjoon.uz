@@ -17,22 +17,22 @@
                           <i data-feather="user"></i>
                         </div>
                         <h2 class="title">
-                          Hi, I’m <span>Azizjon</span>
+                          {{ $t('hero.greeting') }} <span>{{ $t('hero.name') }}</span>
                         </h2>
-                        <p class="disc">Full Stack (Java) engineer working for fairtech.uz in Tashkent</p>
+                        <p class="disc">{{ $t('hero.subtitle') }}</p>
                       </div>
                       <div class="user-info-footer">
                         <div class="info">
                           <i data-feather="file"></i>
-                          <span>Full Stack (Java) engineer</span>
+                          <span>{{ $t('hero.job') }}</span>
                         </div>
                         <div class="info">
                           <i data-feather="mail"></i>
-                          <span>azizjon.malikovv@gmail.com</span>
+                          <span>{{ $t('hero.email') }}</span>
                         </div>
                         <div class="info">
                           <i data-feather="map-pin"></i>
-                          <span>Tashkent</span>
+                          <span>{{ $t('hero.location') }}</span>
                         </div>
                       </div>
                     </div>
@@ -40,16 +40,16 @@
 
                   <div class="col-xl-12 col-lg-12 col-12">
                     <div class="user-info-bottom">
-                      <span>Download my CV: </span>
+                      <span>{{ $t('hero.downloadLabel') }} </span>
                       <div class="button-wrapper d-flex">
                         <a
                             class="rn-btn mr--30"
                             href="/cv/Azizjon%20Malikov.pdf"
                             download="Azizjon_Malikov_CV.pdf"
                         >
-                          <span>DOWNLOAD CV</span>
+                          <span>{{ $t('hero.downloadCv') }}</span>
                         </a>
-                        <a class="rn-btn" href="#contacts"><span>CONTACT ME</span></a>
+                        <a class="rn-btn" href="#contacts"><span>{{ $t('hero.contactMe') }}</span></a>
                       </div>
                     </div>
                   </div>
