@@ -42,11 +42,18 @@
                     <div class="user-info-bottom">
                       <span>Download my CV: </span>
                       <div class="button-wrapper d-flex">
-                        <a class="rn-btn mr--30" href="#contacts"><span>DOWNLOAD CV</span></a>
+                        <a
+                            class="rn-btn mr--30"
+                            href="/cv/Azizjon%20Malikov.pdf"
+                            download="Azizjon_Malikov_CV.pdf"
+                        >
+                          <span>DOWNLOAD CV</span>
+                        </a>
                         <a class="rn-btn" href="#contacts"><span>CONTACT ME</span></a>
                       </div>
                     </div>
                   </div>
+
 
                 </div>
               </div>
