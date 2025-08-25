@@ -34,16 +34,19 @@
                     :class="{ active: activeId === item.href }"
                     @click.prevent="scrollTo(item.href)"
                 >
-                  {{ item.label }}
+                  {{ $t(item.key) }}
                 </a>
               </li>
             </ul>
           </nav>
 
-          <!-- Right dummy (mobile menu btn or language later) -->
+          <!-- Language switcher -->
           <div class="header-right d-none d-xl-block">
-            <!-- Example: future language switcher -->
-            <!-- <b-button variant="outline-light" size="sm">EN</b-button> -->
+            <b-dropdown :text="$i18n.locale.toUpperCase()" variant="outline-light" size="sm">
+              <b-dropdown-item @click="switchLanguage('en')">EN</b-dropdown-item>
+              <b-dropdown-item @click="switchLanguage('ru')">RU</b-dropdown-item>
+              <b-dropdown-item @click="switchLanguage('uz')">UZ</b-dropdown-item>
+            </b-dropdown>
           </div>
         </div>
       </div>
@@ -59,13 +62,13 @@ export default {
       scrollTop: 0,
       activeId: "#home",
       navItems: [
-        { label: "Home", href: "#home" },
-        { label: "Experience", href: "#experiences" },
-        { label: "Education", href: "#educations" },
-        { label: "Resume", href: "#resume" },
-        { label: "Portfolio", href: "#portfolio" },
-        { label: "Blog", href: "#blog" },
-        { label: "Footer", href: "#footer" }
+        { key: 'nav.home', href: '#home' },
+        { key: 'nav.experience', href: '#experiences' },
+        { key: 'nav.education', href: '#educations' },
+        { key: 'nav.resume', href: '#resume' },
+        { key: 'nav.portfolio', href: '#portfolio' },
+        { key: 'nav.blog', href: '#blog' },
+        { key: 'nav.footer', href: '#footer' }
       ]
     };
   },
@@ -84,6 +87,9 @@ export default {
     },
     onScroll() {
       this.scrollTop = window.scrollY
+    },
+    switchLanguage(lang) {
+      this.$i18n.locale = lang
     }
   },
   mounted() {

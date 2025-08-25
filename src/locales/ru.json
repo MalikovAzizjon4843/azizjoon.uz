@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "home": "Главная",
+    "experience": "Опыт",
+    "education": "Образование",
+    "resume": "Резюме",
+    "portfolio": "Портфолио",
+    "blog": "Блог",
+    "footer": "Футер"
+  },
+  "hero": {
+    "greeting": "Привет, я",
+    "name": "Азизжон",
+    "subtitle": "Full-stack разработчик",
+    "job": "Full Stack (Java) инженер",
+    "email": "azizjon.malikovv@gmail.com",
+    "location": "Ташкент",
+    "downloadLabel": "Скачать мое резюме:",
+    "downloadCv": "СКАЧАТЬ CV",
+    "contactMe": "СВЯЗАТЬСЯ"
+  }
+}

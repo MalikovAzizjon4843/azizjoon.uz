@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "home": "Home",
+    "experience": "Experience",
+    "education": "Education",
+    "resume": "Resume",
+    "portfolio": "Portfolio",
+    "blog": "Blog",
+    "footer": "Footer"
+  },
+  "hero": {
+    "greeting": "Hi, I’m",
+    "name": "Azizjon",
+    "subtitle": "Full-stack Developer",
+    "job": "Full Stack (Java) engineer",
+    "email": "azizjon.malikovv@gmail.com",
+    "location": "Tashkent",
+    "downloadLabel": "Download my CV:",
+    "downloadCv": "DOWNLOAD CV",
+    "contactMe": "CONTACT ME"
+  }
+}
