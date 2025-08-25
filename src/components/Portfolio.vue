@@ -145,7 +145,7 @@ export default {
           link: '#'
         },
         {
-          image: 'portfolio-04.jpg',
+          image: 'about-portfolio.png',
           category: 'Frontend / SPA',
           likes: 310,
           title: 'Personal Portfolio Website',
@@ -164,7 +164,7 @@ export default {
           link: '#'
         },
         {
-          image: 'portfolio-03.jpg',
+          image: 'portfolio-capstone.png',
           category: 'Capstone / REST API',
           likes: 265,
           title: 'Task Manager API (Capstone)',
