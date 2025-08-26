@@ -107,7 +107,7 @@ export default {
       currentItem: null,
       items: [
         {
-          image: 'portfolio-erp.png',
+          image: 'portfolio-erpp.png',
           category: 'Spring Boot / ERP',
           likes: 540,
           title: 'ERP Modules Suite (Inventory, Sales, HR)',
@@ -126,7 +126,7 @@ export default {
           link: '#'
         },
         {
-          image: 'portfolio-fairtech.png',
+          image: 'portfolio-fairetch.png',
           category: 'E-commerce Backend',
           likes: 620,
           title: 'Fairtech E-commerce Platform Backend',
