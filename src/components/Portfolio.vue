@@ -12,7 +12,7 @@
 
       <div class="row mt--25 mt_md--5 mt_sm--5">
         <div class="col-lg-12">
-          <swiper :options="swiperOptions" class="portfolio-swiper">
+          <swiper v-if="!isMobile" :options="swiperOptions" class="portfolio-swiper">
             <!-- Slides -->
             <swiper-slide v-for="(item, i) in items" :key="i">
               <div class="rn-portfolio" @click="openItem(item)">
@@ -46,6 +46,37 @@
             <div class="swiper-button-prev slick-arrow-style-one slick-arrow" slot="button-prev"></div>
             <div class="swiper-button-next slick-arrow-style-one slick-arrow" slot="button-next"></div>
           </swiper>
+          <div v-else class="portfolio-list">
+            <div
+              class="rn-portfolio"
+              v-for="(item, i) in items"
+              :key="i"
+              @click="openItem(item)"
+            >
+              <div class="inner">
+                <div class="thumbnail">
+                  <a href="javascript:void(0)">
+                    <img :src="item.imageSrc" :alt="item.title" />
+                  </a>
+                </div>
+                <div class="content">
+                  <div class="category-info">
+                    <div class="category-list">
+                      <a href="javascript:void(0)">{{ item.category }}</a>
+                    </div>
+                    <div class="meta">
+                      <span><i class="feather-heart"></i> {{ item.likes }}</span>
+                    </div>
+                  </div>
+                  <h4 class="title">
+                    <a href="javascript:void(0)">{{ item.title }}
+                      <i class="feather-arrow-up-right"></i>
+                    </a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -105,6 +136,7 @@ export default {
     return {
       showModal: false,
       currentItem: null,
+      isMobile: false,
       items: [
         {
           image: 'portfolio-erpp.png',
@@ -215,6 +247,13 @@ export default {
   created() {
     this.items = this.itemsWithSrc
   },
+  mounted() {
+    this.handleResize()
+    window.addEventListener('resize', this.handleResize)
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.handleResize)
+  },
   methods: {
     openItem(item) {
       this.currentItem = item
@@ -222,6 +261,9 @@ export default {
       if (window.feather && window.feather.replace) {
         this.$nextTick(() => window.feather.replace())
       }
+    },
+    handleResize() {
+      this.isMobile = window.innerWidth < 768
     }
   }
 }
@@ -229,6 +271,12 @@ export default {
 
 <style scoped>
 .portfolio-swiper { width: 100%; }
+
+.portfolio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
 .rn-portfolio {
   background: #1e1e1e;
