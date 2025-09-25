@@ -33,6 +33,7 @@
                   <img
                       :src="require(`@/assets/images/blog/${blog.image}`)"
                       :alt="blog.title"
+                      loading="lazy"
                   />
                 </a>
               </div>
@@ -65,6 +66,7 @@
             :src="require(`@/assets/images/blog/${currentBlog.image}`)"
             alt="news modal"
             class="img-fluid mb-3"
+            loading="lazy"
         />
         <span class="date">{{ currentBlog.date }}</span>
         <p class="mt-3">{{ currentBlog.description }}</p>

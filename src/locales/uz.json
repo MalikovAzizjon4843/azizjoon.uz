@@ -22,5 +22,10 @@
     "downloadLabel": "Mening CV'imni yuklab oling:",
     "downloadCv": "CV YUKLAB OLISH",
     "contactMe": "BOG'LANISH"
+  },
+  "seo": {
+    "title": "Azizjon Malikov | Full-stack dasturchi portfeli",
+    "description": "Azizjon Malikovning full-stack (Java) loyihalari, tajribasi, rezyumesi va blogi bilan tanishing.",
+    "keywords": "Azizjon Malikov, full-stack dasturchi, Java muhandis, portfolio, rezyume, blog"
   }
 }

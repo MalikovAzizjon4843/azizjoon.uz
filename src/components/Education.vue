@@ -16,7 +16,7 @@
           <div class="experience-style-two" data-aos="fade-up">
             <div class="experience-left">
               <div class="experience-image">
-                <img src="@/assets/images/portfolio/titu-logo.png" alt="TITU">
+                <img src="@/assets/images/portfolio/titu-logo.png" alt="TITU" loading="lazy">
               </div>
               <div class="experience-center">
                 <span class="date bg-success">2023–2027 (Part time)</span>
@@ -37,7 +37,7 @@
           <div class="experience-style-two" data-aos="fade-up" data-aos-delay="100">
             <div class="experience-left">
               <div class="experience-image">
-                <img src="@/assets/images/portfolio/pdp-logo.png" alt="PDP">
+                <img src="@/assets/images/portfolio/pdp-logo.png" alt="PDP" loading="lazy">
               </div>
               <div class="experience-center">
                 <span class="date bg-danger">Jul 2021 – May 2022</span>

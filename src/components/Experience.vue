@@ -17,7 +17,7 @@
             <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="experience-style-two">
               <div class="w-25">
                 <div class="experience-image">
-                  <img src="@/assets/images/portfolio/experience1.png" alt="Personal Portfolio">
+                  <img src="@/assets/images/portfolio/experience1.png" alt="Personal Portfolio" loading="lazy">
                 </div>
 
               </div>
@@ -43,7 +43,7 @@
             <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="experience-style-two">
               <div class="w-25">
                 <div class="experience-image">
-                  <img src="@/assets/images/portfolio/experience2.png" alt="Personal Portfolio">
+                  <img src="@/assets/images/portfolio/experience2.png" alt="Personal Portfolio" loading="lazy">
                 </div>
 
               </div>

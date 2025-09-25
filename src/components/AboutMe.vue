@@ -62,7 +62,7 @@
             <div class="order-1 order-xl-2 col-lg-12 col-xl-7">
               <div class="background-image-area">
                 <div class="thumbnail-image">
-                  <img src="@/assets/images/slider/banner2.png" alt="Personal Portfolio" class="img-fluid" />
+                  <img src="@/assets/images/slider/banner2.png" alt="Personal Portfolio" class="img-fluid" loading="lazy" />
                 </div>
               </div>
             </div>

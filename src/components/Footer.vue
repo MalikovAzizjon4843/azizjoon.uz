@@ -5,7 +5,7 @@
         <div class="col-xl-3 col-12 col-lg-3 col-md-6 col-sm-6 col-12">
           <div class="logo">
             <router-link to="/">
-              <img src="@/assets/images/avatar.png" alt="logo" />
+              <img src="@/assets/images/avatar.png" alt="logo" loading="lazy" />
             </router-link>
           </div>
           <div class="social-icone-wrapper">

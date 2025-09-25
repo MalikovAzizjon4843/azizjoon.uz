@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "vercel-build": "npm run build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "sitemap": "node scripts/generate-sitemap.js"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",

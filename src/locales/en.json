@@ -22,5 +22,10 @@
     "downloadLabel": "Download my CV:",
     "downloadCv": "DOWNLOAD CV",
     "contactMe": "CONTACT ME"
+  },
+  "seo": {
+    "title": "Azizjon Malikov | Full-Stack Developer Portfolio",
+    "description": "Explore Azizjon Malikov’s full-stack (Java) portfolio, experience, resume, blog and ways to get in touch.",
+    "keywords": "Azizjon Malikov, Full-Stack Developer, Java engineer, portfolio, resume, blog"
   }
 }

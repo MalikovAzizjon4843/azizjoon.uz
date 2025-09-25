@@ -13,7 +13,7 @@
         <div class="header-left">
           <div class="logo">
             <router-link to="/" @click.native.prevent="scrollToTop">
-              <img src="@/assets/images/avatar.png" alt="logo" />
+              <img src="@/assets/images/avatar.png" alt="logo" loading="lazy" />
             </router-link>
           </div>
         </div>
@@ -156,6 +156,16 @@ export default {
     },
     switchLanguage(lang) {
       this.$i18n.locale = lang
+      if (typeof window !== 'undefined') {
+        window.localStorage.setItem('preferred-locale', lang)
+        try {
+          const url = new URL(window.location.href)
+          url.searchParams.set('lang', lang)
+          window.history.replaceState({}, '', `${url.pathname}${url.search}${url.hash}`)
+        } catch (error) {
+          // Ignore URL parsing errors in unsupported environments
+        }
+      }
     },
     toggleTheme() {
       this.$emit('toggle-theme')

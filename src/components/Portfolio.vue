@@ -19,7 +19,7 @@
                 <div class="inner">
                   <div class="thumbnail">
                     <a href="javascript:void(0)">
-                      <img :src="item.imageSrc" :alt="item.title" />
+                      <img :src="item.imageSrc" :alt="item.title" loading="lazy" />
                     </a>
                   </div>
                   <div class="content">
@@ -56,7 +56,7 @@
               <div class="inner">
                 <div class="thumbnail">
                   <a href="javascript:void(0)">
-                    <img :src="item.imageSrc" :alt="item.title" />
+                    <img :src="item.imageSrc" :alt="item.title" loading="lazy" />
                   </a>
                 </div>
                 <div class="content">
@@ -85,7 +85,13 @@
     <b-modal v-model="showModal" size="lg" :title="currentItem?.title || 'Project details'" hide-footer>
       <div class="row">
         <div class="col-md-6 mb-3">
-          <img v-if="currentItem" :src="currentItem.imageSrc" :alt="currentItem.title" class="img-fluid rounded" />
+          <img
+              v-if="currentItem"
+              :src="currentItem.imageSrc"
+              :alt="currentItem.title"
+              class="img-fluid rounded"
+              loading="lazy"
+          />
         </div>
         <div class="col-md-6">
           <h5 class="mb-1">{{ currentItem?.category }}</h5>
