@@ -4,34 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce7cedd9-dd38-4a66-9641-158e6737c687" name="Changes" comment="education some changes">
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-core/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-core/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-core/dist/compiler-core.cjs.prod.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-core/dist/compiler-core.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-core/dist/compiler-core.esm-bundler.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-core/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-core/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.prod.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/dist/compiler-dom.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/dist/compiler-dom.esm-browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/dist/compiler-dom.esm-browser.prod.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/dist/compiler-dom.esm-bundler.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/dist/compiler-dom.global.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/dist/compiler-dom.global.prod.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-dom/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-ssr/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-ssr/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-ssr/dist/compiler-ssr.cjs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-ssr/dist/compiler-ssr.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@vue/compiler-ssr/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="ce7cedd9-dd38-4a66-9641-158e6737c687" name="Changes" comment="node version changed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +22,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="Vue Options API Component" />
+        <option value="tsconfig.json" />
       </list>
     </option>
   </component>
@@ -84,7 +59,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;com.codeium.enabled&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/azizjoon.uz&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/azizjoon.uz/src/assets/images/portfolio&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -102,6 +77,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\azizjoon.uz\src\assets\images\portfolio" />
+      <recent name="D:\Projects\azizjoon.uz\src\assets\images\blog" />
       <recent name="D:\Projects\azizjoon.uz" />
     </key>
   </component>
@@ -141,6 +118,39 @@
       <workItem from="1748343338970" duration="8140000" />
       <workItem from="1748404632352" duration="16581000" />
       <workItem from="1748490756530" duration="5294000" />
+      <workItem from="1749040937713" duration="2241000" />
+      <workItem from="1749095362986" duration="1116000" />
+      <workItem from="1749104432130" duration="8431000" />
+      <workItem from="1749440714390" duration="9463000" />
+      <workItem from="1749527670769" duration="5276000" />
+      <workItem from="1749613661612" duration="6031000" />
+      <workItem from="1749698906659" duration="4861000" />
+      <workItem from="1749786005962" duration="1333000" />
+      <workItem from="1749815019154" duration="643000" />
+      <workItem from="1750310135387" duration="450000" />
+      <workItem from="1750857660845" duration="971000" />
+      <workItem from="1750940684285" duration="1120000" />
+      <workItem from="1751000553480" duration="2000" />
+      <workItem from="1751029674105" duration="87000" />
+      <workItem from="1752239389454" duration="23000" />
+      <workItem from="1754651820160" duration="2218000" />
+      <workItem from="1754998552075" duration="2402000" />
+      <workItem from="1755155030515" duration="2198000" />
+      <workItem from="1755229599702" duration="2527000" />
+      <workItem from="1755488143410" duration="2263000" />
+      <workItem from="1755575232140" duration="637000" />
+      <workItem from="1755684934168" duration="1547000" />
+      <workItem from="1755769878095" duration="7799000" />
+      <workItem from="1755836090299" duration="8351000" />
+      <workItem from="1756094475467" duration="1850000" />
+      <workItem from="1756113999613" duration="676000" />
+      <workItem from="1756180380778" duration="11339000" />
+      <workItem from="1756282589581" duration="2625000" />
+      <workItem from="1756300005737" duration="1040000" />
+      <workItem from="1756352452486" duration="1701000" />
+      <workItem from="1756371435013" duration="1195000" />
+      <workItem from="1756440475271" duration="1542000" />
+      <workItem from="1758795461681" duration="2964000" />
     </task>
     <task id="LOCAL-00001" summary="all updates">
       <option name="closed" value="true" />
@@ -190,16 +200,254 @@
       <option name="project" value="LOCAL" />
       <updated>1748518627104</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="all configuration update">
+      <option name="closed" value="true" />
+      <created>1749041142825</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1749041142825</updated>
+    </task>
+    <task id="LOCAL-00008" summary="engine node v set">
+      <option name="closed" value="true" />
+      <created>1749041434952</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1749041434952</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix: add vercel config for vue2 build">
+      <option name="closed" value="true" />
+      <created>1749041989600</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1749041989600</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix: add vercel config for vue2 build">
+      <option name="closed" value="true" />
+      <created>1749042509178</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1749042509178</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix: recreate lockfile for Node 18&quot;">
+      <option name="closed" value="true" />
+      <created>1749042980220</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1749042980220</updated>
+    </task>
+    <task id="LOCAL-00012" summary="chore: lockfile for Vercel Node 18 build">
+      <option name="closed" value="true" />
+      <created>1749108325707</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1749108325707</updated>
+    </task>
+    <task id="LOCAL-00013" summary="chore: lockfile for Vercel Node 18 build">
+      <option name="closed" value="true" />
+      <created>1749109979318</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1749109979318</updated>
+    </task>
+    <task id="LOCAL-00014" summary="chore: lockfile for Vercel Node 18 build">
+      <option name="closed" value="true" />
+      <created>1749111708607</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1749111708607</updated>
+    </task>
+    <task id="LOCAL-00015" summary="package json updated">
+      <option name="closed" value="true" />
+      <created>1749120630271</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1749120630271</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix: lock @babel/types to stable version">
+      <option name="closed" value="true" />
+      <created>1749121314928</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1749121314928</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix: lock @babel/types to stable version">
+      <option name="closed" value="true" />
+      <created>1749121531600</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1749121531600</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix: vue2 vercel deploy config">
+      <option name="closed" value="true" />
+      <created>1749121881455</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1749121881455</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fix: vue2 vercel deploy config">
+      <option name="closed" value="true" />
+      <created>1749123108708</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1749123108708</updated>
+    </task>
+    <task id="LOCAL-00020" summary="footer changed">
+      <option name="closed" value="true" />
+      <created>1749733963596</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1749733963596</updated>
+    </task>
+    <task id="LOCAL-00021" summary="added social link">
+      <option name="closed" value="true" />
+      <created>1749822686499</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1749822686499</updated>
+    </task>
+    <task id="LOCAL-00022" summary="date changed">
+      <option name="closed" value="true" />
+      <created>1750858521018</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1750858521018</updated>
+    </task>
+    <task id="LOCAL-00023" summary="date changed">
+      <option name="closed" value="true" />
+      <created>1750941765735</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1750941765735</updated>
+    </task>
+    <task id="LOCAL-00024" summary="date changed">
+      <option name="closed" value="true" />
+      <created>1751029688842</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1751029688842</updated>
+    </task>
+    <task id="LOCAL-00025" summary="bg changed">
+      <option name="closed" value="true" />
+      <created>1752239403712</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1752239403712</updated>
+    </task>
+    <task id="LOCAL-00026" summary="footer links changed">
+      <option name="closed" value="true" />
+      <created>1755689437242</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1755689437242</updated>
+    </task>
+    <task id="LOCAL-00027" summary="resume part have done with real infos">
+      <option name="closed" value="true" />
+      <created>1755847045943</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1755847045943</updated>
+    </task>
+    <task id="LOCAL-00028" summary="portfolio images changed">
+      <option name="closed" value="true" />
+      <created>1756203165888</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1756203165888</updated>
+    </task>
+    <task id="LOCAL-00029" summary="added blog and portfolio new images">
+      <option name="closed" value="true" />
+      <created>1756203182991</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1756203182991</updated>
+    </task>
+    <task id="LOCAL-00030" summary="blog part have done">
+      <option name="closed" value="true" />
+      <created>1756205044796</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1756205044796</updated>
+    </task>
+    <task id="LOCAL-00031" summary="main image size rechanged">
+      <option name="closed" value="true" />
+      <created>1756300342252</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1756300342252</updated>
+    </task>
+    <task id="LOCAL-00032" summary="node version changed">
+      <option name="closed" value="true" />
+      <created>1758798586218</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1758798586218</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="all updates" />
     <MESSAGE value="swiper added and fix" />
     <MESSAGE value="favicon and some images added" />
-    <option name="LAST_COMMIT_MESSAGE" value="favicon and some images added" />
+    <MESSAGE value="all configuration update" />
+    <MESSAGE value="engine node v set" />
+    <MESSAGE value="fix: add vercel config for vue2 build" />
+    <MESSAGE value="fix: recreate lockfile for Node 18&quot;" />
+    <MESSAGE value="chore: lockfile for Vercel Node 18 build" />
+    <MESSAGE value="package json updated" />
+    <MESSAGE value="fix: lock @babel/types to stable version" />
+    <MESSAGE value="fix: vue2 vercel deploy config" />
+    <MESSAGE value="footer changed" />
+    <MESSAGE value="added social link" />
+    <MESSAGE value="date changed" />
+    <MESSAGE value="bg changed" />
+    <MESSAGE value="footer links changed" />
+    <MESSAGE value="resume part have done with real infos" />
+    <MESSAGE value="portfolio images changed" />
+    <MESSAGE value="added blog and portfolio new images" />
+    <MESSAGE value="blog part have done" />
+    <MESSAGE value="main image size rechanged" />
+    <MESSAGE value="node version changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="node version changed" />
   </component>
 </project>
