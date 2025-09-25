@@ -8,6 +8,10 @@
     "blog": "Blog",
     "footer": "Footer"
   },
+  "theme": {
+    "switchToLight": "Light mode",
+    "switchToDark": "Dark mode"
+  },
   "hero": {
     "greeting": "Hi, I’m",
     "name": "Azizjon",
