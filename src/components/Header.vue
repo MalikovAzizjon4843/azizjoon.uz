@@ -4,7 +4,8 @@
       'black-logo-version',
       'header--sticky',
       'p-3',
-      scrollTop > 50 ? 'rn-header' : ''
+      scrollTop > 50 ? 'rn-header' : '',
+      themeClass
     ]">
     <div class="header-wrapper rn-popup-mobile-menu m--0 row align-items-center h-25">
       <!-- Left Logo -->
@@ -44,8 +45,17 @@
           </nav>
 
           <!-- Language switcher -->
-          <div class="header-right d-none d-xl-block">
-            <b-dropdown :text="$i18n.locale.toUpperCase()" variant="outline-light" size="sm">
+          <div class="header-right d-none d-xl-flex align-items-center gap-2">
+            <button
+                type="button"
+                class="theme-toggle"
+                @click="toggleTheme"
+                :aria-label="theme === 'dark' ? $t('theme.switchToLight') : $t('theme.switchToDark')"
+            >
+              <i :data-feather="theme === 'dark' ? 'sun' : 'moon'"></i>
+              <span>{{ theme === 'dark' ? $t('theme.switchToLight') : $t('theme.switchToDark') }}</span>
+            </button>
+            <b-dropdown :text="$i18n.locale.toUpperCase()" :variant="dropdownVariant" size="sm">
               <b-dropdown-item @click="switchLanguage('en')">EN</b-dropdown-item>
               <b-dropdown-item @click="switchLanguage('ru')">RU</b-dropdown-item>
               <b-dropdown-item @click="switchLanguage('uz')">UZ</b-dropdown-item>
@@ -72,7 +82,17 @@
           </a>
         </li>
         <li class="nav-item mt-3">
-          <b-dropdown :text="$i18n.locale.toUpperCase()" variant="outline-light" size="sm">
+          <button
+              type="button"
+              class="theme-toggle w-100 justify-content-center"
+              @click="handleMobileThemeToggle"
+          >
+            <i :data-feather="theme === 'dark' ? 'sun' : 'moon'"></i>
+            <span>{{ theme === 'dark' ? $t('theme.switchToLight') : $t('theme.switchToDark') }}</span>
+          </button>
+        </li>
+        <li class="nav-item mt-3">
+          <b-dropdown :text="$i18n.locale.toUpperCase()" :variant="dropdownVariant" size="sm">
             <b-dropdown-item @click="switchLanguage('en')">EN</b-dropdown-item>
             <b-dropdown-item @click="switchLanguage('ru')">RU</b-dropdown-item>
             <b-dropdown-item @click="switchLanguage('uz')">UZ</b-dropdown-item>
@@ -84,8 +104,16 @@
 </template>
 
 <script>
+import feather from 'feather-icons'
+
 export default {
   name: "Header",
+  props: {
+    theme: {
+      type: String,
+      default: 'dark'
+    }
+  },
   data() {
     return {
       scrollTop: 0,
@@ -128,16 +156,45 @@ export default {
     },
     switchLanguage(lang) {
       this.$i18n.locale = lang
+    },
+    toggleTheme() {
+      this.$emit('toggle-theme')
+    },
+    handleMobileThemeToggle() {
+      this.toggleTheme()
+      this.isMenuOpen = false
+    },
+    refreshIcons() {
+      this.$nextTick(() => {
+        feather.replace()
+      })
     }
   },
   mounted() {
     window.addEventListener("scroll", this.trackActiveSection);
     window.addEventListener('scroll', this.onScroll)
+    this.refreshIcons()
   },
   beforeDestroy() {
     window.removeEventListener("scroll", this.trackActiveSection);
     window.removeEventListener('scroll', this.onScroll)
   },
+  computed: {
+    themeClass() {
+      return this.theme === 'light' ? 'light-mode' : 'dark-mode'
+    },
+    dropdownVariant() {
+      return this.theme === 'light' ? 'outline-dark' : 'outline-light'
+    }
+  },
+  watch: {
+    theme() {
+      this.refreshIcons()
+    },
+    isMenuOpen() {
+      this.refreshIcons()
+    }
+  }
 };
 </script>
 
@@ -145,10 +202,28 @@ export default {
 header {
   position: relative;
 }
+
 .rn-header {
   background-color: #1e1e1e;
   padding: 0.75rem 1.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+header.light-mode {
+  color: #1f2937;
+}
+
+header.light-mode .rn-header {
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.1);
+}
+
+header.light-mode .primary-menu .nav-link {
+  color: #4b5563;
+}
+
+header.light-mode .primary-menu .nav-link.active {
+  color: #0f172a;
 }
 
 .primary-menu .nav-link {
@@ -160,6 +235,48 @@ header {
 
 .primary-menu .nav-link.active {
   color: white;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle i {
+  width: 20px;
+  height: 20px;
+}
+
+.theme-toggle span {
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+header.dark-mode .theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+header.light-mode .theme-toggle {
+  background: rgba(15, 23, 42, 0.08);
+  color: #0f172a;
+}
+
+header.light-mode .theme-toggle:hover {
+  background: rgba(15, 23, 42, 0.16);
+}
+
+.mobile-menu .theme-toggle {
+  width: 100%;
+  justify-content: center;
 }
 
 .logo {

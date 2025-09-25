@@ -8,6 +8,10 @@
     "blog": "Блог",
     "footer": "Футер"
   },
+  "theme": {
+    "switchToLight": "Светлая тема",
+    "switchToDark": "Тёмная тема"
+  },
   "hero": {
     "greeting": "Привет, я",
     "name": "Азизжон",

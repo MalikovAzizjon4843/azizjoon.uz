@@ -8,6 +8,10 @@
     "blog": "Blog",
     "footer": "Futer"
   },
+  "theme": {
+    "switchToLight": "Yorug' rejim",
+    "switchToDark": "Qorong'i rejim"
+  },
   "hero": {
     "greeting": "Salom, men",
     "name": "Azizjon",
