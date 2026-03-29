@@ -1,0 +1,53 @@
+@use 'variables' as *;
+
+@mixin mobile {
+  @media (max-width: #{$bp-md - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $bp-md) and (max-width: #{$bp-lg - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $bp-lg) {
+    @content;
+  }
+}
+
+@mixin tablet-up {
+  @media (min-width: $bp-md) {
+    @content;
+  }
+}
+
+@mixin small-mobile {
+  @media (max-width: #{$bp-sm - 1px}) {
+    @content;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include mobile {
+    padding: 0 16px;
+  }
+}
+
+.container-narrow {
+  width: 100%;
+  max-width: $container-narrow;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include mobile {
+    padding: 0 16px;
+  }
+}

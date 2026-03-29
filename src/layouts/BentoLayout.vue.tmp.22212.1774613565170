@@ -1,0 +1,59 @@
+<template>
+  <div class="bento-layout">
+    <BentoHeader />
+
+    <main class="container">
+      <div class="bento-grid">
+        <BentoHeroCard />
+        <BentoPhotoCard />
+        <BentoAvailableCard />
+        <BentoStatsCards />
+        <BentoStackCard />
+        <BentoExperienceCard />
+        <BentoProjectCard />
+        <BentoContactCard />
+      </div>
+    </main>
+
+    <BentoFooter />
+  </div>
+</template>
+
+<script setup>
+import { onMounted } from 'vue'
+import { useAppStore } from '@/stores/useAppStore'
+import BentoHeader from '@/components/bento/BentoHeader.vue'
+import BentoHeroCard from '@/components/bento/BentoHeroCard.vue'
+import BentoPhotoCard from '@/components/bento/BentoPhotoCard.vue'
+import BentoAvailableCard from '@/components/bento/BentoAvailableCard.vue'
+import BentoStatsCards from '@/components/bento/BentoStatsCards.vue'
+import BentoStackCard from '@/components/bento/BentoStackCard.vue'
+import BentoExperienceCard from '@/components/bento/BentoExperienceCard.vue'
+import BentoProjectCard from '@/components/bento/BentoProjectCard.vue'
+import BentoContactCard from '@/components/bento/BentoContactCard.vue'
+import BentoFooter from '@/components/bento/BentoFooter.vue'
+
+const store = useAppStore()
+
+onMounted(() => {
+  document.documentElement.setAttribute('data-layout', 'bento')
+})
+</script>
+
+<style lang="scss" scoped>
+.bento-layout {
+  min-height: 100vh;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 8px;
+  padding: 20px 0;
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 8px;
+  }
+}
+</style>

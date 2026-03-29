@@ -1,0 +1,17 @@
+[data-theme="light"][data-layout="minimal"] {
+  --bg: #f8fafc;
+  --bg-light: #ffffff;
+  --bg-lightest: #f1f5f9;
+  --card: #ffffff;
+  --border: #e2e8f0;
+  --text: #0f172a;
+  --text-2: #475569;
+  --text-3: #94a3b8;
+  --text-dim: #cbd5e1;
+  --accent: #0ea5e9;
+  --accent-tint: rgba(14, 165, 233, 0.1);
+  --success: #10b981;
+  --font-heading: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}

@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Men haqimda",
+    "experience": "Tajriba",
+    "projects": "Loyihalar",
+    "education": "Ta'lim",
+    "blog": "Blog",
+    "contact": "Aloqa"
+  },
+  "hero": {
+    "greeting": "Assalomu alaykum, mening ismim",
+    "title": "Full Stack Java Engineer",
+    "bio": "Enterprise tizimlar yaratuvchi full-stack developer. O'zbekiston davlat tizimlari uchun Vue.js va Spring Boot yechimlar ishlab chiqaman.",
+    "cta_projects": "Loyihalarimni ko'ring",
+    "cta_contact": "Bog'lanish",
+    "cta_github": "GitHub",
+    "cta_resume": "Resume yuklab olish",
+    "terminal_cmd": "cat intro.md",
+    "available": "Yangi loyihalarga ochiqman"
+  },
+  "about": {
+    "title": "Men haqimda",
+    "p1": "Men enterprise web ilovalar yarataman. Hozirda Fairtech kompaniyasida O'zbekiston Antimonopoliya qo'mitasi uchun davlat tizimlari ishlab chiqaman.",
+    "p2": "Asosiy texnologiyalarim Vue.js va Java Spring Boot. Frontend va backend da bir xil darajada ishlayman.",
+    "p3": "Ishdan tashqari vaqtimda yangi texnologiyalarni o'rganaman va shaxsiy loyihalar ustida ishlayman."
+  },
+  "skills": {
+    "title": "Texnologiyalar",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Ma'lumotlar bazasi",
+    "tools": "Vositalar"
+  },
+  "experience": {
+    "title": "Ish tajribam",
+    "subtitle": "3+ yillik tajriba",
+    "present": "Hozir",
+    "fairtech": {
+      "role": "Full Stack Java Engineer",
+      "org": "O'zbekiston Antimonopoliya qo'mitasi — FAIRTECH",
+      "description": "Davlat enterprise tizimlari uchun scalable web ilovalar ishlab chiqish",
+      "bullet1": "RAIS — Raqobat Agentligi Information System: statistika moduli, 15 viloyat uchun appeal-stat API, monitoring dashboardlar",
+      "bullet2": "Compleans — compliance va noadil raqobat monitoring tizimi, tekshiruvlar va hisobotlar",
+      "bullet3": "XT_XARID — tizimlararo integratsiya platformasi, sinxronizatsiya",
+      "bullet4": "Vue 2 dan Vue 3 ga migratsiya — {'@'}vue/compat, 100+ komponent, i18n v9, Composition API",
+      "bullet5": "Dominant subjects registry CRUD, role-based permissions (ability.can())",
+      "bullet6": "PDF generation tizimi (html2pdf.js) — davlat hujjat formatlari"
+    },
+    "texno": {
+      "role": "Java Software Engineer",
+      "org": "Texno Model",
+      "description": "Backend development va loyihalarni boshqarish",
+      "bullet1": "Java Spring Boot bilan web ilovalar yaratish",
+      "bullet2": "REST API dizayn va implementatsiya",
+      "bullet3": "Loyihalarni qisman boshqarish va code review"
+    }
+  },
+  "projects": {
+    "title": "Loyihalar",
+    "featured": "Asosiy loyihalar",
+    "other": "Boshqa loyihalar",
+    "view_more": "Batafsil",
+    "rais": {
+      "desc": "Raqobat Agentligi Information System — statistika moduli, appeal-stat API (15 viloyat), monitoring dashboardlar, hisobot generatsiya"
+    },
+    "compleans": {
+      "desc": "Compliance va noadil raqobat monitoring tizimi — tekshiruvlar, hisobotlar, entity management"
+    },
+    "xtxarid": {
+      "desc": "Tizimlararo integratsiya platformasi — Compleans va XT_XARID sinxronizatsiya, ma'lumot almashinuvi"
+    },
+    "fairtech_portal": {
+      "desc": "Kompaniya ichki portali — full responsive dizayn, foydalanuvchi boshqaruvi"
+    },
+    "dominant": {
+      "desc": "Monopol sub'ektlar reestri CRUD — role-based permissions, dynamic multi-input, entity relations"
+    },
+    "portfolio": {
+      "desc": "Shaxsiy portfolio sayt — 5 xil dizayn versiya, 3 til, dark/light tema"
+    }
+  },
+  "education": {
+    "title": "Ta'lim",
+    "jangrand": {
+      "degree": "Arts development"
+    }
+  },
+  "contact": {
+    "title": "Bog'lanaylik",
+    "subtitle": "Yangi loyihalar, hamkorlik yoki savollaring bo'lsa — doim tayyorman.",
+    "form_name": "Ismingiz",
+    "form_email": "Email manzilingiz",
+    "form_message": "Xabaringiz",
+    "form_send": "Yuborish",
+    "form_success": "Xabaringiz yuborildi! Tez orada javob beraman.",
+    "or": "yoki",
+    "direct_contact": "To'g'ridan-to'g'ri bog'laning"
+  },
+  "footer": {
+    "built_by": "Azizjon Malikov tomonidan yaratilgan",
+    "rights": "Barcha huquqlar himoyalangan"
+  },
+  "version_switcher": {
+    "label": "Dizayn versiyasi",
+    "v1": "Bento",
+    "v2": "Minimal",
+    "v3": "Light",
+    "v4": "Bold",
+    "v6": "Original"
+  },
+  "theme": {
+    "dark": "Qorong'u",
+    "light": "Yorug'"
+  },
+  "stats": {
+    "years": "Yil tajriba",
+    "projects": "Loyihalar",
+    "enterprise": "Enterprise",
+    "components": "Komponent"
+  },
+  "resume": {
+    "download": "Resume yuklab olish"
+  }
+}

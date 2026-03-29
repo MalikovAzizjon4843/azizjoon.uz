@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(mkdir -p public/v0)",
+      "Bash(cp -r dist/* public/v0/)",
+      "Bash(mkdir -p src/assets/images)",
+      "Bash(touch src/assets/images/profile.jpg)",
+      "Bash(npm install:*)",
+      "Bash(npx vite:*)",
+      "mcp__Claude_Preview__preview_start"
+    ]
+  }
+}

@@ -1,17 +1,17 @@
-import Vue from 'vue'
-import VueI18n from 'vue-i18n'
-import en from '../locales/en.json'
-import uz from '../locales/uz.json'
-import ru from '../locales/ru.json'
+import { createI18n } from 'vue-i18n'
+import uz from './uz.json'
+import ru from './ru.json'
+import en from './en.json'
 
-Vue.use(VueI18n)
+const savedLang = typeof localStorage !== 'undefined'
+  ? localStorage.getItem('lang') || 'uz'
+  : 'uz'
 
-export default new VueI18n({
-    locale: 'en', // boshlang‘ich til
-    fallbackLocale: 'en',
-    messages: {
-        en,
-        uz,
-        ru
-    }
+const i18n = createI18n({
+  legacy: false,
+  locale: savedLang,
+  fallbackLocale: 'uz',
+  messages: { uz, ru, en }
 })
+
+export default i18n

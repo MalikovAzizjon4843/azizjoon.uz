@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "education": "Education",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi there, my name is",
+    "title": "Full Stack Java Engineer",
+    "bio": "Full-stack developer building enterprise systems. I create Vue.js and Spring Boot solutions for government systems of Uzbekistan.",
+    "cta_projects": "View my projects",
+    "cta_contact": "Get in touch",
+    "cta_github": "GitHub",
+    "cta_resume": "Download resume",
+    "terminal_cmd": "cat intro.md",
+    "available": "Open for new projects"
+  },
+  "about": {
+    "title": "About me",
+    "p1": "I build enterprise web applications. Currently working at Fairtech, developing government systems for the Antimonopoly Committee of Uzbekistan.",
+    "p2": "My core technologies are Vue.js and Java Spring Boot. I work equally well on both frontend and backend.",
+    "p3": "Outside of work, I explore new technologies and build personal projects."
+  },
+  "skills": {
+    "title": "Technologies",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Database",
+    "tools": "Tools"
+  },
+  "experience": {
+    "title": "Work experience",
+    "subtitle": "3+ years of experience",
+    "present": "Present",
+    "fairtech": {
+      "role": "Full Stack Java Engineer",
+      "org": "Antimonopoly Committee of Uzbekistan — FAIRTECH",
+      "description": "Developing scalable web applications for government enterprise systems",
+      "bullet1": "RAIS — Competition Agency Information System: statistics module, appeal-stat API for 15 regions, monitoring dashboards",
+      "bullet2": "Compleans — compliance and unfair competition monitoring system, audits and reports",
+      "bullet3": "XT_XARID — cross-system integration platform, data synchronization",
+      "bullet4": "Migration from Vue 2 to Vue 3 — {'@'}vue/compat, 100+ components, i18n v9, Composition API",
+      "bullet5": "Dominant subjects registry CRUD, role-based permissions (ability.can())",
+      "bullet6": "PDF generation system (html2pdf.js) — government document formats"
+    },
+    "texno": {
+      "role": "Java Software Engineer",
+      "org": "Texno Model",
+      "description": "Backend development and project management",
+      "bullet1": "Building web applications with Java Spring Boot",
+      "bullet2": "REST API design and implementation",
+      "bullet3": "Partial project management and code review"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "featured": "Featured projects",
+    "other": "Other projects",
+    "view_more": "Learn more",
+    "rais": {
+      "desc": "Competition Agency Information System — statistics module, appeal-stat API (15 regions), monitoring dashboards, report generation"
+    },
+    "compleans": {
+      "desc": "Compliance and unfair competition monitoring system — audits, reports, entity management"
+    },
+    "xtxarid": {
+      "desc": "Cross-system integration platform — Compleans and XT_XARID synchronization, data exchange"
+    },
+    "fairtech_portal": {
+      "desc": "Company internal portal — fully responsive design, user management"
+    },
+    "dominant": {
+      "desc": "Dominant subjects registry CRUD — role-based permissions, dynamic multi-input, entity relations"
+    },
+    "portfolio": {
+      "desc": "Personal portfolio website — 5 design versions, 3 languages, dark/light theme"
+    }
+  },
+  "education": {
+    "title": "Education",
+    "jangrand": {
+      "degree": "Arts development"
+    }
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "New projects, collaboration or questions — always happy to connect.",
+    "form_name": "Your name",
+    "form_email": "Your email",
+    "form_message": "Your message",
+    "form_send": "Send",
+    "form_success": "Message sent! I'll get back to you soon.",
+    "or": "or",
+    "direct_contact": "Reach out directly"
+  },
+  "footer": {
+    "built_by": "Built by Azizjon Malikov",
+    "rights": "All rights reserved"
+  },
+  "version_switcher": {
+    "label": "Design version",
+    "v1": "Bento",
+    "v2": "Minimal",
+    "v3": "Light",
+    "v4": "Bold",
+    "v6": "Original"
+  },
+  "theme": {
+    "dark": "Dark",
+    "light": "Light"
+  },
+  "stats": {
+    "years": "Years experience",
+    "projects": "Projects",
+    "enterprise": "Enterprise",
+    "components": "Components"
+  },
+  "resume": {
+    "download": "Download resume"
+  }
+}

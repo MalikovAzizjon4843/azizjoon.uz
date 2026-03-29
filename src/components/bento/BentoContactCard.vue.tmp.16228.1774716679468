@@ -1,0 +1,138 @@
+<template>
+  <div id="contact" class="bento-contact-section">
+    <div class="contact-cta">
+      <div class="cta-content">
+        <h3 class="mono">
+          <span>$</span> send_message
+        </h3>
+        <p class="cta-subtitle">{{ $t('contact.subtitle') }}</p>
+        <div class="cta-email-row">
+          <a :href="`mailto:${portfolioData.personal.email}`" class="cta-email mono">
+            {{ portfolioData.personal.email }}
+          </a>
+          <span class="cta-arrow">&rarr;</span>
+        </div>
+        <a
+          :href="portfolioData.personal.resumePath"
+          download
+          class="cta-resume-btn mono"
+        >
+          {{ $t('resume.download') }}
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap">
+      <ContactForm />
+      <div class="contact-or">
+        <span>{{ $t('contact.or') }}</span>
+      </div>
+      <p class="direct-label">{{ $t('contact.direct_contact') }}</p>
+      <SocialLinks />
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { portfolioData } from '@/data/portfolio'
+import ContactForm from '@/components/shared/ContactForm.vue'
+import SocialLinks from '@/components/shared/SocialLinks.vue'
+</script>
+
+<style lang="scss" scoped>
+.bento-contact-section {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 8px;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-cta {
+  background-color: var(--accent);
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--bg);
+  }
+}
+
+.cta-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cta-subtitle {
+  font-size: 12px;
+  color: var(--bg);
+  opacity: 0.6;
+}
+
+.cta-email-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cta-email {
+  font-size: 12px;
+  color: var(--bg);
+  text-decoration: underline;
+  opacity: 0.9;
+
+  &:hover { opacity: 1; }
+}
+
+.cta-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: var(--bg);
+  color: var(--accent);
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  align-self: flex-start;
+  margin-top: 4px;
+  transition: opacity 0.2s;
+
+  &:hover { opacity: 0.9; }
+}
+
+.cta-arrow {
+  font-size: 24px;
+  color: var(--bg);
+  align-self: flex-end;
+}
+
+.contact-form-wrap {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-or {
+  text-align: center;
+  color: var(--text-3);
+  font-size: 11px;
+}
+
+.direct-label {
+  font-size: 11px;
+  color: var(--text-3);
+}
+</style>
