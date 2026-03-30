@@ -2,23 +2,25 @@ export const portfolioData = {
   personal: {
     name: 'Azizjon',
     surname: 'Malikov',
+    title: 'Middle Full Stack Developer',
     email: 'azizjon.malikovv@gmail.com',
+    phone: '+998919224843',
     location: 'Toshkent',
-    phone: null,
-    photo: null, // set dynamically or use fallback
+    photo: null,
     resumePath: '/cv/Azizjon Malikov.pdf',
     available: true,
     social: {
       github: 'https://github.com/MalikovAzizjon4843',
       linkedin: 'https://www.linkedin.com/in/azizjon-malikov',
       telegram: 'https://t.me/Azizjon_Malikov'
-    }
+    },
+    website: 'https://azizjoon.uz'
   },
 
   stats: [
     { value: 3, suffix: '+', i18nLabel: 'stats.years' },
-    { value: 16, suffix: '+', i18nLabel: 'stats.projects' },
-    { value: 5, suffix: '', i18nLabel: 'stats.enterprise' },
+    { value: 22, suffix: '+', i18nLabel: 'stats.projects' },
+    { value: 8, suffix: '+', i18nLabel: 'stats.enterprise' },
     { value: 100, suffix: '+', i18nLabel: 'stats.components' }
   ],
 
@@ -47,6 +49,7 @@ export const portfolioData = {
       role: 'experience.fairtech.role',
       company: 'Fairtech',
       organization: 'experience.fairtech.org',
+      location: 'Toshkent',
       startDate: '2023.07',
       endDate: null,
       isCurrent: true,
@@ -57,24 +60,29 @@ export const portfolioData = {
         'experience.fairtech.bullet3',
         'experience.fairtech.bullet4',
         'experience.fairtech.bullet5',
-        'experience.fairtech.bullet6'
+        'experience.fairtech.bullet6',
+        'experience.fairtech.bullet7',
+        'experience.fairtech.bullet8'
       ],
-      tech: ['Vue 3', 'Spring Boot', 'PostgreSQL', 'JPA/Hibernate', 'REST API']
+      tech: ['Vue.js', 'Spring Boot', 'PostgreSQL', 'JPA/Hibernate', 'REST API']
     },
     {
       role: 'experience.texno.role',
-      company: 'Texno Model',
+      company: 'Texno Dargoh',
       organization: 'experience.texno.org',
-      startDate: '2022.05',
-      endDate: '2023.06',
+      location: 'Toshkent',
+      startDate: '2022.04',
+      endDate: '2023.05',
       isCurrent: false,
       description: 'experience.texno.description',
       bullets: [
         'experience.texno.bullet1',
         'experience.texno.bullet2',
-        'experience.texno.bullet3'
+        'experience.texno.bullet3',
+        'experience.texno.bullet4',
+        'experience.texno.bullet5'
       ],
-      tech: ['Java', 'Spring Boot', 'REST API']
+      tech: ['Java', 'Spring', 'CRM', 'Telegram Bot API', 'Thymeleaf']
     }
   ],
 
@@ -125,7 +133,7 @@ export const portfolioData = {
       featured: true,
       links: { github: null, live: null }
     },
-    // === REGULAR (11) ===
+    // === REGULAR ===
     {
       name: 'my.fairtech.uz',
       status: 'live',
@@ -143,6 +151,60 @@ export const portfolioData = {
       tech: ['Vue.js', 'Spring Boot', 'PostgreSQL'],
       featured: false,
       links: { github: null, live: null }
+    },
+    {
+      name: 'TEDA CRM System',
+      status: 'production',
+      type: 'Full-Stack',
+      i18nDesc: 'projects.teda_crm.desc',
+      tech: ['Java', 'Spring', 'PostgreSQL', 'CRM'],
+      featured: false,
+      links: { github: 'https://github.com/TEDA-LLC/ourSystem.git', live: 'https://admin.teda.uz' }
+    },
+    {
+      name: 'teda.uz + Telegram Bot',
+      status: 'production',
+      type: 'Web / Bot',
+      i18nDesc: 'projects.teda_web.desc',
+      tech: ['Java', 'Spring', 'Thymeleaf', 'Telegram Bot API'],
+      featured: false,
+      links: { github: null, live: 'https://www.teda.uz' }
+    },
+    {
+      name: 'Ibrat Club',
+      status: 'production',
+      type: 'Web / Bot',
+      i18nDesc: 'projects.ibrat.desc',
+      tech: ['Java', 'Spring', 'Telegram Bot API'],
+      featured: false,
+      links: { github: null, live: 'https://ibrat.teda.uz' }
+    },
+    {
+      name: 'quiz.fairtech.uz',
+      status: 'production',
+      type: 'Web',
+      i18nDesc: 'projects.quiz.desc',
+      tech: ['Vue.js', 'Spring Boot', 'PostgreSQL'],
+      featured: false,
+      links: { github: null, live: 'https://quiz.fairtech.uz' }
+    },
+    {
+      name: 'cabinet.fairtech.uz',
+      status: 'production',
+      type: 'Enterprise',
+      i18nDesc: 'projects.cabinet.desc',
+      tech: ['Vue.js', 'Spring Boot', 'PostgreSQL'],
+      featured: false,
+      links: { github: null, live: 'https://cabinet.fairtech.uz' }
+    },
+    {
+      name: 'fairtech.uz',
+      status: 'production',
+      type: 'Enterprise',
+      i18nDesc: 'projects.fairtech_main.desc',
+      tech: ['Vue.js', 'Spring Boot'],
+      featured: false,
+      links: { github: null, live: 'https://fairtech.uz' }
     },
     {
       name: 'Interactive Uzbekistan Map',
@@ -229,10 +291,53 @@ export const portfolioData = {
 
   education: [
     {
-      institution: 'Jan-Grands',
+      institution: 'education.tuit.name',
       location: 'Toshkent',
-      i18nDegree: 'education.jangrand.degree',
-      years: ''
+      i18nDegree: 'education.tuit.degree',
+      years: '2023 — hozir',
+      i18nDetails: 'education.tuit.details'
+    },
+    {
+      institution: 'PDP Academy',
+      location: 'Toshkent',
+      i18nDegree: 'education.pdp.degree',
+      years: '2021.07 — 2022.03',
+      i18nDetails: 'education.pdp.details'
+    },
+    {
+      institution: 'EPAM Systems',
+      location: 'Toshkent',
+      i18nDegree: 'education.epam.degree',
+      years: '2022.04 — 2022.07',
+      i18nDetails: 'education.epam.details'
+    },
+    {
+      institution: 'One Million Uzbek Coders',
+      location: 'Online',
+      i18nDegree: 'education.onemillion.degree',
+      years: '2020.02',
+      i18nDetails: 'education.onemillion.details'
+    }
+  ],
+
+  certificates: [
+    {
+      name: 'certificates.pdp_java.name',
+      issuer: 'PDP Academy',
+      date: '2022.05',
+      url: 'https://online.pdp.uz/api/file/get/92ca4b35-6388-4b50-8762-95542363d4a7'
+    },
+    {
+      name: 'certificates.pdp_frontend.name',
+      issuer: 'PDP Academy',
+      date: '2021.04',
+      url: null
+    },
+    {
+      name: 'certificates.onemillion.name',
+      issuer: 'One Million Uzbek Coders',
+      date: '2020.02',
+      url: null
     }
   ]
 }

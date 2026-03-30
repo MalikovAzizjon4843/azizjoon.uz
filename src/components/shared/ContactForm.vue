@@ -1,7 +1,7 @@
 <template>
   <form class="contact-form" @submit.prevent="handleSubmit" novalidate>
     <div v-if="isSubmitted" class="form-success">
-      {{ $t('contact.form_success') }}
+      ✓ {{ $t('contact.success') }}
     </div>
     <template v-else>
       <div class="form-group" :class="{ error: errors.name }">
@@ -34,8 +34,12 @@
         ></textarea>
         <span v-if="errors.message" class="error-msg">{{ errors.message }}</span>
       </div>
-      <button type="submit" class="form-submit">
-        {{ $t('contact.form_send') }}
+      <button type="submit" class="form-submit" :disabled="isSubmitting">
+        <span v-if="isSubmitting" class="submit-loading">
+          <span class="spinner"></span>
+          {{ $t('contact.sending') }}
+        </span>
+        <span v-else>{{ $t('contact.form_send') }}</span>
       </button>
     </template>
   </form>
@@ -43,7 +47,10 @@
 
 <script setup>
 import { reactive, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { portfolioData } from '@/data/portfolio'
+
+const { t } = useI18n()
 
 const form = reactive({
   name: '',
@@ -58,18 +65,19 @@ const errors = reactive({
 })
 
 const isSubmitted = ref(false)
+const isSubmitting = ref(false)
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 function validateField(field) {
   errors[field] = ''
   if (field === 'name' && form.name.length < 2) {
-    errors.name = 'Min 2 characters'
+    errors.name = t('contact.validation.name_min')
   }
   if (field === 'email' && !emailRegex.test(form.email)) {
-    errors.email = 'Invalid email'
+    errors.email = t('contact.validation.email_invalid')
   }
   if (field === 'message' && form.message.length < 10) {
-    errors.message = 'Min 10 characters'
+    errors.message = t('contact.validation.message_min')
   }
   return !errors[field]
 }
@@ -78,20 +86,60 @@ function validate() {
   return validateField('name') & validateField('email') & validateField('message')
 }
 
-function handleSubmit() {
+function openMailtoFallback() {
+  const subject = encodeURIComponent(`azizjoon.uz dan murojaat - ${form.name}`)
+  const body = encodeURIComponent(`${form.message}\n\nEmail: ${form.email}`)
+  window.open(`mailto:${portfolioData.personal.email}?subject=${subject}&body=${body}`)
+}
+
+async function handleSubmit() {
   if (!validate()) return
 
-  const subject = encodeURIComponent(`Portfolio contact from ${form.name}`)
-  const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`)
-  window.location.href = `mailto:${portfolioData.personal.email}?subject=${subject}&body=${body}`
+  const TELEGRAM_BOT_TOKEN = import.meta.env.VITE_TELEGRAM_BOT_TOKEN
+  const TELEGRAM_CHAT_ID = import.meta.env.VITE_TELEGRAM_CHAT_ID
 
-  isSubmitted.value = true
-  setTimeout(() => {
-    isSubmitted.value = false
-    form.name = ''
-    form.email = ''
-    form.message = ''
-  }, 3000)
+  if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
+    openMailtoFallback()
+    return
+  }
+
+  const text =
+    `📬 Yangi murojaat!\n\n` +
+    `👤 Ism: ${form.name}\n` +
+    `📧 Email: ${form.email}\n` +
+    `💬 Xabar:\n${form.message}\n\n` +
+    `🌐 Sayt: azizjoon.uz\n` +
+    `🕐 Vaqt: ${new Date().toLocaleString('uz-UZ')}`
+
+  try {
+    isSubmitting.value = true
+
+    const response = await fetch(
+      `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`,
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          chat_id: TELEGRAM_CHAT_ID,
+          text: text
+        })
+      }
+    )
+
+    if (response.ok) {
+      isSubmitted.value = true
+      form.name = ''
+      form.email = ''
+      form.message = ''
+      setTimeout(() => { isSubmitted.value = false }, 5000)
+    } else {
+      throw new Error('Telegram API error')
+    }
+  } catch {
+    openMailtoFallback()
+  } finally {
+    isSubmitting.value = false
+  }
 }
 </script>
 
@@ -155,18 +203,43 @@ function handleSubmit() {
   transition: opacity 0.2s ease, transform 0.2s ease;
   align-self: flex-start;
 
-  &:hover {
+  &:hover:not(:disabled) {
     opacity: 0.9;
     transform: translateY(-1px);
   }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+}
+
+.submit-loading {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }
 
 .form-success {
   padding: 16px;
   background-color: rgba(74, 222, 128, 0.1);
-  border: 1px solid var(--success);
+  border: 1px solid var(--success, #4ade80);
   border-radius: 8px;
-  color: var(--success);
+  color: var(--success, #4ade80);
   font-size: 14px;
   text-align: center;
 }

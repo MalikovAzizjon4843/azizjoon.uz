@@ -30,6 +30,10 @@ const versions = [
 ]
 
 function switchVersion(v) {
+  if (v === 'v6') {
+    window.location.href = 'https://old.azizjoon.uz'
+    return
+  }
   store.setVersion(v)
 }
 </script>

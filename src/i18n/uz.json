@@ -10,8 +10,8 @@
   },
   "hero": {
     "greeting": "Assalomu alaykum, mening ismim",
-    "title": "Full Stack Java Engineer",
-    "bio": "Enterprise tizimlar yaratuvchi full-stack developer. O'zbekiston davlat tizimlari uchun Vue.js va Spring Boot yechimlar ishlab chiqaman.",
+    "title": "Middle Full Stack Developer",
+    "bio": "3+ yillik tajribaga ega full-stack developer. Xususiy va davlat sektorlarida ta'sirli raqamli yechimlar yaratish tajribasiga ega. Java va Vue.js bo'yicha mutaxassislik, OOP tamoyillari asosida kengaytiriladigan web ilovalar va samarali boshqaruv tizimlarini ishlab chiqish. Spring va PostgreSQL texnologiyalaridan foydalanib toza, qo'llab-quvvatlanadigan kod yozishga sodiq.",
     "cta_projects": "Loyihalarimni ko'ring",
     "cta_contact": "Bog'lanish",
     "cta_github": "GitHub",
@@ -38,22 +38,26 @@
     "present": "Hozir",
     "fairtech": {
       "role": "Full Stack Java Engineer",
-      "org": "O'zbekiston Antimonopoliya qo'mitasi — FAIRTECH",
-      "description": "Davlat enterprise tizimlari uchun scalable web ilovalar ishlab chiqish",
+      "org": "O'zbekiston Respublikasi Raqobatni rivojlantirish va iste'molchilar huquqlarini himoya qilish davlat qo'mitasi",
+      "description": "Fairtech — qo'mitaning Markaziy apparati va 14 ta hududiy boshqarmasi (Toshkent shahri, Toshkent viloyati, Qoraqalpog'iston Respublikasi va boshqa viloyatlar) barcha ichki xodimlari uchun yagona tizim ishlab chiqish",
       "bullet1": "RAIS — Raqobat Agentligi Information System: statistika moduli, 15 viloyat uchun appeal-stat API, monitoring dashboardlar",
       "bullet2": "Compleans — compliance va noadil raqobat monitoring tizimi, tekshiruvlar va hisobotlar",
       "bullet3": "XT_XARID — tizimlararo integratsiya platformasi, sinxronizatsiya",
       "bullet4": "Vue 2 dan Vue 3 ga migratsiya — {'@'}vue/compat, 100+ komponent, i18n v9, Composition API",
       "bullet5": "Dominant subjects registry CRUD, role-based permissions (ability.can())",
-      "bullet6": "PDF generation tizimi (html2pdf.js) — davlat hujjat formatlari"
+      "bullet6": "PDF generation tizimi (html2pdf.js) — davlat hujjat formatlari",
+      "bullet7": "quiz.fairtech.uz — davlat inspektorlarini baholash uchun onlayn test tizimi",
+      "bullet8": "cabinet.fairtech.uz — ichki foydalanish uchun modulli kabinet tizimi"
     },
     "texno": {
-      "role": "Java Software Engineer",
-      "org": "Texno Model",
-      "description": "Backend development va loyihalarni boshqarish",
-      "bullet1": "Java Spring Boot bilan web ilovalar yaratish",
-      "bullet2": "REST API dizayn va implementatsiya",
-      "bullet3": "Loyihalarni qisman boshqarish va code review"
+      "role": "Java Backend Developer",
+      "org": "Texno Dargoh (teda.uz)",
+      "description": "Java va Spring framework yordamida web ilovalar ishlab chiqish",
+      "bullet1": "Java va Spring framework yordamida web ilovalar ishlab chiqish",
+      "bullet2": "Mijozlar boshqaruvini yaxshilash uchun CRM tizimlar yaratish va qo'llab-quvvatlash",
+      "bullet3": "Jurnal nashr qilish uchun avtomatik operatsion tizim ishlab chiqish",
+      "bullet4": "Veb saytlar va Telegram botlar uchun foydalanuvchilarga qulay interfeys dizayn qilish",
+      "bullet5": "Yuqori sifatli dasturiy yechimlar yetkazish uchun jamoalar bilan hamkorlik"
     }
   },
   "projects": {
@@ -106,15 +110,59 @@
     "pharm": {
       "desc": "Dorixona monitoring moduli — farmatsevtika tekshiruv tizimi. Tab-asosida workflow (ijro jarayonida, tasdiqlashda, yakunlangan), natija kiritish, tasdiqlash/rad etish, fayl yuklash, optimized API bilan tezlashtirilgan"
     },
+    "teda_crm": {
+      "desc": "Texno Dargoh CRM tizimi — mijozlar bazasi, buyurtmalar boshqaruvi, operatsion avtomatlashtirish"
+    },
+    "teda_web": {
+      "desc": "teda.uz korporativ veb sayt va Telegram bot — kompaniya xizmatlari, tadbirlar, aloqa"
+    },
+    "ibrat": {
+      "desc": "Ibrat Club — tadbirlar tashkil etish platformasi, ro'yxatdan o'tish, Telegram bot integratsiya"
+    },
+    "quiz": {
+      "desc": "quiz.fairtech.uz — davlat inspektorlari uchun onlayn test va baholash tizimi, respublika bo'ylab"
+    },
+    "cabinet": {
+      "desc": "cabinet.fairtech.uz — ichki foydalanish uchun modulli kabinet tizimi, vazifalar boshqaruvi"
+    },
+    "fairtech_main": {
+      "desc": "fairtech.uz — asosiy workflow avtomatlashtirish platformasi, ichki foydalanish"
+    },
     "portfolio": {
       "desc": "Shaxsiy portfolio sayt — 5 xil dizayn versiya, 3 til, dark/light tema"
     }
   },
   "education": {
     "title": "Ta'lim",
-    "jangrand": {
-      "degree": "Arts development"
+    "tuit": {
+      "name": "Toshkent Iqtisodiyot va Texnologiyalar Universiteti",
+      "degree": "Kompyuter muhandisligi fakulteti",
+      "details": "4-kurs, sirtqi ta'lim"
+    },
+    "pdp": {
+      "degree": "Java Backend kursi",
+      "details": "Java Core, OOP, Spring, Database Development"
+    },
+    "epam": {
+      "degree": "Java Backend Development Training",
+      "details": "Java Core, OOP, Spring, Database Development"
+    },
+    "onemillion": {
+      "degree": "Frontend va Backend kursi",
+      "details": "One Million Uzbek Coders dasturi"
     }
+  },
+  "certificates": {
+    "title": "Sertifikatlar",
+    "pdp_java": { "name": "Java Backend Course sertifikati" },
+    "pdp_frontend": { "name": "Frontend Course sertifikati" },
+    "onemillion": { "name": "Frontend va Backend Course sertifikati" }
+  },
+  "languages": {
+    "title": "Tillar",
+    "uzbek": "O'zbek tili — ona tili",
+    "english": "Ingliz tili",
+    "russian": "Rus tili"
   },
   "contact": {
     "title": "Bog'lanaylik",
@@ -125,7 +173,15 @@
     "form_send": "Yuborish",
     "form_success": "Xabaringiz yuborildi! Tez orada javob beraman.",
     "or": "yoki",
-    "direct_contact": "To'g'ridan-to'g'ri bog'laning"
+    "direct_contact": "To'g'ridan-to'g'ri bog'laning",
+    "validation": {
+      "name_min": "Kamida 2 ta belgi kiriting",
+      "email_invalid": "Email manzil noto'g'ri",
+      "message_min": "Kamida 10 ta belgi kiriting"
+    },
+    "sending": "Yuborilmoqda...",
+    "success": "Xabaringiz yuborildi! Tez orada javob beraman.",
+    "error": "Xatolik yuz berdi. Iltimos, to'g'ridan-to'g'ri email orqali bog'laning."
   },
   "footer": {
     "built_by": "Azizjon Malikov tomonidan yaratilgan",

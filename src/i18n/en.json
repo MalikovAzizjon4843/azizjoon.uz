@@ -10,8 +10,8 @@
   },
   "hero": {
     "greeting": "Hi there, my name is",
-    "title": "Full Stack Java Engineer",
-    "bio": "Full-stack developer building enterprise systems. I create Vue.js and Spring Boot solutions for government systems of Uzbekistan.",
+    "title": "Middle Full Stack Developer",
+    "bio": "Dynamic full-stack developer with over 3 years of experience delivering impactful digital solutions across private and government sectors. Expertise in Java and Vue.js, building scalable web applications and efficient management systems.",
     "cta_projects": "View my projects",
     "cta_contact": "Get in touch",
     "cta_github": "GitHub",
@@ -38,22 +38,26 @@
     "present": "Present",
     "fairtech": {
       "role": "Full Stack Java Engineer",
-      "org": "Antimonopoly Committee of Uzbekistan — FAIRTECH",
-      "description": "Developing scalable web applications for government enterprise systems",
+      "org": "State Committee of the Republic of Uzbekistan for Competition Development and Consumer Rights Protection",
+      "description": "Fairtech — developing a unified system for all internal employees across the Committee's central office and 14 regional branches (Tashkent city, Tashkent region, Republic of Karakalpakstan and other regions)",
       "bullet1": "RAIS — Competition Agency Information System: statistics module, appeal-stat API for 15 regions, monitoring dashboards",
       "bullet2": "Compleans — compliance and unfair competition monitoring system, audits and reports",
       "bullet3": "XT_XARID — cross-system integration platform, data synchronization",
       "bullet4": "Migration from Vue 2 to Vue 3 — {'@'}vue/compat, 100+ components, i18n v9, Composition API",
       "bullet5": "Dominant subjects registry CRUD, role-based permissions (ability.can())",
-      "bullet6": "PDF generation system (html2pdf.js) — government document formats"
+      "bullet6": "PDF generation system (html2pdf.js) — government document formats",
+      "bullet7": "quiz.fairtech.uz — online quiz system for government inspectors nationwide",
+      "bullet8": "cabinet.fairtech.uz — modular cabinet system for internal use"
     },
     "texno": {
-      "role": "Java Software Engineer",
-      "org": "Texno Model",
-      "description": "Backend development and project management",
-      "bullet1": "Building web applications with Java Spring Boot",
-      "bullet2": "REST API design and implementation",
-      "bullet3": "Partial project management and code review"
+      "role": "Java Backend Developer",
+      "org": "Texno Dargoh (teda.uz)",
+      "description": "Web application development with Java and Spring",
+      "bullet1": "Developed web applications using Java and Spring framework",
+      "bullet2": "Created and maintained CRM systems to improve customer management",
+      "bullet3": "Engineered automatic operation system for magazine publishing",
+      "bullet4": "Designed user-friendly interfaces for websites and Telegram bots",
+      "bullet5": "Collaborated with cross-functional teams to deliver quality solutions"
     }
   },
   "projects": {
@@ -106,15 +110,59 @@
     "pharm": {
       "desc": "Pharmacy monitoring module — pharmaceutical inspection system. Tab-based workflow (in progress, pending approval, completed), result submission, approve/reject, file uploads, optimized API for faster performance"
     },
+    "teda_crm": {
+      "desc": "Texno Dargoh CRM system — client database, order management, operations automation"
+    },
+    "teda_web": {
+      "desc": "teda.uz corporate website and Telegram bot — company services, events, communication"
+    },
+    "ibrat": {
+      "desc": "Ibrat Club — event organization platform, registration, Telegram bot integration"
+    },
+    "quiz": {
+      "desc": "quiz.fairtech.uz — online testing system for government inspectors nationwide"
+    },
+    "cabinet": {
+      "desc": "cabinet.fairtech.uz — modular cabinet system for internal use, task management"
+    },
+    "fairtech_main": {
+      "desc": "fairtech.uz — core workflow automation platform for internal use"
+    },
     "portfolio": {
       "desc": "Personal portfolio website — 5 design versions, 3 languages, dark/light theme"
     }
   },
   "education": {
     "title": "Education",
-    "jangrand": {
-      "degree": "Arts development"
+    "tuit": {
+      "name": "Tashkent University of Economics and Technologies",
+      "degree": "Faculty of Computer Engineering",
+      "details": "4th year, part-time study"
+    },
+    "pdp": {
+      "degree": "Java Backend Course",
+      "details": "Java Core, OOP, Spring, Database Development"
+    },
+    "epam": {
+      "degree": "Java Backend Development Training",
+      "details": "Java Core, OOP, Spring, Database Development"
+    },
+    "onemillion": {
+      "degree": "Frontend & Backend Course",
+      "details": "One Million Uzbek Coders program"
     }
+  },
+  "certificates": {
+    "title": "Certificates",
+    "pdp_java": { "name": "Java Backend Course Certificate" },
+    "pdp_frontend": { "name": "Frontend Course Certificate" },
+    "onemillion": { "name": "Frontend & Backend Course Certificate" }
+  },
+  "languages": {
+    "title": "Languages",
+    "uzbek": "Uzbek — Native",
+    "english": "English",
+    "russian": "Russian"
   },
   "contact": {
     "title": "Get in touch",
@@ -125,7 +173,15 @@
     "form_send": "Send",
     "form_success": "Message sent! I'll get back to you soon.",
     "or": "or",
-    "direct_contact": "Reach out directly"
+    "direct_contact": "Reach out directly",
+    "validation": {
+      "name_min": "Minimum 2 characters",
+      "email_invalid": "Invalid email address",
+      "message_min": "Minimum 10 characters"
+    },
+    "sending": "Sending...",
+    "success": "Message sent! I'll respond soon.",
+    "error": "Something went wrong. Please contact directly via email."
   },
   "footer": {
     "built_by": "Built by Azizjon Malikov",

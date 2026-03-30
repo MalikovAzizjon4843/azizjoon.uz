@@ -8,12 +8,6 @@ const routes = [
     meta: { version: 'v1' }
   },
   {
-    path: '/v6',
-    name: 'original',
-    component: () => import('@/layouts/OriginalLayout.vue'),
-    meta: { version: 'v6' }
-  },
-  {
     path: '/v2',
     name: 'minimal',
     component: () => import('@/layouts/MinimalLayout.vue'),
