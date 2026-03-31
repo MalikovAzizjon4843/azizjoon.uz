@@ -136,7 +136,8 @@ async function handleSubmit() {
       throw new Error('Telegram API error')
     }
   } catch {
-    openMailtoFallback()
+    // openMailtoFallback()
+    errorMessage.value = t('contact.error')
   } finally {
     isSubmitting.value = false
   }
