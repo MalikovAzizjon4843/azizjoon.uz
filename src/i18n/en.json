@@ -154,9 +154,15 @@
   },
   "certificates": {
     "title": "Certificates",
-    "pdp_java": { "name": "Java Backend Course Certificate" },
-    "pdp_frontend": { "name": "Frontend Course Certificate" },
-    "onemillion": { "name": "Frontend & Backend Course Certificate" }
+    "pdp_java": {
+      "name": "Java Backend Course Certificate"
+    },
+    "pdp_frontend": {
+      "name": "Frontend Course Certificate"
+    },
+    "onemillion": {
+      "name": "Frontend & Backend Course Certificate"
+    }
   },
   "languages": {
     "title": "Languages",
@@ -186,14 +192,6 @@
   "footer": {
     "built_by": "Built by Azizjon Malikov",
     "rights": "All rights reserved"
-  },
-  "version_switcher": {
-    "label": "Design version",
-    "v1": "Bento",
-    "v2": "Minimal",
-    "v3": "Light",
-    "v4": "Bold",
-    "v6": "Original"
   },
   "theme": {
     "dark": "Dark",

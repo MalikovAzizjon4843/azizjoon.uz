@@ -154,9 +154,15 @@
   },
   "certificates": {
     "title": "Sertifikatlar",
-    "pdp_java": { "name": "Java Backend Course sertifikati" },
-    "pdp_frontend": { "name": "Frontend Course sertifikati" },
-    "onemillion": { "name": "Frontend va Backend Course sertifikati" }
+    "pdp_java": {
+      "name": "Java Backend Course sertifikati"
+    },
+    "pdp_frontend": {
+      "name": "Frontend Course sertifikati"
+    },
+    "onemillion": {
+      "name": "Frontend va Backend Course sertifikati"
+    }
   },
   "languages": {
     "title": "Tillar",
@@ -186,14 +192,6 @@
   "footer": {
     "built_by": "Azizjon Malikov tomonidan yaratilgan",
     "rights": "Barcha huquqlar himoyalangan"
-  },
-  "version_switcher": {
-    "label": "Dizayn versiyasi",
-    "v1": "Bento",
-    "v2": "Minimal",
-    "v3": "Light",
-    "v4": "Bold",
-    "v6": "Original"
   },
   "theme": {
     "dark": "Qorong'u",

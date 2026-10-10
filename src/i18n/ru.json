@@ -154,9 +154,15 @@
   },
   "certificates": {
     "title": "Сертификаты",
-    "pdp_java": { "name": "Сертификат курса Java Backend" },
-    "pdp_frontend": { "name": "Сертификат курса Frontend" },
-    "onemillion": { "name": "Сертификат курса Frontend и Backend" }
+    "pdp_java": {
+      "name": "Сертификат курса Java Backend"
+    },
+    "pdp_frontend": {
+      "name": "Сертификат курса Frontend"
+    },
+    "onemillion": {
+      "name": "Сертификат курса Frontend и Backend"
+    }
   },
   "languages": {
     "title": "Языки",
@@ -186,14 +192,6 @@
   "footer": {
     "built_by": "Создано Азизжоном Маликовым",
     "rights": "Все права защищены"
-  },
-  "version_switcher": {
-    "label": "Версия дизайна",
-    "v1": "Bento",
-    "v2": "Minimal",
-    "v3": "Light",
-    "v4": "Bold",
-    "v6": "Original"
   },
   "theme": {
     "dark": "Тёмная",

@@ -1,40 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '@/views/HomeView.vue'
 
 const routes = [
-  {
-    path: '/',
-    name: 'bento',
-    component: () => import('@/layouts/BentoLayout.vue'),
-    meta: { version: 'v1' }
-  },
-  {
-    path: '/v2',
-    name: 'minimal',
-    component: () => import('@/layouts/MinimalLayout.vue'),
-    meta: { version: 'v2' }
-  },
-  {
-    path: '/v3',
-    name: 'light',
-    component: () => import('@/layouts/LightLayout.vue'),
-    meta: { version: 'v3' }
-  },
-  {
-    path: '/v4',
-    name: 'bold',
-    component: () => import('@/layouts/BoldLayout.vue'),
-    meta: { version: 'v4' }
-  },
-  {
-    path: '/:pathMatch(.*)*',
-    redirect: '/'
-  }
+  { path: '/', name: 'home', component: HomeView },
+  { path: '/:pathMatch(.*)*', redirect: '/' }
 ]
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
-  scrollBehavior() {
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) return savedPosition
+    if (to.hash) return { el: to.hash, top: 90, behavior: 'smooth' }
     return { top: 0 }
   }
 })
