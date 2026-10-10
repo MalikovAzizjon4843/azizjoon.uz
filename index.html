@@ -1,22 +1,67 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="uz" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#09090b">
-  <meta name="description" content="Azizjon Malikov — Full Stack Java Engineer. Vue.js, Spring Boot, PostgreSQL.">
-  <meta name="keywords" content="Azizjon Malikov, Full Stack Developer, Java Engineer, Vue.js, Spring Boot, Portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Azizjon Malikov — Full-stack developer, Toshkent</title>
+  <meta name="description" content="Azizjon Malikov — Vue.js va Java Spring Boot bilan davlat va biznes uchun enterprise web ilovalar quradigan middle full-stack developer.">
   <meta name="author" content="Azizjon Malikov">
-  <meta property="og:title" content="Azizjon Malikov — Full Stack Java Engineer">
-  <meta property="og:description" content="Enterprise tizimlar yaratuvchi full-stack developer.">
+  <meta name="theme-color" content="#051421">
+  <link rel="canonical" href="https://azizjoon.uz/">
+
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://azizjoon.uz">
-  <meta property="og:image" content="/og-image.png">
-  <link rel="icon" href="/favicon.ico">
+  <meta property="og:site_name" content="Azizjon Malikov">
+  <meta property="og:url" content="https://azizjoon.uz/">
+  <meta property="og:title" content="Azizjon Malikov — Full-stack developer">
+  <meta property="og:description" content="Vue.js va Java Spring Boot bilan davlat va biznes uchun enterprise web ilovalar.">
+  <meta property="og:image" content="https://azizjoon.uz/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Azizjon Malikov — Full-stack developer · Vue.js · Java Spring Boot">
+  <meta property="og:locale" content="uz_UZ">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Azizjon Malikov — Full-stack developer">
+  <meta name="twitter:description" content="Vue.js va Java Spring Boot bilan davlat va biznes uchun enterprise web ilovalar.">
+  <meta name="twitter:image" content="https://azizjoon.uz/og-image.png">
+
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
-  <title>Azizjon Malikov — Full Stack Java Engineer</title>
+
+  <!-- Apply the saved theme and language before first paint (no flash). -->
+  <script>
+    (function () {
+      var d = document.documentElement, t = null, l = null;
+      try { t = localStorage.getItem('theme'); l = localStorage.getItem('lang'); } catch (e) {}
+      d.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
+      if (l === 'uz' || l === 'ru' || l === 'en') d.setAttribute('lang', l);
+    })();
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Azizjon Malikov",
+      "jobTitle": "Full-Stack Developer",
+      "url": "https://azizjoon.uz/",
+      "image": "https://azizjoon.uz/og-image.png",
+      "address": { "@type": "PostalAddress", "addressLocality": "Tashkent", "addressCountry": "UZ" },
+      "knowsAbout": ["Vue.js", "Java", "Spring Boot", "PostgreSQL"],
+      "sameAs": [
+        "https://github.com/MalikovAzizjon4843",
+        "https://www.linkedin.com/in/azizjon-malikov",
+        "https://t.me/Azizjon_Malikov"
+      ]
+    }
+  </script>
 </head>
 <body>
   <div id="app"></div>

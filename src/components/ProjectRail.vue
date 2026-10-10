@@ -90,8 +90,9 @@ function step(dir) {
 function updateEdges() {
   const el = rail.value
   if (!el) return
-  atStart.value = el.scrollLeft <= 2
-  atEnd.value = el.scrollLeft + el.clientWidth >= el.scrollWidth - 2
+  // The rail has 4px of side padding, so allow a few pixels of slack.
+  atStart.value = el.scrollLeft <= 8
+  atEnd.value = el.scrollLeft + el.clientWidth >= el.scrollWidth - 8
 }
 
 let resizeObserver

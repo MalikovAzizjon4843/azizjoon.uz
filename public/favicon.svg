@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    .lt { fill: #0E2A3A } .lb { fill: #2F5266 } .rt { fill: #4DB6E8 } .rb { fill: #2585B8 }
+    @media (prefers-color-scheme: dark) {
+      .lt { fill: #E8F2F7 } .lb { fill: #A9C3D1 } .rt { fill: #6CCBF2 } .rb { fill: #2F95C8 }
+    }
+  </style>
+  <path class="lt" d="M9 50 L50 9 L55.47 14.47 L42.55 50 Z" />
+  <path class="lb" d="M9 50 L42.55 50 L33.6 74.6 Z" />
+  <path class="rt" d="M66.4 25.4 L91 50 L57.45 50 Z" />
+  <path class="rb" d="M57.45 50 L91 50 L50 91 L44.53 85.53 Z" />
+</svg>
