@@ -6,7 +6,7 @@
       <feDisplacementMap in="SourceGraphic" in2="soft" scale="40" xChannelSelector="R" yChannelSelector="G" />
     </filter>
   </svg>
-  <div class="field" aria-hidden="true">
+  <div class="bg-field" aria-hidden="true">
     <div v-for="n in 5" :key="n" :class="['blob', `blob--${n}`]" />
   </div>
   <div class="grain" aria-hidden="true" />

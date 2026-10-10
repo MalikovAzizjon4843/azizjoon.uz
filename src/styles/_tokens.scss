@@ -28,6 +28,7 @@
   --facet-rt: #6CCBF2;
   --facet-rb: #2F95C8;
   --ok: #3DDC97;
+  --ok-text: #3DDC97;
   --danger: #FF8A8A;
   color-scheme: dark;
 }
@@ -50,7 +51,8 @@
   --g-edge: rgba(255, 255, 255, .42);
   --g-shadow: rgba(14, 42, 58, .14);
   --g-spec: rgba(255, 255, 255, .6);
-  --g-tint: rgba(37, 133, 184, .8);
+  // Design value rgba(37,133,184,.8) gives white labels ~3.2:1; deepened for WCAG AA (≥4.5:1).
+  --g-tint: rgba(23, 95, 134, .9);
   --g-sat: 1.9;
   --grain: .05;
   --facet-lt: #0E2A3A;
@@ -58,6 +60,7 @@
   --facet-rt: #4DB6E8;
   --facet-rb: #2585B8;
   --ok: #1F9D62;
+  --ok-text: #126B43; // --ok is too light for body text on light glass (WCAG AA)
   --danger: #B42318;
 
   --font: 'Archivo', 'Helvetica Neue', Arial, sans-serif;

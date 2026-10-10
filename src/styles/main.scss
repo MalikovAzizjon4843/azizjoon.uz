@@ -1,4 +1,5 @@
 @use 'tokens';
-@use 'base';
 @use 'background';
+// Glass before base: modifiers such as .btn--tinted must override the glass fill.
 @use 'glass';
+@use 'base';
