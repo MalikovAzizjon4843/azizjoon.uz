@@ -1,43 +1,87 @@
 {
+  "meta": {
+    "title": "Azizjon Malikov — Full-stack developer, Tashkent",
+    "description": "Azizjon Malikov is a middle full-stack developer building enterprise web applications with Vue.js and Java Spring Boot for government and business."
+  },
+  "a11y": {
+    "home": "Azizjon Malikov — home",
+    "language": "Language",
+    "theme_to_light": "Switch to light theme",
+    "theme_to_dark": "Switch to dark theme",
+    "cv": "Open CV in a new tab",
+    "sections": "Sections",
+    "portrait": "Photo of Azizjon Malikov",
+    "gem": "3D logo — drag to spin",
+    "rail": "Projects carousel — use the left and right arrow keys",
+    "prev": "Previous project",
+    "next": "Next project",
+    "new_tab": "(opens in a new tab)"
+  },
   "nav": {
-    "home": "Home",
-    "about": "About",
+    "about": "Me",
+    "work": "Work",
     "experience": "Experience",
-    "projects": "Projects",
-    "education": "Education",
-    "blog": "Blog",
     "contact": "Contact"
   },
   "hero": {
-    "greeting": "Hi there, my name is",
-    "title": "Middle Full Stack Developer",
-    "bio": "Dynamic full-stack developer with over 3 years of experience delivering impactful digital solutions across private and government sectors. Expertise in Java and Vue.js, building scalable web applications and efficient management systems.",
-    "cta_projects": "View my projects",
-    "cta_contact": "Get in touch",
-    "cta_github": "GitHub",
-    "cta_resume": "Download resume",
-    "terminal_cmd": "cat intro.md",
-    "available": "Open for new projects"
+    "status": "Open to new projects",
+    "role": "Middle full-stack developer, Tashkent",
+    "lead": "I build enterprise web applications with Vue.js and Java Spring Boot for government and business. My systems run every day across a central office and 14 regional branches.",
+    "cta_work": "See the work",
+    "cta_cv": "Download CV"
   },
-  "about": {
-    "title": "About me",
-    "p1": "I build enterprise web applications. Currently working at Fairtech, developing government systems for the Antimonopoly Committee of Uzbekistan.",
-    "p2": "My core technologies are Vue.js and Java Spring Boot. I work equally well on both frontend and backend.",
-    "p3": "Outside of work, I explore new technologies and build personal projects."
+  "widgets": {
+    "overview": "Overview",
+    "exp_label": "Experience",
+    "exp_text": "years, since 2022",
+    "now_label": "Now",
+    "now_org": "State Committee for Competition Development",
+    "time_label": "Time in Tashkent",
+    "online": "Working hours — quick reply",
+    "offline": "Off hours — I'll reply in the morning",
+    "proj_label": "Projects",
+    "proj_text": "projects shipped",
+    "reg_label": "Regions",
+    "reg_text": "regional branches use my systems",
+    "stack_label": "Core stack"
   },
-  "skills": {
-    "title": "Technologies",
-    "frontend": "Frontend",
-    "backend": "Backend",
-    "database": "Database",
-    "tools": "Tools"
+  "status": {
+    "live": "Live",
+    "done": "Done",
+    "internal": "Internal"
+  },
+  "work": {
+    "title": "Work",
+    "sub": "Swipe the cards — five of 22+ projects.",
+    "visit": "Open the site",
+    "items": {
+      "rais": {
+        "name": "RAIS",
+        "desc": "Competition agency information system: a statistics module, an appeals API covering 15 regions, and monitoring dashboards."
+      },
+      "xt": {
+        "name": "XT_XARID",
+        "desc": "Tender investigation platform: lot-based inspections, disciplinary workflows and REST/NDJSON integration."
+      },
+      "quiz": {
+        "name": "quiz.fairtech.uz",
+        "desc": "A nationwide system for assessing government inspectors."
+      },
+      "mig": {
+        "name": "Vue 2 → Vue 3",
+        "desc": "Over 100 components moved step by step through {'@'}vue/compat, without taking the system down for a day."
+      },
+      "rtam": {
+        "name": "rtam.uz",
+        "desc": "Official site of a state institution: Spring Boot backend, a hardened admin panel and a CMS."
+      }
+    }
   },
   "experience": {
-    "title": "Work experience",
-    "subtitle": "3+ years of experience",
-    "present": "Present",
+    "title": "Experience",
+    "present": "now",
     "fairtech": {
-      "role": "Full Stack Java Engineer",
+      "role": "Full-Stack Developer",
       "org": "State Committee of the Republic of Uzbekistan for Competition Development and Consumer Rights Protection",
       "description": "Fairtech — developing a unified system for all internal employees across the Committee's central office and 14 regional branches (Tashkent city, Tashkent region, Republic of Karakalpakstan and other regions)",
       "bullet1": "RAIS — Competition Agency Information System: statistics module, appeal-stat API for 15 regions, monitoring dashboards",
@@ -47,7 +91,9 @@
       "bullet5": "Dominant subjects registry CRUD, role-based permissions (ability.can())",
       "bullet6": "PDF generation system (html2pdf.js) — government document formats",
       "bullet7": "quiz.fairtech.uz — online quiz system for government inspectors nationwide",
-      "bullet8": "cabinet.fairtech.uz — modular cabinet system for internal use"
+      "bullet8": "cabinet.fairtech.uz — modular cabinet system for internal use",
+      "org_short": "Fairtech, State Committee for Competition Development",
+      "summary": "I work on RAIS, Compleans, XT_XARID and quiz.fairtech.uz, and led the move to Vue 3."
     },
     "texno": {
       "role": "Java Backend Developer",
@@ -57,14 +103,77 @@
       "bullet2": "Created and maintained CRM systems to improve customer management",
       "bullet3": "Engineered automatic operation system for magazine publishing",
       "bullet4": "Designed user-friendly interfaces for websites and Telegram bots",
-      "bullet5": "Collaborated with cross-functional teams to deliver quality solutions"
+      "bullet5": "Collaborated with cross-functional teams to deliver quality solutions",
+      "org_short": "Texno Dargoh (teda.uz)",
+      "summary": "CRM systems, publishing workflow automation and Telegram bots."
+    },
+    "rtam": {
+      "role": "Backend Developer",
+      "org": "Digital Transformation & Outsourcing Center",
+      "org_short": "Digital Transformation & Outsourcing Center",
+      "summary": "Built the backend, admin panel and CMS for rtam.uz from scratch."
+    },
+    "months": {
+      "1": "Jan",
+      "2": "Feb",
+      "3": "Mar",
+      "4": "Apr",
+      "5": "May",
+      "6": "Jun",
+      "7": "Jul",
+      "8": "Aug",
+      "9": "Sep",
+      "10": "Oct",
+      "11": "Nov",
+      "12": "Dec"
     }
   },
+  "contact": {
+    "title": "Let's build something together.",
+    "text": "A new project, a collaboration or a question — write to me. I usually reply within a day.",
+    "photo_alt": "Azizjon Malikov",
+    "copy": "Copy email",
+    "copied": "Copied",
+    "copy_failed": "Couldn't copy — select the address by hand",
+    "social": "Social links",
+    "form": {
+      "title": "Leave a message",
+      "hint": "It lands straight in my Telegram.",
+      "name": "Name",
+      "name_ph": "Your name",
+      "company": "Company",
+      "optional": "optional",
+      "company_ph": "Company name",
+      "contact": "Email or Telegram",
+      "contact_ph": "you{'@'}company.com or {'@'}username",
+      "message": "Message",
+      "message_ph": "A few lines about the project, role or question",
+      "honeypot": "Leave this field empty",
+      "send": "Send",
+      "sending": "Sending…",
+      "success": "Thanks! Your message arrived — I usually reply within a day.",
+      "error": "Couldn't send the message.",
+      "error_rate": "Too many attempts — please try again in 10 minutes.",
+      "error_validation": "Please check the fields and send again.",
+      "fallback": "Write by email"
+    },
+    "validation": {
+      "name": "Name must be 2 to 80 characters",
+      "contact_required": "Enter an email or a Telegram username",
+      "contact_invalid": "Use an email (name{'@'}mail.com) or a Telegram handle ({'@'}username)",
+      "company": "Company name must be at most 120 characters",
+      "message": "Message must be 10 to 2000 characters"
+    }
+  },
+  "project": {
+    "soon_title": "Case study coming soon",
+    "soon_text": "I'm writing up the full story of this project.",
+    "back": "Back to home"
+  },
+  "footer": {
+    "text": "© {year} Azizjon Malikov. Built in Tashkent."
+  },
   "projects": {
-    "title": "Projects",
-    "featured": "Featured projects",
-    "other": "Other projects",
-    "view_more": "Learn more",
     "rais": {
       "desc": "Competition Agency Information System — statistics module, appeal-stat API (15 regions), monitoring dashboards, report generation"
     },
@@ -129,7 +238,7 @@
       "desc": "fairtech.uz — core workflow automation platform for internal use"
     },
     "portfolio": {
-      "desc": "Personal portfolio website — 5 design versions, 3 languages, dark/light theme"
+      "desc": "Personal portfolio — Liquid Glass design, 3 languages, dark/light theme, 3D logo"
     }
   },
   "education": {
@@ -163,47 +272,5 @@
     "onemillion": {
       "name": "Frontend & Backend Course Certificate"
     }
-  },
-  "languages": {
-    "title": "Languages",
-    "uzbek": "Uzbek — Native",
-    "english": "English",
-    "russian": "Russian"
-  },
-  "contact": {
-    "title": "Get in touch",
-    "subtitle": "New projects, collaboration or questions — always happy to connect.",
-    "form_name": "Your name",
-    "form_email": "Your email",
-    "form_message": "Your message",
-    "form_send": "Send",
-    "form_success": "Message sent! I'll get back to you soon.",
-    "or": "or",
-    "direct_contact": "Reach out directly",
-    "validation": {
-      "name_min": "Minimum 2 characters",
-      "email_invalid": "Invalid email address",
-      "message_min": "Minimum 10 characters"
-    },
-    "sending": "Sending...",
-    "success": "Message sent! I'll respond soon.",
-    "error": "Something went wrong. Please contact directly via email."
-  },
-  "footer": {
-    "built_by": "Built by Azizjon Malikov",
-    "rights": "All rights reserved"
-  },
-  "theme": {
-    "dark": "Dark",
-    "light": "Light"
-  },
-  "stats": {
-    "years": "Years experience",
-    "projects": "Projects",
-    "enterprise": "Enterprise",
-    "components": "Components"
-  },
-  "resume": {
-    "download": "Download resume"
   }
 }

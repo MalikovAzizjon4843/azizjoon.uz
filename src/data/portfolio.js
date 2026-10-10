@@ -14,14 +14,29 @@ export const portfolioData = {
       linkedin: 'https://www.linkedin.com/in/azizjon-malikov',
       telegram: 'https://t.me/Azizjon_Malikov'
     },
-    website: 'https://azizjoon.uz'
+    website: 'https://azizjoon.uz',
+    timeZone: 'Asia/Tashkent',
+    // Shown in the "Tashkent time" widget as online (Mon–Fri, local time).
+    workingHours: { from: 9, to: 19 }
   },
 
-  stats: [
-    { value: 3, suffix: '+', i18nLabel: 'stats.years' },
-    { value: 22, suffix: '+', i18nLabel: 'stats.projects' },
-    { value: 8, suffix: '+', i18nLabel: 'stats.enterprise' },
-    { value: 100, suffix: '+', i18nLabel: 'stats.components' }
+  // Home page overview widgets.
+  highlights: {
+    careerStart: 2022,
+    projectsCount: 22,
+    regions: 14,
+    currentCompany: 'Fairtech',
+    currentProjects: ['RAIS', 'Compleans', 'XT_XARID', 'quiz.fairtech.uz'],
+    coreStack: ['Vue 3', 'Nuxt 3', 'TypeScript', 'Pinia', 'Java', 'Spring Boot', 'PostgreSQL', 'Docker']
+  },
+
+  // Home page carousel. Card texts live in i18n under work.items.<key>.
+  featuredProjects: [
+    { key: 'rais', slug: 'rais', year: '2023', status: 'live', url: null, tags: ['Vue 3', 'Spring Boot', 'PostgreSQL'] },
+    { key: 'xt', slug: 'xt-xarid', year: '2024', status: 'live', url: null, tags: ['Java', 'Spring Boot', 'PostgreSQL'] },
+    { key: 'quiz', slug: 'quiz-fairtech', year: '2024', status: 'live', url: 'https://quiz.fairtech.uz', tags: ['Vue.js', 'Spring Boot'] },
+    { key: 'mig', slug: 'vue3-migration', year: '2025', status: 'done', url: null, tags: ['Vue 3', 'vue-i18n 9', 'Router 4'] },
+    { key: 'rtam', slug: 'rtam', year: '2025', status: 'live', url: 'https://rtam.uz', tags: ['Spring Boot', 'Security', 'CMS'] }
   ],
 
   skills: {
@@ -46,9 +61,12 @@ export const portfolioData = {
 
   experience: [
     {
+      key: 'fairtech',
       role: 'experience.fairtech.role',
       company: 'Fairtech',
       organization: 'experience.fairtech.org',
+      orgShort: 'experience.fairtech.org_short',
+      summary: 'experience.fairtech.summary',
       location: 'Toshkent',
       startDate: '2023.07',
       endDate: null,
@@ -67,9 +85,25 @@ export const portfolioData = {
       tech: ['Vue.js', 'Spring Boot', 'PostgreSQL', 'JPA/Hibernate', 'REST API']
     },
     {
+      key: 'rtam',
+      role: 'experience.rtam.role',
+      company: 'RTAM',
+      organization: 'experience.rtam.org',
+      orgShort: 'experience.rtam.org_short',
+      summary: 'experience.rtam.summary',
+      location: 'Toshkent',
+      startDate: '2025.07',
+      endDate: '2025.09',
+      isCurrent: false,
+      tech: ['Spring Boot', 'Spring Security', 'CMS']
+    },
+    {
+      key: 'texno',
       role: 'experience.texno.role',
       company: 'Texno Dargoh',
       organization: 'experience.texno.org',
+      orgShort: 'experience.texno.org_short',
+      summary: 'experience.texno.summary',
       location: 'Toshkent',
       startDate: '2022.04',
       endDate: '2023.05',
