@@ -1,0 +1,78 @@
+// Liquid glass material.
+// .glass           clear material (default)
+// .glass--regular  denser fill for content surfaces
+// .glass--refract  SVG displacement (#liquid, Chromium only — see useRefract)
+// --mx / --my      cursor position for the specular highlight (useSpecular)
+
+.glass {
+  position: relative;
+  isolation: isolate;
+  background: var(--g-clear);
+  -webkit-backdrop-filter: blur(16px) saturate(var(--g-sat));
+  backdrop-filter: blur(16px) saturate(var(--g-sat));
+  box-shadow:
+    inset 0 1px 0 var(--g-hi),
+    inset 0 0 0 1px var(--g-edge),
+    0 12px 32px var(--g-shadow);
+  transition:
+    transform .45s cubic-bezier(.3, 1.4, .5, 1),
+    background-color .5s,
+    box-shadow .5s;
+
+  // Specular highlight that follows the pointer.
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    z-index: -1;
+    pointer-events: none;
+    background: radial-gradient(280px circle at var(--mx, 25%) var(--my, -20%), var(--g-spec), transparent 62%);
+  }
+
+  // Gradient rim, masked to a 1px ring.
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    pointer-events: none;
+    background: linear-gradient(140deg, var(--g-hi), transparent 35%, transparent 65%, var(--g-edge));
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+  }
+}
+
+.glass--regular {
+  background: var(--g-regular);
+}
+
+.glass--refract {
+  backdrop-filter: url(#liquid) blur(10px) saturate(var(--g-sat));
+}
+
+.press:active {
+  transform: scale(.96);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glass {
+    transition: none;
+  }
+
+  .press:active {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .glass,
+  .glass--regular,
+  .glass--refract {
+    background: var(--bg);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}

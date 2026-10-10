@@ -1,0 +1,80 @@
+// Design tokens — mirrors design/liquid-glass-2.html.
+// Light is the base; dark applies via prefers-color-scheme (unless the user
+// picked light) or an explicit [data-theme="dark"].
+
+@mixin dark-tokens {
+  --bg: #051421;
+  --ink: #E8F2F7;
+  --muted: #A9C1CE;
+  --accent: #6CCBF2;
+  --accent-deep: #2F95C8;
+  --accent-text: #8FDAF8;
+  --blob-a: #146A93;
+  --blob-b: #1F8BBF;
+  --blob-c: #22408F;
+  --blob-d: #49BDEB;
+  --blob-e: #0E4C6E;
+  --g-clear: rgba(255, 255, 255, .08);
+  --g-regular: rgba(9, 30, 44, .6);
+  --g-hi: rgba(255, 255, 255, .3);
+  --g-edge: rgba(255, 255, 255, .12);
+  --g-shadow: rgba(0, 0, 0, .42);
+  --g-spec: rgba(255, 255, 255, .18);
+  --g-tint: rgba(58, 169, 218, .6);
+  --g-sat: 1.45;
+  --grain: .09;
+  --facet-lt: #E8F2F7;
+  --facet-lb: #A9C3D1;
+  --facet-rt: #6CCBF2;
+  --facet-rb: #2F95C8;
+  --ok: #3DDC97;
+  --danger: #FF8A8A;
+  color-scheme: dark;
+}
+
+:root {
+  --bg: #DCEBF2;
+  --ink: #0E2A3A;
+  --muted: #3E5A6A;
+  --accent: #4DB6E8;
+  --accent-deep: #2585B8;
+  --accent-text: #175F86;
+  --blob-a: #8FD3F5;
+  --blob-b: #4DB6E8;
+  --blob-c: #C3ECFA;
+  --blob-d: #2585B8;
+  --blob-e: #A9C8F5;
+  --g-clear: rgba(255, 255, 255, .26);
+  --g-regular: rgba(255, 255, 255, .62);
+  --g-hi: rgba(255, 255, 255, .9);
+  --g-edge: rgba(255, 255, 255, .42);
+  --g-shadow: rgba(14, 42, 58, .14);
+  --g-spec: rgba(255, 255, 255, .6);
+  --g-tint: rgba(37, 133, 184, .8);
+  --g-sat: 1.9;
+  --grain: .05;
+  --facet-lt: #0E2A3A;
+  --facet-lb: #2F5266;
+  --facet-rt: #4DB6E8;
+  --facet-rb: #2585B8;
+  --ok: #1F9D62;
+  --danger: #B42318;
+
+  --font: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --spring: cubic-bezier(.3, 1.5, .45, 1);
+
+  color-scheme: light;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @include dark-tokens;
+  }
+}
+
+:root[data-theme="dark"] {
+  @include dark-tokens;
+}

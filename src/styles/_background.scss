@@ -1,0 +1,50 @@
+// Drifting colour blobs and film grain behind every page.
+
+.field {
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+  overflow: hidden;
+  background: var(--bg);
+  transition: background-color .5s;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  will-change: transform;
+  transition: background-color .6s;
+}
+
+.blob--1 { width: 54vmax; height: 54vmax; left: -14vmax; top: -18vmax; background: var(--blob-a); opacity: .8; animation: blob-drift-1 26s ease-in-out infinite alternate; }
+.blob--2 { width: 40vmax; height: 40vmax; right: -12vmax; top: 6vh; background: var(--blob-c); opacity: .7; animation: blob-drift-2 30s ease-in-out infinite alternate; }
+.blob--3 { width: 46vmax; height: 46vmax; left: 18vw; bottom: -26vmax; background: var(--blob-e); opacity: .85; animation: blob-drift-3 34s ease-in-out infinite alternate; }
+.blob--4 { width: 24vmax; height: 24vmax; right: 16vw; bottom: 10vh; background: var(--blob-d); opacity: .55; animation: blob-drift-1 22s ease-in-out infinite alternate-reverse; }
+.blob--5 { width: 26vmax; height: 26vmax; left: 30vw; top: 18vh; background: var(--blob-b); opacity: .45; animation: blob-drift-2 28s ease-in-out infinite alternate-reverse; }
+
+@keyframes blob-drift-1 { to { transform: translate(8vmax, 6vmax) scale(1.08); } }
+@keyframes blob-drift-2 { to { transform: translate(-10vmax, 8vmax) scale(.92); } }
+@keyframes blob-drift-3 { to { transform: translate(-6vmax, -8vmax) scale(1.1); } }
+
+.grain {
+  position: fixed;
+  inset: -50%;
+  z-index: -2;
+  pointer-events: none;
+  opacity: var(--grain);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blob {
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .blob,
+  .grain {
+    display: none;
+  }
+}
