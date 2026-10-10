@@ -21,7 +21,7 @@
           </li>
         </ul>
       </div>
-      <slot />
+      <ContactForm />
     </div>
   </section>
 </template>
@@ -31,6 +31,7 @@ import { onBeforeUnmount, reactive } from 'vue'
 import { useI18n } from 'vue-i18n'
 import photo from '@/assets/images/profile.jpg'
 import { portfolioData } from '@/data/portfolio'
+import ContactForm from './ContactForm.vue'
 
 const { t } = useI18n()
 const personal = portfolioData.personal
