@@ -8,7 +8,8 @@
         <p class="contact__text">{{ t('contact.text') }}</p>
       </div>
       <div>
-        <a class="contact__mail" :href="`mailto:${personal.email}`">{{ personal.email }}</a>
+        <!-- The only allowed line break is right before the "@". -->
+        <a class="contact__mail" :href="`mailto:${personal.email}`"><span>{{ emailUser }}</span><wbr /><span>{{ emailDomain }}</span></a>
         <div class="contact__copy-row">
           <button type="button" class="btn btn--tinted glass press" @click="copyEmail">{{ t('contact.copy') }}</button>
           <span class="contact__copied" :class="{ 'contact__copied--on': flash.on }" role="status" aria-live="polite">{{ flash.text }}</span>
@@ -35,6 +36,10 @@ import ContactForm from './ContactForm.vue'
 
 const { t } = useI18n()
 const personal = portfolioData.personal
+// "azizjon.malikovv" + "@gmail.com", so a narrow column wraps only at the "@".
+const at = personal.email.indexOf('@')
+const emailUser = personal.email.slice(0, at)
+const emailDomain = personal.email.slice(at)
 const social = [
   { label: 'Telegram', href: personal.social.telegram },
   { label: 'GitHub', href: personal.social.github },
@@ -124,9 +129,12 @@ onBeforeUnmount(() => clearTimeout(flashTimer))
   display: block;
   font-weight: 700;
   font-stretch: 112.5%;
-  font-size: clamp(20px, 2vw, 26px);
-  overflow-wrap: anywhere;
+  font-size: clamp(18px, 1.7vw, 26px);
   text-decoration: none;
+
+  span {
+    white-space: nowrap;
+  }
 }
 
 .contact__copy-row {
