@@ -7,7 +7,7 @@
         <span aria-hidden="true">←</span> {{ t('project.back') }}
       </RouterLink>
       <div class="detail__meta">
-        <span class="pill">{{ years(project) }}</span>
+        <span v-if="project.year" class="pill">{{ years(project) }}</span>
         <span class="pill">{{ t(`status.${project.status}`) }}</span>
         <RouterLink class="pill detail__cat" :to="{ path: '/projects', query: { category: project.category } }">
           {{ t(`category.${project.category}`) }}

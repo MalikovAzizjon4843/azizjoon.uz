@@ -109,4 +109,12 @@
     <loc>https://azizjoon.uz/projects/azizjoon</loc>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://azizjoon.uz/projects/birthday-bot</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://azizjoon.uz/projects/gpt-bot</loc>
+    <priority>0.6</priority>
+  </url>
 </urlset>

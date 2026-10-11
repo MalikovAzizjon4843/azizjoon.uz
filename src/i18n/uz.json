@@ -80,7 +80,6 @@
         "role": "Middle Full-Stack Developer",
         "org": "Raqamli transformatsiya va autsorsing markazi DM",
         "org_full": "O'zbekiston Respublikasi Raqobatni rivojlantirish va iste'molchilar huquqlarini himoya qilish davlat qo'mitasi huzuridagi Raqamli transformatsiya va autsorsing markazi DM",
-        "org_note": "Raqobat qo'mitasi huzurida",
         "summary": "Qo'mitaning ichki va ommaviy axborot tizimlarini ishlab chiqaman.",
         "bullets": {
           "1": "Fairtech ekosistemasi: komplayans (ko'rsatma ijrosi, insofsiz raqobat, kartel), cabinet.fairtech.uz, my.fairtech.uz",
@@ -93,7 +92,6 @@
         "role": "Java Backend Developer",
         "org": "Texno Dargoh (teda.uz)",
         "org_full": "Texno Dargoh (teda.uz)",
-        "org_note": "",
         "summary": "",
         "bullets": {
           "1": "Java va Spring asosida web ilovalar",

@@ -43,7 +43,7 @@ const raw = [
     category: 'government',
     status: 'internal',
     year: '2023 — now',
-    links: { live: 'https://fairtech.uz' },
+    links: { live: null },
     stack: ['Java', 'Spring Boot', 'JPA / Hibernate', 'MapStruct', 'PostgreSQL', 'Vue.js', 'Vuetify'],
     content: {
       uz: {
@@ -110,7 +110,8 @@ const raw = [
           'Lot raqamini oldindan tekshirish (takror saqlashning oldini olish)',
           "Ichma-ich ma'lumotlar grafini bitta so'rovda saqlash",
           "Apache POI bilan 9 bo'limli Excel eksport",
-          'REST/NDJSON integratsiya'
+          'REST/NDJSON integratsiya',
+          "Ta'sir chora moduli: ma'muriy protokol, ish qo'zg'atish, bir nechta huquqbuzar va jabrlanuvchi, holat bo'yicha filtrlash"
         ]
       },
       ru: {
@@ -124,7 +125,8 @@ const raw = [
           'Предварительная проверка номера лота (защита от повторного сохранения)',
           'Сохранение вложенного графа данных одним запросом',
           'Экспорт в Excel из 9 разделов на Apache POI',
-          'Интеграция REST/NDJSON'
+          'Интеграция REST/NDJSON',
+          'Модуль мер воздействия: административный протокол, возбуждение дела, несколько нарушителей и потерпевших, фильтрация по статусу'
         ]
       },
       en: {
@@ -138,7 +140,8 @@ const raw = [
           'Lot number pre-check to prevent duplicate saves',
           'Saving a nested data graph in a single request',
           '9-section Excel export with Apache POI',
-          'REST/NDJSON integration'
+          'REST/NDJSON integration',
+          'Enforcement measures module: administrative reports, opening cases, multiple offenders and victims, filtering by status'
         ]
       }
     }
@@ -158,7 +161,8 @@ const raw = [
         highlights: [
           'Statistika moduli',
           "15 viloyat bo'yicha murojaatlar statistikasi API'si",
-          'Rahbariyat uchun monitoring dashboardlari'
+          'Rahbariyat uchun monitoring dashboardlari',
+          "Interaktiv O'zbekiston xaritasi: viloyatlar murojaatlar soniga qarab rang oladi"
         ]
       },
       ru: {
@@ -168,7 +172,8 @@ const raw = [
         highlights: [
           'Модуль статистики',
           'API статистики обращений по 15 регионам',
-          'Дашборды мониторинга для руководства'
+          'Дашборды мониторинга для руководства',
+          'Интерактивная карта Узбекистана: цвет региона зависит от числа обращений'
         ]
       },
       en: {
@@ -178,7 +183,8 @@ const raw = [
         highlights: [
           'Statistics module',
           'Appeals statistics API across 15 regions',
-          'Monitoring dashboards for management'
+          'Monitoring dashboards for management',
+          'Interactive map of Uzbekistan: regions are colored by the number of appeals'
         ]
       }
     }
@@ -880,6 +886,63 @@ const raw = [
       uz: { title: 'azizjoon.uz', tagline: 'Shu sayt: Liquid Glass dizayn, 3D logo, 3 til' },
       ru: { title: 'azizjoon.uz', tagline: 'Этот сайт: дизайн Liquid Glass, 3D-логотип, 3 языка' },
       en: { title: 'azizjoon.uz', tagline: 'This site: Liquid Glass design, a 3D logo, 3 languages' }
+    }
+  },
+  {
+    slug: 'birthday-bot',
+    order: 46,
+    category: 'personal',
+    status: 'done',
+    year: '', // not provided yet
+    stack: ['Java', 'Spring Boot', 'PostgreSQL', 'Telegram Bot API', 'Telegram Mini App'],
+    content: {
+      uz: {
+        title: "Telegram tug'ilgan kun boti",
+        tagline: "Guruhlar uchun tug'ilgan kunlarni eslatuvchi va tabriklovchi bot",
+        highlights: [
+          'AI yordamida tabrik matnlari',
+          'Bir foydalanuvchi bir nechta guruhda',
+          'Yosh avtomatik hisoblanadi',
+          "Ko'p tilli",
+          "Mini App ko'rinishidagi admin panel"
+        ]
+      },
+      ru: {
+        title: 'Telegram-бот для дней рождения',
+        tagline: 'Бот, который напоминает о днях рождения в группах и поздравляет',
+        highlights: [
+          'Тексты поздравлений с помощью ИИ',
+          'Один пользователь — в нескольких группах',
+          'Возраст вычисляется автоматически',
+          'Многоязычность',
+          'Админ-панель в виде Mini App'
+        ]
+      },
+      en: {
+        title: 'Telegram birthday bot',
+        tagline: 'A bot that reminds groups about birthdays and sends greetings',
+        highlights: [
+          'AI-written greetings',
+          'One user across several groups',
+          'Age calculated automatically',
+          'Multilingual',
+          'Admin panel as a Mini App'
+        ]
+      }
+    }
+  },
+  {
+    slug: 'gpt-bot',
+    order: 47,
+    category: 'personal',
+    status: 'done',
+    year: '', // not provided yet
+    links: { github: 'https://github.com/MalikovAzizjon4843/gpt-telegram-bot' },
+    stack: ['Python', 'OpenAI API', 'Telegram Bot API'],
+    content: {
+      uz: { title: 'GPT Telegram bot', tagline: 'OpenAI GPT bilan suhbatlashadigan Telegram bot' },
+      ru: { title: 'GPT Telegram-бот', tagline: 'Telegram-бот для общения с OpenAI GPT' },
+      en: { title: 'GPT Telegram bot', tagline: 'A Telegram bot for chatting with OpenAI GPT' }
     }
   }
 ]

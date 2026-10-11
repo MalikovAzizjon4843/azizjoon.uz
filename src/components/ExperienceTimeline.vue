@@ -11,12 +11,10 @@
         </div>
         <div>
           <h3 class="timeline__role">{{ t(`experience.jobs.${job.key}.role`) }}</h3>
-          <div class="timeline__org" :title="t(`experience.jobs.${job.key}.org_full`)">
-            {{ t(`experience.jobs.${job.key}.org`) }}
-          </div>
-          <div v-if="t(`experience.jobs.${job.key}.org_note`)" class="timeline__note">
-            {{ t(`experience.jobs.${job.key}.org_note`) }}
-          </div>
+          <div class="timeline__org">{{ t(`experience.jobs.${job.key}.org`) }}</div>
+          <!-- Full legal name in the card itself (no hover on phones); it already
+               says "under the Competition Committee", so no separate note. -->
+          <p v-if="fullName(job)" class="timeline__note">{{ fullName(job) }}</p>
         </div>
         <div>
           <p v-if="t(`experience.jobs.${job.key}.summary`)" class="timeline__sum">
@@ -38,6 +36,12 @@ import { formatPeriod } from '@/utils/format'
 
 const { t } = useI18n()
 const jobs = portfolioData.experience
+
+// Shown only when it adds something beyond the short name.
+function fullName(job) {
+  const full = t(`experience.jobs.${job.key}.org_full`)
+  return full !== t(`experience.jobs.${job.key}.org`) ? full : ''
+}
 
 function period(job) {
   return formatPeriod(job.startDate, job.endDate, {
@@ -90,9 +94,10 @@ function period(job) {
 }
 
 .timeline__note {
+  margin: 6px 0 0;
   color: var(--muted);
-  margin-top: 2px;
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 1.45;
 }
 
 .timeline__sum {
