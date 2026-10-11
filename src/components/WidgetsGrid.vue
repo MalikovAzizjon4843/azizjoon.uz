@@ -27,7 +27,7 @@
 
       <div class="w glass glass--regular">
         <span class="w__label">{{ t('widgets.proj_label') }}</span>
-        <div class="w__big">{{ highlights.projectsCount }}+</div>
+        <div class="w__big">{{ projects.length }}</div>
         <div class="w__text">{{ t('widgets.proj_text') }}</div>
       </div>
 
@@ -56,6 +56,7 @@
 import { onBeforeUnmount, reactive } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { portfolioData } from '@/data/portfolio'
+import { projects } from '@/data/projects'
 
 const { t } = useI18n()
 const { highlights, personal } = portfolioData

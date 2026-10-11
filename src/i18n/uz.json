@@ -40,42 +40,23 @@
     "online": "Ish vaqti — tez javob beraman",
     "offline": "Ish vaqtidan tashqari — ertalab javob beraman",
     "proj_label": "Loyihalar",
-    "proj_text": "tugallangan loyiha",
+    "proj_text": "loyiha katalogda",
     "reg_label": "Hududlar",
     "reg_text": "hududiy boshqarma tizimlarimni ishlatadi",
     "stack_label": "Asosiy stack"
   },
   "status": {
     "live": "Ishlab turibdi",
+    "internal": "Ichki tizim",
     "done": "Yakunlangan",
-    "internal": "Ichki tizim"
+    "in-progress": "Jarayonda",
+    "prototype": "Prototip"
   },
   "work": {
     "title": "Ishlar",
-    "sub": "Kartalarni suring — 22 dan ortiq loyihadan beshtasi.",
+    "sub": "Kartalarni suring — {total} ta loyihadan {count} tasi.",
     "visit": "Saytni ochish",
-    "items": {
-      "rais": {
-        "name": "RAIS",
-        "desc": "Raqobat agentligi axborot tizimi: statistika moduli, 15 viloyat bo'yicha murojaatlar API'si va monitoring dashboardlari."
-      },
-      "xt": {
-        "name": "XT_XARID",
-        "desc": "Tender tekshiruvi platformasi: lot asosida tekshiruv, intizomiy chora jarayonlari va REST/NDJSON integratsiya."
-      },
-      "quiz": {
-        "name": "quiz.fairtech.uz",
-        "desc": "Respublika bo'ylab davlat inspektorlari bilimini baholash tizimi."
-      },
-      "mig": {
-        "name": "Vue 2 → Vue 3",
-        "desc": "100 dan ortiq komponent {'@'}vue/compat orqali bosqichma-bosqich ko'chirildi — tizim bir kun ham to'xtamadi."
-      },
-      "rtam": {
-        "name": "rtam.uz",
-        "desc": "Davlat muassasasi rasmiy sayti: Spring Boot backend, himoyalangan admin panel va CMS."
-      }
-    }
+    "all": "Barcha loyihalar"
   },
   "experience": {
     "title": "Tajriba",
@@ -168,74 +149,6 @@
   "footer": {
     "text": "© {year} Azizjon Malikov. Toshkentda qurilgan."
   },
-  "projects": {
-    "rais": {
-      "desc": "Raqobat Agentligi Information System — statistika moduli, appeal-stat API (15 viloyat), monitoring dashboardlar, hisobot generatsiya"
-    },
-    "compleans": {
-      "desc": "Compliance va noadil raqobat monitoring tizimi — tekshiruvlar, hisobotlar, entity management"
-    },
-    "xtxarid": {
-      "desc": "Tender tekshiruv va xarid monitoring tizimi — lot asosida tekshiruv, intizomiy jazo, holat/status workflow, fayl yuklash, integratsiya (REST/NDJSON), qo'lda va avtomatik tekshiruv farqlash"
-    },
-    "fairtech_portal": {
-      "desc": "Kompaniya ichki portali — full responsive dizayn, foydalanuvchi boshqaruvi"
-    },
-    "dominant": {
-      "desc": "Monopol sub'ektlar reestri CRUD — role-based permissions, dynamic multi-input, entity relations"
-    },
-    "tasir_chora": {
-      "desc": "Ta'sir chora va intizomiy jazo moduli — ma'muriy protokol, ish qo'zg'atish, huquqbuzarlik aniqlash. Ko'p huquqbuzar va jabrlanuvchi qo'llab-quvvatlash, fayl yuklash, holat bo'yicha filtrlash"
-    },
-    "uz_map": {
-      "desc": "O'zbekiston interaktiv xaritasi — viloyatlar hover va active holatda rang o'zgaradi, murojaat soniga qarab dinamik rang, SVG asosida"
-    },
-    "birthday_bot": {
-      "desc": "Telegram tug'ilgan kun tabriklash boti — guruhlar boshqaruvi, ko'p guruhli foydalanuvchi, yosh avtomatik hisoblash, admin buyruqlar"
-    },
-    "trading_bot": {
-      "desc": "TradingView signal boti — 1m/5m/15m candlestick tahlili, GPT orqali bozor holati baholash, buy/sell tavsiya, Telegram orqali signal"
-    },
-    "gpt_bot": {
-      "desc": "GPT integratsiyali Telegram bot — OpenAI API orqali savollarga javob berish, Heroku ga deploy, Python asosida"
-    },
-    "dnd_builder": {
-      "desc": "Nested drag & drop konstruktor — elementlarni ichma-ich joylashtirish, undo/redo funksiyasi, Pinia state boshqaruv, test vazifa sifatida bajarilgan"
-    },
-    "royce": {
-      "desc": "Royce Logistics — QuickManage platformasi kloni. Logistika kompaniyasi uchun yuk tashish, buyurtma boshqaruvi, kuzatuv va hisobotlar tizimi. Nuxt 3 + Tailwind CSS bilan zamonaviy frontend"
-    },
-    "adizone": {
-      "desc": "Adizone CRM — mijozlar bilan munosabatlar boshqaruvi tizimi. Buyurtmalar, mijozlar bazasi, statistika va hisobotlar. Vue 3 + Pinia bilan SPA arxitektura"
-    },
-    "media_bot": {
-      "desc": "Multi-platform media yuklab olish boti — Telegram orqali YouTube, Instagram, TikTok va boshqa platformalardan video/audio yuklab olish. Link yuborasiz — bot faylni qaytaradi"
-    },
-    "pharm": {
-      "desc": "Dorixona monitoring moduli — farmatsevtika tekshiruv tizimi. Tab-asosida workflow (ijro jarayonida, tasdiqlashda, yakunlangan), natija kiritish, tasdiqlash/rad etish, fayl yuklash, optimized API bilan tezlashtirilgan"
-    },
-    "teda_crm": {
-      "desc": "Texno Dargoh CRM tizimi — mijozlar bazasi, buyurtmalar boshqaruvi, operatsion avtomatlashtirish"
-    },
-    "teda_web": {
-      "desc": "teda.uz korporativ veb sayt va Telegram bot — kompaniya xizmatlari, tadbirlar, aloqa"
-    },
-    "ibrat": {
-      "desc": "Ibrat Club — tadbirlar tashkil etish platformasi, ro'yxatdan o'tish, Telegram bot integratsiya"
-    },
-    "quiz": {
-      "desc": "quiz.fairtech.uz — davlat inspektorlari uchun onlayn test va baholash tizimi, respublika bo'ylab"
-    },
-    "cabinet": {
-      "desc": "cabinet.fairtech.uz — ichki foydalanish uchun modulli kabinet tizimi, vazifalar boshqaruvi"
-    },
-    "fairtech_main": {
-      "desc": "fairtech.uz — asosiy workflow avtomatlashtirish platformasi, ichki foydalanish"
-    },
-    "portfolio": {
-      "desc": "Shaxsiy portfolio sayt — Liquid Glass dizayn, 3 til, dark/light tema, 3D logotip"
-    }
-  },
   "education": {
     "title": "Ta'lim",
     "tuit": {
@@ -267,5 +180,12 @@
     "onemillion": {
       "name": "Frontend va Backend Course sertifikati"
     }
+  },
+  "category": {
+    "all": "Barchasi",
+    "government": "Davlat tizimlari",
+    "client": "Mijozlar",
+    "company": "Texno Dargoh",
+    "personal": "Shaxsiy"
   }
 }

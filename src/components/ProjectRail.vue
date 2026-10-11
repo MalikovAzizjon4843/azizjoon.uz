@@ -3,7 +3,7 @@
     <div class="section-head">
       <div>
         <h2 id="work-title" class="section-title">{{ t('work.title') }}</h2>
-        <p class="section-sub">{{ t('work.sub') }}</p>
+        <p class="section-sub">{{ t('work.sub', { count: featured.length, total: projects.length }) }}</p>
       </div>
       <div class="rail-nav">
         <button
@@ -41,23 +41,15 @@
       @keydown.right.prevent="step(1)"
     >
       <ul class="rail__list">
-        <li v-for="p in projects" :key="p.key" class="card glass glass--regular">
-          <div class="card__top">
-            <span>{{ p.year }}</span>
-            <span class="pill">{{ t(`status.${p.status}`) }}</span>
-          </div>
-          <h3 class="card__title">
-            <RouterLink class="card__link" :to="`/projects/${p.slug}`">{{ t(`work.items.${p.key}.name`) }}</RouterLink>
-          </h3>
-          <p class="card__desc">{{ t(`work.items.${p.key}.desc`) }}</p>
-          <div class="card__foot">
-            <ul class="card__tags">
-              <li v-for="tag in p.tags" :key="tag" class="tag">{{ tag }}</li>
-            </ul>
-            <a v-if="p.url" class="card__visit" :href="p.url" target="_blank" rel="noopener">
-              {{ t('work.visit') }}<span class="sr-only"> {{ t('a11y.new_tab') }}</span>
-            </a>
-          </div>
+        <li v-for="p in featured" :key="p.slug" class="rail__item">
+          <ProjectCard :project="p" />
+        </li>
+        <li class="rail__item">
+          <RouterLink to="/projects" class="all glass glass--regular press">
+            <span class="all__count">{{ projects.length }}</span>
+            <span class="all__label">{{ t('work.all') }}</span>
+            <span class="all__arrow" aria-hidden="true">→</span>
+          </RouterLink>
         </li>
       </ul>
     </div>
@@ -67,22 +59,22 @@
 <script setup>
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { portfolioData } from '@/data/portfolio'
+import { featuredProjects as featured, projects } from '@/data/projects'
 import { prefersReducedMotion } from '@/composables/useGlass'
+import ProjectCard from './ProjectCard.vue'
 
 const GAP = 18
 
 const { t } = useI18n()
-const projects = portfolioData.featuredProjects
 const rail = ref(null)
 const atStart = ref(true)
 const atEnd = ref(false)
 
 function step(dir) {
   const el = rail.value
-  const card = el.querySelector('.card')
+  const item = el.querySelector('.rail__item')
   el.scrollBy({
-    left: dir * ((card ? card.offsetWidth : 380) + GAP),
+    left: dir * ((item ? item.offsetWidth : 380) + GAP),
     behavior: prefersReducedMotion() ? 'auto' : 'smooth'
   })
 }
@@ -153,85 +145,48 @@ onBeforeUnmount(() => resizeObserver?.disconnect())
   gap: 18px;
 }
 
-.card {
+.rail__item {
   flex: 0 0 min(400px, 84%);
   scroll-snap-align: start;
+}
+
+.all {
+  height: 100%;
+  min-height: 330px;
   border-radius: 30px;
   padding: 30px;
-  min-height: 330px;
   display: flex;
   flex-direction: column;
-
-  &:has(.card__link:focus-visible) {
-    outline: 2px solid var(--accent-deep);
-    outline-offset: 3px;
-  }
+  text-decoration: none;
 }
 
-.card__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-  color: var(--muted);
-}
-
-.card__title {
-  margin: 22px 0 0;
+.all__count {
   font-weight: 800;
   font-stretch: 125%;
-  font-size: 32px;
-  letter-spacing: -.03em;
-  line-height: 1.05;
-}
-
-// The title link covers the whole card; the "visit" link sits above it.
-.card__link {
-  text-decoration: none;
-
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    z-index: 1;
-  }
-
-  &:focus-visible {
-    outline: none;
-  }
-}
-
-.card__desc {
-  margin: 12px 0 0;
-  color: var(--muted);
-}
-
-.card__foot {
-  margin-top: auto;
-  padding-top: 22px;
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-
-.card__tags {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.card__visit {
-  position: relative;
-  z-index: 2;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 72px;
+  line-height: 1;
+  letter-spacing: -.04em;
   color: var(--accent-text);
-  text-underline-offset: 4px;
+}
+
+.all__label {
+  margin-top: 14px;
+  font-weight: 800;
+  font-stretch: 125%;
+  font-size: 30px;
+  letter-spacing: -.03em;
+  line-height: 1.08;
+}
+
+.all__arrow {
+  margin-top: auto;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  background: var(--g-tint);
+  color: #fff;
 }
 </style>

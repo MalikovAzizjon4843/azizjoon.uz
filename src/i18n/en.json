@@ -40,42 +40,23 @@
     "online": "Working hours — quick reply",
     "offline": "Off hours — I'll reply in the morning",
     "proj_label": "Projects",
-    "proj_text": "projects shipped",
+    "proj_text": "projects in the catalog",
     "reg_label": "Regions",
     "reg_text": "regional branches use my systems",
     "stack_label": "Core stack"
   },
   "status": {
     "live": "Live",
+    "internal": "Internal",
     "done": "Done",
-    "internal": "Internal"
+    "in-progress": "In progress",
+    "prototype": "Prototype"
   },
   "work": {
     "title": "Work",
-    "sub": "Swipe the cards — five of 22+ projects.",
+    "sub": "Swipe the cards — {count} of {total} projects.",
     "visit": "Open the site",
-    "items": {
-      "rais": {
-        "name": "RAIS",
-        "desc": "Competition agency information system: a statistics module, an appeals API covering 15 regions, and monitoring dashboards."
-      },
-      "xt": {
-        "name": "XT_XARID",
-        "desc": "Tender investigation platform: lot-based inspections, disciplinary workflows and REST/NDJSON integration."
-      },
-      "quiz": {
-        "name": "quiz.fairtech.uz",
-        "desc": "A nationwide system for assessing government inspectors."
-      },
-      "mig": {
-        "name": "Vue 2 → Vue 3",
-        "desc": "Over 100 components moved step by step through {'@'}vue/compat, without taking the system down for a day."
-      },
-      "rtam": {
-        "name": "rtam.uz",
-        "desc": "Official site of a state institution: Spring Boot backend, a hardened admin panel and a CMS."
-      }
-    }
+    "all": "All projects"
   },
   "experience": {
     "title": "Experience",
@@ -168,74 +149,6 @@
   "footer": {
     "text": "© {year} Azizjon Malikov. Built in Tashkent."
   },
-  "projects": {
-    "rais": {
-      "desc": "Competition Agency Information System — statistics module, appeal-stat API (15 regions), monitoring dashboards, report generation"
-    },
-    "compleans": {
-      "desc": "Compliance and unfair competition monitoring system — audits, reports, entity management"
-    },
-    "xtxarid": {
-      "desc": "Tender investigation and procurement monitoring system — lot-based inspections, disciplinary actions, status workflow, file uploads, integration (REST/NDJSON), distinguishing manual and automatic checks"
-    },
-    "fairtech_portal": {
-      "desc": "Company internal portal — fully responsive design, user management"
-    },
-    "dominant": {
-      "desc": "Dominant subjects registry CRUD — role-based permissions, dynamic multi-input, entity relations"
-    },
-    "tasir_chora": {
-      "desc": "Disciplinary actions module — administrative protocol, case initiation, violation detection. Support for multiple violators and victims, file uploads, status-based filtering"
-    },
-    "uz_map": {
-      "desc": "Interactive Uzbekistan map — dynamic region color change on hover and active state, color intensity based on number of appeals, SVG-based"
-    },
-    "birthday_bot": {
-      "desc": "Telegram birthday greeting bot — group management, multi-group user support, automatic age calculation, admin commands"
-    },
-    "trading_bot": {
-      "desc": "TradingView signal bot — 1m/5m/15m candlestick analysis, GPT-powered market assessment, buy/sell recommendations via Telegram"
-    },
-    "gpt_bot": {
-      "desc": "GPT-integrated Telegram bot — answers questions via OpenAI API, deployed on Heroku, Python-based"
-    },
-    "dnd_builder": {
-      "desc": "Nested drag & drop builder — placing elements inside elements, undo/redo functionality, Pinia state management, completed as a test task"
-    },
-    "royce": {
-      "desc": "Royce Logistics — QuickManage platform clone. Freight management, order tracking, monitoring and reporting system for a logistics company. Modern frontend with Nuxt 3 + Tailwind CSS"
-    },
-    "adizone": {
-      "desc": "Adizone CRM — customer relationship management system. Orders, client database, statistics and reports. SPA architecture with Vue 3 + Pinia"
-    },
-    "media_bot": {
-      "desc": "Multi-platform media download bot — download videos/audio from YouTube, Instagram, TikTok via Telegram. Send a link — bot returns the file"
-    },
-    "pharm": {
-      "desc": "Pharmacy monitoring module — pharmaceutical inspection system. Tab-based workflow (in progress, pending approval, completed), result submission, approve/reject, file uploads, optimized API for faster performance"
-    },
-    "teda_crm": {
-      "desc": "Texno Dargoh CRM system — client database, order management, operations automation"
-    },
-    "teda_web": {
-      "desc": "teda.uz corporate website and Telegram bot — company services, events, communication"
-    },
-    "ibrat": {
-      "desc": "Ibrat Club — event organization platform, registration, Telegram bot integration"
-    },
-    "quiz": {
-      "desc": "quiz.fairtech.uz — online testing system for government inspectors nationwide"
-    },
-    "cabinet": {
-      "desc": "cabinet.fairtech.uz — modular cabinet system for internal use, task management"
-    },
-    "fairtech_main": {
-      "desc": "fairtech.uz — core workflow automation platform for internal use"
-    },
-    "portfolio": {
-      "desc": "Personal portfolio — Liquid Glass design, 3 languages, dark/light theme, 3D logo"
-    }
-  },
   "education": {
     "title": "Education",
     "tuit": {
@@ -267,5 +180,12 @@
     "onemillion": {
       "name": "Frontend & Backend Course Certificate"
     }
+  },
+  "category": {
+    "all": "All",
+    "government": "Government",
+    "client": "Clients",
+    "company": "Texno Dargoh",
+    "personal": "Personal"
   }
 }
