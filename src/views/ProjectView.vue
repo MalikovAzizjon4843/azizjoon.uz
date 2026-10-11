@@ -77,7 +77,7 @@
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
-import { findProject, projects } from '@/data/projects'
+import { SHOT_SIZE, findProject, projects } from '@/data/projects'
 import { useProjectText } from '@/composables/useProjects'
 import { usePageMeta } from '@/composables/usePageMeta'
 import NotFound from '@/components/NotFound.vue'
@@ -116,7 +116,8 @@ usePageMeta(() => project.value
       title: `${text(project.value, 'title')} — Azizjon Malikov`,
       description: text(project.value, 'tagline'),
       path: `/projects/${project.value.slug}`,
-      image: project.value.cover
+      image: project.value.cover,
+      imageSize: SHOT_SIZE
     }
   : { title: `${t('not_found.title')} — Azizjon Malikov`, description: t('not_found.text'), path: `/projects/${props.slug}` })
 </script>
