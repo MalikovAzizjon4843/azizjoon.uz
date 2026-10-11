@@ -36,8 +36,6 @@ export const useAppStore = defineStore('app', () => {
     write('lang', l)
     i18n.global.locale.value = l
     document.documentElement.setAttribute('lang', l)
-    document.title = i18n.global.t('meta.title')
-    document.querySelector('meta[name="description"]')?.setAttribute('content', i18n.global.t('meta.description'))
   }
 
   function init() {

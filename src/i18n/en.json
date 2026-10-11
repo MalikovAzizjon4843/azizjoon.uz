@@ -142,9 +142,29 @@
     }
   },
   "project": {
-    "soon_title": "Case study coming soon",
-    "soon_text": "I'm writing up the full story of this project.",
-    "back": "Back to home"
+    "back": "All projects",
+    "role": "My role",
+    "live": "Open the site",
+    "github": "GitHub",
+    "stack": "Stack",
+    "problem": "Problem",
+    "solution": "Solution",
+    "result": "Result",
+    "highlights": "Key work",
+    "gallery": "Screenshots",
+    "shots_soon": "Screenshots coming soon",
+    "shots_soon_text": "Screenshots with personal data blurred are on their way.",
+    "cover_alt": "{title} — cover",
+    "shot_alt": "{title} — screenshot {n}",
+    "shot_open": "Enlarge screenshot {n}",
+    "lightbox": "Screenshot viewer",
+    "close": "Close",
+    "prev_shot": "Previous screenshot",
+    "next_shot": "Next screenshot",
+    "counter": "{n} / {total}",
+    "prev": "Previous project",
+    "next": "Next project",
+    "nav": "Project navigation"
   },
   "footer": {
     "text": "© {year} Azizjon Malikov. Built in Tashkent."
@@ -187,5 +207,18 @@
     "client": "Clients",
     "company": "Texno Dargoh",
     "personal": "Personal"
+  },
+  "projects_page": {
+    "title": "Projects",
+    "sub": "Government systems, client products and personal experiments — {total} projects in all.",
+    "filter": "Filter by category",
+    "count": "{n} projects",
+    "meta_description": "Projects by Azizjon Malikov: government information systems, CRM and POS systems for clients, and personal work."
+  },
+  "not_found": {
+    "title": "Page not found",
+    "text": "There's nothing at this address — the link may be out of date.",
+    "home": "Back to home",
+    "projects": "Browse projects"
   }
 }

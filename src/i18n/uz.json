@@ -142,9 +142,29 @@
     }
   },
   "project": {
-    "soon_title": "Batafsil sahifa tez orada",
-    "soon_text": "Bu loyiha haqida to'liq ma'lumot ustida ishlayapman.",
-    "back": "Bosh sahifaga qaytish"
+    "back": "Barcha loyihalar",
+    "role": "Mening rolim",
+    "live": "Saytni ochish",
+    "github": "GitHub",
+    "stack": "Texnologiyalar",
+    "problem": "Muammo",
+    "solution": "Yechim",
+    "result": "Natija",
+    "highlights": "Asosiy ishlar",
+    "gallery": "Skrinshotlar",
+    "shots_soon": "Skrinshotlar tez orada",
+    "shots_soon_text": "Shaxsiy ma'lumotlari xiralashtirilgan skrinshotlar tayyorlanmoqda.",
+    "cover_alt": "{title} — muqova",
+    "shot_alt": "{title} — skrinshot {n}",
+    "shot_open": "{n}-skrinshotni kattalashtirish",
+    "lightbox": "Skrinshotlarni ko'rish",
+    "close": "Yopish",
+    "prev_shot": "Oldingi skrinshot",
+    "next_shot": "Keyingi skrinshot",
+    "counter": "{n} / {total}",
+    "prev": "Oldingi loyiha",
+    "next": "Keyingi loyiha",
+    "nav": "Loyihalar orasida harakat"
   },
   "footer": {
     "text": "© {year} Azizjon Malikov. Toshkentda qurilgan."
@@ -187,5 +207,18 @@
     "client": "Mijozlar",
     "company": "Texno Dargoh",
     "personal": "Shaxsiy"
+  },
+  "projects_page": {
+    "title": "Loyihalar",
+    "sub": "Davlat tizimlari, mijozlar uchun mahsulotlar va shaxsiy tajribalar — jami {total} ta loyiha.",
+    "filter": "Kategoriya bo'yicha filtr",
+    "count": "{n} ta loyiha",
+    "meta_description": "Azizjon Malikov loyihalari: davlat axborot tizimlari, mijozlar uchun CRM va POS tizimlari, shaxsiy loyihalar."
+  },
+  "not_found": {
+    "title": "Sahifa topilmadi",
+    "text": "Bu manzilda hech narsa yo'q — balki havola eskirgandir.",
+    "home": "Bosh sahifaga",
+    "projects": "Loyihalarni ko'rish"
   }
 }
