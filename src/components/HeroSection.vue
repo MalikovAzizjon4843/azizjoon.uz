@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap hero">
+  <div id="hero" class="wrap hero">
     <PortraitBadge />
     <span v-if="personal.available" class="chip glass">
       <i class="chip__dot" aria-hidden="true" />

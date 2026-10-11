@@ -1,5 +1,12 @@
 <template>
-  <nav ref="dock" class="dock glass" :class="{ 'glass--refract': refract }" :aria-label="t('a11y.sections')" @keydown="onKeydown">
+  <nav
+    ref="dock"
+    class="dock glass"
+    :class="{ 'glass--refract': refract, 'dock--hidden': hidden }"
+    :aria-label="t('a11y.sections')"
+    :inert="hidden"
+    @keydown="onKeydown"
+  >
     <span class="dock__thumb" :style="thumbStyle" aria-hidden="true" />
     <RouterLink
       v-for="id in SECTIONS"
@@ -31,6 +38,8 @@ const refract = useRefract()
 const dock = ref(null)
 const active = ref(SECTIONS[0])
 const thumbStyle = ref({})
+// Hidden while the hero is on screen; floats up once the visitor scrolls past it.
+const hidden = ref(true)
 
 // Slide the tinted thumb under the active link.
 function moveThumb() {
@@ -53,7 +62,20 @@ function onKeydown(e) {
 }
 
 let observer
+let heroObserver
 onMounted(() => {
+  const hero = document.getElementById('hero')
+  if (hero) {
+    // The top margin skips the strip under the sticky top bar.
+    heroObserver = new IntersectionObserver(([entry]) => {
+      hidden.value = entry.isIntersecting
+      if (!hidden.value) nextTick(moveThumb)
+    }, { rootMargin: '-80px 0px 0px 0px' })
+    heroObserver.observe(hero)
+  } else {
+    hidden.value = false
+  }
+
   observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) active.value = entry.target.id
@@ -74,6 +96,7 @@ watch(locale, () => nextTick(moveThumb))
 
 onBeforeUnmount(() => {
   observer?.disconnect()
+  heroObserver?.disconnect()
   window.removeEventListener('resize', moveThumb)
 })
 </script>
@@ -89,6 +112,17 @@ onBeforeUnmount(() => {
   grid-template-columns: repeat(4, auto);
   padding: 6px;
   border-radius: 999px;
+  transition:
+    transform .55s var(--spring),
+    opacity .35s ease,
+    background-color .5s,
+    box-shadow .5s;
+
+  &--hidden {
+    transform: translate(-50%, calc(100% + 40px));
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 .dock__thumb {
@@ -128,6 +162,7 @@ onBeforeUnmount(() => {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .dock,
   .dock__thumb {
     transition: none;
   }
