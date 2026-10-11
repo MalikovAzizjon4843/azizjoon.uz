@@ -35,7 +35,7 @@
     "exp_label": "Experience",
     "exp_text": "years, since 2022",
     "now_label": "Now",
-    "now_org": "State Committee for Competition Development",
+    "now_org": "Under the Competition Committee",
     "time_label": "Time in Tashkent",
     "online": "Working hours — quick reply",
     "offline": "Off hours — I'll reply in the morning",
@@ -80,39 +80,6 @@
   "experience": {
     "title": "Experience",
     "present": "now",
-    "fairtech": {
-      "role": "Full-Stack Developer",
-      "org": "State Committee of the Republic of Uzbekistan for Competition Development and Consumer Rights Protection",
-      "description": "Fairtech — developing a unified system for all internal employees across the Committee's central office and 14 regional branches (Tashkent city, Tashkent region, Republic of Karakalpakstan and other regions)",
-      "bullet1": "RAIS — Competition Agency Information System: statistics module, appeal-stat API for 15 regions, monitoring dashboards",
-      "bullet2": "Compleans — compliance and unfair competition monitoring system, audits and reports",
-      "bullet3": "XT_XARID — cross-system integration platform, data synchronization",
-      "bullet4": "Migration from Vue 2 to Vue 3 — {'@'}vue/compat, 100+ components, i18n v9, Composition API",
-      "bullet5": "Dominant subjects registry CRUD, role-based permissions (ability.can())",
-      "bullet6": "PDF generation system (html2pdf.js) — government document formats",
-      "bullet7": "quiz.fairtech.uz — online quiz system for government inspectors nationwide",
-      "bullet8": "cabinet.fairtech.uz — modular cabinet system for internal use",
-      "org_short": "Fairtech, State Committee for Competition Development",
-      "summary": "I work on RAIS, Compleans, XT_XARID and quiz.fairtech.uz, and led the move to Vue 3."
-    },
-    "texno": {
-      "role": "Java Backend Developer",
-      "org": "Texno Dargoh (teda.uz)",
-      "description": "Web application development with Java and Spring",
-      "bullet1": "Developed web applications using Java and Spring framework",
-      "bullet2": "Created and maintained CRM systems to improve customer management",
-      "bullet3": "Engineered automatic operation system for magazine publishing",
-      "bullet4": "Designed user-friendly interfaces for websites and Telegram bots",
-      "bullet5": "Collaborated with cross-functional teams to deliver quality solutions",
-      "org_short": "Texno Dargoh (teda.uz)",
-      "summary": "CRM systems, publishing workflow automation and Telegram bots."
-    },
-    "rtam": {
-      "role": "Backend Developer",
-      "org": "Digital Transformation & Outsourcing Center",
-      "org_short": "Digital Transformation & Outsourcing Center",
-      "summary": "Built the backend, admin panel and CMS for rtam.uz from scratch."
-    },
     "months": {
       "1": "Jan",
       "2": "Feb",
@@ -126,6 +93,34 @@
       "10": "Oct",
       "11": "Nov",
       "12": "Dec"
+    },
+    "jobs": {
+      "center": {
+        "role": "Middle Full-Stack Developer",
+        "org": "Digital Transformation and Outsourcing Center",
+        "org_full": "Digital Transformation and Outsourcing Center (state institution) under the State Committee of the Republic of Uzbekistan for Competition Development and Consumer Rights Protection",
+        "org_note": "Under the Competition Committee",
+        "summary": "I build the committee's internal and public information systems.",
+        "bullets": {
+          "1": "The Fairtech ecosystem: compliance (order enforcement, unfair competition, cartels), cabinet.fairtech.uz, my.fairtech.uz",
+          "2": "RAIS, XT_XARID, the dominant entities registry, quiz.fairtech.uz, the Jurist module",
+          "3": "Led the Vue 2 → Vue 3 migration (100+ components)",
+          "4": "The center's official site rtam.uz and its admin panel"
+        }
+      },
+      "texno": {
+        "role": "Java Backend Developer",
+        "org": "Texno Dargoh (teda.uz)",
+        "org_full": "Texno Dargoh (teda.uz)",
+        "org_note": "",
+        "summary": "",
+        "bullets": {
+          "1": "Web applications on Java and Spring",
+          "2": "The company CRM (customers and orders)",
+          "3": "A system automating the journal publishing workflow",
+          "4": "The corporate site teda.uz, the events platform ibrat.teda.uz and Telegram bots"
+        }
+      }
     }
   },
   "contact": {

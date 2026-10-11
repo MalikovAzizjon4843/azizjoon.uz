@@ -25,8 +25,8 @@ export const portfolioData = {
     careerStart: 2022,
     projectsCount: 22,
     regions: 14,
-    currentCompany: 'Fairtech',
-    currentProjects: ['RAIS', 'Compleans', 'XT_XARID', 'quiz.fairtech.uz'],
+    currentCompany: 'RTAM DM',
+    currentProjects: ['Fairtech', 'RAIS', 'XT_XARID', 'rtam.uz'],
     coreStack: ['Vue 3', 'Nuxt 3', 'TypeScript', 'Pinia', 'Java', 'Spring Boot', 'PostgreSQL', 'Docker']
   },
 
@@ -59,64 +59,25 @@ export const portfolioData = {
 
   highlightedSkills: ['Vue.js', 'Vue 3', 'Spring Boot', 'PostgreSQL', 'Java'],
 
+  // Newest first. Texts live in i18n under experience.jobs.<key>.
   experience: [
     {
-      key: 'fairtech',
-      role: 'experience.fairtech.role',
-      company: 'Fairtech',
-      organization: 'experience.fairtech.org',
-      orgShort: 'experience.fairtech.org_short',
-      summary: 'experience.fairtech.summary',
+      key: 'center',
+      company: 'RTAM DM',
       location: 'Toshkent',
       startDate: '2023.07',
       endDate: null,
-      isCurrent: true,
-      description: 'experience.fairtech.description',
-      bullets: [
-        'experience.fairtech.bullet1',
-        'experience.fairtech.bullet2',
-        'experience.fairtech.bullet3',
-        'experience.fairtech.bullet4',
-        'experience.fairtech.bullet5',
-        'experience.fairtech.bullet6',
-        'experience.fairtech.bullet7',
-        'experience.fairtech.bullet8'
-      ],
-      tech: ['Vue.js', 'Spring Boot', 'PostgreSQL', 'JPA/Hibernate', 'REST API']
-    },
-    {
-      key: 'rtam',
-      role: 'experience.rtam.role',
-      company: 'RTAM',
-      organization: 'experience.rtam.org',
-      orgShort: 'experience.rtam.org_short',
-      summary: 'experience.rtam.summary',
-      location: 'Toshkent',
-      startDate: '2025.07',
-      endDate: '2025.09',
-      isCurrent: false,
-      tech: ['Spring Boot', 'Spring Security', 'CMS']
+      bullets: 4,
+      tech: ['Java', 'Spring Boot', 'PostgreSQL', 'Vue.js', 'Vue 3', 'Nuxt']
     },
     {
       key: 'texno',
-      role: 'experience.texno.role',
       company: 'Texno Dargoh',
-      organization: 'experience.texno.org',
-      orgShort: 'experience.texno.org_short',
-      summary: 'experience.texno.summary',
       location: 'Toshkent',
       startDate: '2022.04',
       endDate: '2023.05',
-      isCurrent: false,
-      description: 'experience.texno.description',
-      bullets: [
-        'experience.texno.bullet1',
-        'experience.texno.bullet2',
-        'experience.texno.bullet3',
-        'experience.texno.bullet4',
-        'experience.texno.bullet5'
-      ],
-      tech: ['Java', 'Spring', 'CRM', 'Telegram Bot API', 'Thymeleaf']
+      bullets: 4,
+      tech: ['Java', 'Spring', 'Thymeleaf', 'Telegram Bot API']
     }
   ],
 

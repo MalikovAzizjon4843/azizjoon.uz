@@ -35,7 +35,7 @@
     "exp_label": "Tajriba",
     "exp_text": "2022-yildan beri, yil",
     "now_label": "Hozir",
-    "now_org": "Raqobatni rivojlantirish davlat qo'mitasi",
+    "now_org": "Raqobat qo'mitasi huzurida",
     "time_label": "Toshkent vaqti",
     "online": "Ish vaqti — tez javob beraman",
     "offline": "Ish vaqtidan tashqari — ertalab javob beraman",
@@ -80,39 +80,6 @@
   "experience": {
     "title": "Tajriba",
     "present": "hozir",
-    "fairtech": {
-      "role": "Full-Stack Developer",
-      "org": "O'zbekiston Respublikasi Raqobatni rivojlantirish va iste'molchilar huquqlarini himoya qilish davlat qo'mitasi",
-      "description": "Fairtech — qo'mitaning Markaziy apparati va 14 ta hududiy boshqarmasi (Toshkent shahri, Toshkent viloyati, Qoraqalpog'iston Respublikasi va boshqa viloyatlar) barcha ichki xodimlari uchun yagona tizim ishlab chiqish",
-      "bullet1": "RAIS — Raqobat Agentligi Information System: statistika moduli, 15 viloyat uchun appeal-stat API, monitoring dashboardlar",
-      "bullet2": "Compleans — compliance va noadil raqobat monitoring tizimi, tekshiruvlar va hisobotlar",
-      "bullet3": "XT_XARID — tizimlararo integratsiya platformasi, sinxronizatsiya",
-      "bullet4": "Vue 2 dan Vue 3 ga migratsiya — {'@'}vue/compat, 100+ komponent, i18n v9, Composition API",
-      "bullet5": "Dominant subjects registry CRUD, role-based permissions (ability.can())",
-      "bullet6": "PDF generation tizimi (html2pdf.js) — davlat hujjat formatlari",
-      "bullet7": "quiz.fairtech.uz — davlat inspektorlarini baholash uchun onlayn test tizimi",
-      "bullet8": "cabinet.fairtech.uz — ichki foydalanish uchun modulli kabinet tizimi",
-      "org_short": "Fairtech, Raqobatni rivojlantirish davlat qo'mitasi",
-      "summary": "RAIS, Compleans, XT_XARID va quiz.fairtech.uz ustida ishlayman; Vue 3 ga o'tishga rahbarlik qildim."
-    },
-    "texno": {
-      "role": "Java Backend Developer",
-      "org": "Texno Dargoh (teda.uz)",
-      "description": "Java va Spring framework yordamida web ilovalar ishlab chiqish",
-      "bullet1": "Java va Spring framework yordamida web ilovalar ishlab chiqish",
-      "bullet2": "Mijozlar boshqaruvini yaxshilash uchun CRM tizimlar yaratish va qo'llab-quvvatlash",
-      "bullet3": "Jurnal nashr qilish uchun avtomatik operatsion tizim ishlab chiqish",
-      "bullet4": "Veb saytlar va Telegram botlar uchun foydalanuvchilarga qulay interfeys dizayn qilish",
-      "bullet5": "Yuqori sifatli dasturiy yechimlar yetkazish uchun jamoalar bilan hamkorlik",
-      "org_short": "Texno Dargoh (teda.uz)",
-      "summary": "CRM tizimlari, nashriyot jarayonlarini avtomatlashtirish va Telegram botlar."
-    },
-    "rtam": {
-      "role": "Backend Developer",
-      "org": "Raqamli transformatsiya va autsorsing markazi",
-      "org_short": "Raqamli transformatsiya va autsorsing markazi",
-      "summary": "rtam.uz uchun backend, admin panel va CMS'ni noldan qurdim."
-    },
     "months": {
       "1": "yanvar",
       "2": "fevral",
@@ -126,6 +93,34 @@
       "10": "oktyabr",
       "11": "noyabr",
       "12": "dekabr"
+    },
+    "jobs": {
+      "center": {
+        "role": "Middle Full-Stack Developer",
+        "org": "Raqamli transformatsiya va autsorsing markazi DM",
+        "org_full": "O'zbekiston Respublikasi Raqobatni rivojlantirish va iste'molchilar huquqlarini himoya qilish davlat qo'mitasi huzuridagi Raqamli transformatsiya va autsorsing markazi DM",
+        "org_note": "Raqobat qo'mitasi huzurida",
+        "summary": "Qo'mitaning ichki va ommaviy axborot tizimlarini ishlab chiqaman.",
+        "bullets": {
+          "1": "Fairtech ekosistemasi: komplayans (ko'rsatma ijrosi, insofsiz raqobat, kartel), cabinet.fairtech.uz, my.fairtech.uz",
+          "2": "RAIS, XT_XARID, Dominant sub'ektlar reestri, quiz.fairtech.uz, Jurist moduli",
+          "3": "Vue 2 → Vue 3 migratsiyasiga rahbarlik (100+ komponent)",
+          "4": "Markazning rasmiy sayti rtam.uz va admin paneli"
+        }
+      },
+      "texno": {
+        "role": "Java Backend Developer",
+        "org": "Texno Dargoh (teda.uz)",
+        "org_full": "Texno Dargoh (teda.uz)",
+        "org_note": "",
+        "summary": "",
+        "bullets": {
+          "1": "Java va Spring asosida web ilovalar",
+          "2": "Kompaniya CRM tizimi (mijozlar va buyurtmalar boshqaruvi)",
+          "3": "Jurnal nashri jarayonlarini avtomatlashtirish tizimi",
+          "4": "Korporativ sayt teda.uz, tadbirlar platformasi ibrat.teda.uz va Telegram botlar"
+        }
+      }
     }
   },
   "contact": {
