@@ -48,6 +48,11 @@ const EXTRUDE = { depth: 0.26, bevelEnabled: true, bevelThickness: 0.05, bevelSi
 const SPLIT_NORMAL = new Vector3(0.9398, -0.3417, 0)
 // three r155+ uses physical light units; scale the design's legacy intensities.
 const LIGHT = Math.PI
+// Resting yaw, idle sway and the yaw limit outside of dragging (radians).
+const REST_Y = 0.3
+const IDLE_AMPLITUDE = 0.3
+const Y_LIMIT = 0.6
+const TWO_PI = Math.PI * 2
 
 const { t } = useI18n()
 const store = useAppStore()
@@ -122,10 +127,14 @@ function frame(now) {
   const m = motion
   m.spin += m.vel
   m.vel *= 0.92
-  if (!m.dragging) m.spin *= 0.985
 
-  const idleY = reduce ? 0.3 : 0.3 + Math.sin(elapsed * 0.6) * 0.5
-  gem.rotation.y += (idleY + m.spin + m.tiltY - gem.rotation.y) * 0.07
+  // Free spin while dragging; otherwise keep the gem facing the viewer so it
+  // never turns edge-on into a thin line.
+  const idleY = REST_Y + (reduce ? 0 : Math.sin(elapsed * 0.6) * IDLE_AMPLITUDE)
+  const targetY = m.dragging
+    ? idleY + m.spin + m.tiltY
+    : Math.max(-Y_LIMIT, Math.min(Y_LIMIT, idleY + m.tiltY))
+  gem.rotation.y += (targetY - gem.rotation.y) * 0.07
   gem.rotation.x += ((reduce ? 0 : Math.sin(elapsed * 0.4) * 0.1) + m.tiltX - gem.rotation.x) * 0.07
 
   m.split += ((m.hover || m.dragging ? 1 : 0) - m.split) * (reduce ? 1 : 0.08)
@@ -170,7 +179,12 @@ function onPointerDown(e) {
 }
 
 function endDrag() {
+  if (!motion.dragging) return
   motion.dragging = false
+  motion.spin = 0
+  motion.vel = 0
+  // Drop whole turns so the gem eases back to the clamped range the short way.
+  if (gem) gem.rotation.y -= TWO_PI * Math.round(gem.rotation.y / TWO_PI)
 }
 
 function onVisibilityChange() {
