@@ -638,6 +638,49 @@ const raw = [
     year: '2025 — 2026',
     links: { live: 'https://mobifone.uz' },
     stack: ['Vue 3', 'Tailwind CSS', 'Spring Boot 3.2', 'PostgreSQL', 'Nginx'],
+    cover: '/projects/mobifone/cover.webp',
+    screenshots: [
+      {
+        src: '/projects/mobifone/01.webp',
+        caption: {
+          uz: "mobifone.uz: do'kon saytining bosh sahifasi",
+          ru: 'mobifone.uz: главная страница сайта магазина',
+          en: "mobifone.uz: the store website's home page"
+        }
+      },
+      {
+        src: '/projects/mobifone/02.webp',
+        caption: {
+          uz: "Savdo ekrani: nom, kod yoki shtrix-kod bo'yicha qidiruv, savat va 5 xil to'lov turi",
+          ru: 'Экран продаж: поиск по названию, коду или штрихкоду, корзина и 5 способов оплаты',
+          en: 'Sales screen: search by name, code or barcode, a cart and 5 payment methods'
+        }
+      },
+      {
+        src: '/projects/mobifone/03.webp',
+        caption: {
+          uz: "Ombor: qoldiqlar, kam qolgan va tugagan mahsulotlar, harakatlar tarixi (tijorat ma'lumotlari yashirilgan)",
+          ru: 'Склад: остатки, заканчивающиеся и закончившиеся товары, история движений (коммерческие данные скрыты)',
+          en: 'Warehouse: stock levels, low and out-of-stock items, movement history (commercial data hidden)'
+        }
+      },
+      {
+        src: '/projects/mobifone/04.webp',
+        caption: {
+          uz: "Dashboard: kunlik savdo, sotuvchilar reytingi, kategoriyalar bo'yicha tahlil",
+          ru: 'Дашборд: продажи за день, рейтинг продавцов, аналитика по категориям',
+          en: 'Dashboard: daily sales, seller ranking, breakdown by category'
+        }
+      },
+      {
+        src: '/projects/mobifone/05.webp',
+        caption: {
+          uz: 'Sayt telefonda',
+          ru: 'Сайт на телефоне',
+          en: 'The website on a phone'
+        }
+      }
+    ],
     content: {
       uz: {
         title: 'Mobifone — savdo nuqtasi uchun POS/CRM',
